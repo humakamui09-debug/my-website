@@ -1,0 +1,4295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>건강백세 - 어르신 두뇌 건강 게임 & 건강 정보</title>
+<meta name="description" content="어르신을 위한 치매 예방 두뇌 게임, 운동 방법, 건강 정보, 영양 식단을 한 곳에서! 짝 맞추기, 낱말 퀴즈, 테트리스, 볼링, 낚시, 두더지 잡기 등 10가지 게임 무료 제공.">
+<meta name="keywords" content="어르신 게임, 치매 예방, 두뇌 게임, 노인 건강, 인지 훈련, 기억력 게임, 건강 정보, 노인 운동, 뇌 활성화, 무료 게임">
+<meta name="author" content="건강백세">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="건강백세 - 어르신 두뇌 건강 게임 & 건강 정보">
+<meta property="og:description" content="치매 예방 두뇌 게임 10종, 운동법, 건강 정보, 영양 식단을 무료로 제공하는 어르신 전용 건강 도우미 사이트입니다.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="건강백세 - 어르신 두뇌 건강 게임">
+<meta name="twitter:description" content="치매 예방 두뇌 게임 10종, 운동법, 건강 정보 무료 제공">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3128887986335368"
+     crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "건강백세",
+  "description": "어르신을 위한 치매 예방 두뇌 게임과 건강 정보 사이트",
+  "inLanguage": "ko"
+}
+</script>
+<style>
+  :root {
+    --cream: #FDF6EC;
+    --warm-bg: #FFF9F0;
+    --gold: #D48B2A;
+    --gold-light: #F0C060;
+    --green: #4A8C5C;
+    --green-light: #7BBF8E;
+    --red: #C0392B;
+    --blue: #2471A3;
+    --text-dark: #2C1810;
+    --text-mid: #5D4037;
+    --text-light: #8D6E63;
+    --border: #E8D5B7;
+    --shadow: rgba(100,60,20,0.12);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--warm-bg);
+    color: var(--text-dark);
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #7B3F00 0%, #D4822A 50%, #F0C060 100%);
+    padding: 28px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '🌿';
+    position: absolute; top: 10px; left: 30px; font-size: 36px; opacity: 0.4;
+  }
+  header::after {
+    content: '🌿';
+    position: absolute; bottom: 10px; right: 30px; font-size: 36px; opacity: 0.4;
+    transform: scaleX(-1);
+  }
+  header h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    letter-spacing: 3px;
+  }
+  header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 20px;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  /* NAV */
+  nav {
+    background: #7B3F00;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  nav button {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 10px 22px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+  }
+  nav button:hover, nav button.active {
+    background: white;
+    color: #7B3F00;
+    border-color: white;
+  }
+
+  /* SECTIONS */
+  .section { display: none; padding: 40px 20px; max-width: 900px; margin: 0 auto; }
+  .section.active { display: block; }
+
+  .section-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid var(--gold-light);
+    position: relative;
+  }
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--gold);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  /* CARDS */
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px var(--shadow);
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+  }
+  .card:hover { transform: translateY(-3px); }
+  .card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card p, .card li {
+    font-size: 18px;
+    color: var(--text-mid);
+    line-height: 1.9;
+  }
+  .card ul { padding-left: 24px; }
+  .card li { margin-bottom: 6px; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #FFF3CD, #FFE082);
+    border: 2px solid var(--gold-light);
+    border-radius: 16px;
+    padding: 20px 26px;
+    margin: 16px 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #7B3F00;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media(max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .badge {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .badge.red { background: var(--red); }
+  .badge.blue { background: var(--blue); }
+
+  /* EXERCISE SECTION */
+  .exercise-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .step-num {
+    background: var(--gold);
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+    flex-shrink: 0;
+    font-family: 'Noto Serif KR', serif;
+  }
+  .step-content h4 { font-size: 20px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+  .step-content p { font-size: 17px; color: var(--text-mid); }
+
+  /* TIMER */
+  #timer-display {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--green);
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    border: 3px solid var(--green-light);
+    margin: 20px 0;
+  }
+  .btn-group { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    padding: 14px 32px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+  }
+  .btn-green { background: var(--green); color: white; }
+  .btn-green:hover { background: #3a7a4c; transform: scale(1.05); }
+  .btn-red { background: var(--red); color: white; }
+  .btn-red:hover { background: #a93226; transform: scale(1.05); }
+  .btn-blue { background: var(--blue); color: white; }
+  .btn-blue:hover { background: #1a5f8a; transform: scale(1.05); }
+
+  /* ===== GAMES ===== */
+
+  /* 게임 선택 카드 버튼 */
+  .game-sel-btn {
+    background: var(--gc, #555);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 18px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    transition: transform 0.15s, box-shadow 0.15s;
+    width: 100%;
+    text-align: center;
+  }
+  .game-sel-btn:hover, .game-sel-btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+  }
+  .game-sel-btn.active-game {
+    outline: 4px solid #FFD700;
+    outline-offset: 2px;
+  }
+
+  /* MEMORY CARD GAME */
+  #memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  .mem-card {
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #7B3F00, #D4822A);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    border: 3px solid transparent;
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .mem-card .front { display: none; }
+  .mem-card.flipped {
+    background: white;
+    border-color: var(--gold);
+    transform: rotateY(180deg);
+  }
+  .mem-card.flipped .front { display: block; }
+  .mem-card.flipped .back { display: none; }
+  .mem-card.matched {
+    background: linear-gradient(135deg, #4A8C5C, #7BBF8E);
+    border-color: var(--green);
+    cursor: default;
+  }
+  .mem-card .back { font-size: 28px; color: rgba(255,255,255,0.6); }
+
+  #memory-status {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 16px 0;
+    min-height: 36px;
+  }
+
+  /* NUMBER GAME */
+  #num-display {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--blue);
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #AED6F1;
+    margin: 16px 0;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 8px;
+  }
+  #num-input {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 28px;
+    text-align: center;
+    border: 3px solid var(--border);
+    border-radius: 16px;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 6px;
+    color: var(--text-dark);
+    margin: 12px 0;
+    outline: none;
+  }
+  #num-input:focus { border-color: var(--blue); }
+  #num-feedback {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 40px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  /* WORD PUZZLE */
+  #word-question {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    border: 2px solid var(--border);
+    margin: 16px 0;
+    line-height: 1.6;
+  }
+  .word-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+  .word-opt-btn {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: white;
+    border: 3px solid var(--border);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-dark);
+  }
+  .word-opt-btn:hover { border-color: var(--gold); background: #FFF9F0; transform: scale(1.02); }
+  .word-opt-btn.correct { background: #D5F5E3; border-color: var(--green); color: var(--green); }
+  .word-opt-btn.wrong { background: #FADBD8; border-color: var(--red); color: var(--red); }
+  #word-score {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 10px 0;
+  }
+  #word-feedback {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    min-height: 36px;
+    margin: 8px 0;
+  }
+
+  /* HEALTH INFO */
+  .tip-card {
+    background: white;
+    border-left: 6px solid var(--green);
+    border-radius: 0 16px 16px 0;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 10px var(--shadow);
+  }
+  .tip-card.gold { border-left-color: var(--gold); }
+  .tip-card.blue { border-left-color: var(--blue); }
+  .tip-card.red { border-left-color: var(--red); }
+  .tip-card h4 { font-size: 21px; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
+  .tip-card p { font-size: 17px; color: var(--text-mid); }
+
+  /* SCORE DISPLAY */
+  .score-box {
+    background: linear-gradient(135deg, #FFF3CD, #FFE082);
+    border: 2px solid var(--gold);
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .score-item { text-align: center; }
+  .score-item .num { font-family: 'Noto Serif KR', serif; font-size: 38px; font-weight: 900; color: var(--gold); }
+  .score-item .label { font-size: 15px; color: var(--text-mid); font-weight: 700; }
+
+  /* FOOTER */
+  footer {
+    background: #3E2010;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 24px;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 2;
+  }
+
+  /* PULSE ANIMATION */
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+
+  /* SUCCESS ANIMATION */
+  @keyframes pop { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+  .pop { animation: pop 0.3s ease-out; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 건강백세 🌸</h1>
+  <p>어르신들을 위한 건강 정보와 두뇌 활동 도우미</p>
+</header>
+
+<nav>
+  <button class="active" onclick="showSection('home')">🏠 홈</button>
+  <button onclick="showSection('exercise')">🤸 운동 방법</button>
+  <button onclick="showSection('games')">🧩 치매 예방 게임</button>
+  <button onclick="showSection('health')">💊 건강 정보</button>
+  <button onclick="showSection('food')">🥗 영양 식단</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="section active">
+  <div class="section-title">어서 오세요! 오늘도 건강한 하루 되세요 😊</div>
+
+  <div class="highlight-box pulse">
+    ☀️ 오늘도 건강하게! 규칙적인 운동과 두뇌 활동이 치매 예방의 첫걸음입니다.
+  </div>
+
+  <!-- 사이트 소개 -->
+  <div class="card" style="background:linear-gradient(135deg,#FFF9F0,#FFF3E0);border:2px solid #F0C060;margin-bottom:20px;">
+    <h3 style="font-family:'Noto Serif KR',serif;font-size:24px;color:#7B3F00;margin-bottom:14px;">🌿 건강백세란?</h3>
+    <p style="font-size:18px;line-height:2;color:#5D4037;">
+      <strong>건강백세</strong>는 어르신들의 즐겁고 건강한 노후를 위해 만들어진 <strong>무료 두뇌 건강 플랫폼</strong>입니다.
+      치매 예방 두뇌 게임 10종, 안전한 운동 방법, 고혈압·당뇨 등 건강 정보, 뇌 건강 영양 식단까지
+      한 곳에서 쉽게 이용하실 수 있습니다.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;">
+      <span style="background:#4A8C5C;color:white;padding:6px 16px;border-radius:20px;font-size:16px;font-weight:700;">🎮 게임 10종</span>
+      <span style="background:#D48B2A;color:white;padding:6px 16px;border-radius:20px;font-size:16px;font-weight:700;">🤸 운동 가이드</span>
+      <span style="background:#2471A3;color:white;padding:6px 16px;border-radius:20px;font-size:16px;font-weight:700;">💊 건강 정보</span>
+      <span style="background:#C0392B;color:white;padding:6px 16px;border-radius:20px;font-size:16px;font-weight:700;">🥗 영양 식단</span>
+      <span style="background:#6C3483;color:white;padding:6px 16px;border-radius:20px;font-size:16px;font-weight:700;">🆓 완전 무료</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card" onclick="showSection('exercise')" style="cursor:pointer; border-top:5px solid #4A8C5C;">
+      <h3>🤸 운동 방법</h3>
+      <p>어르신께 맞는 안전하고 효과적인 운동법을 알려드립니다. 스트레칭, 걷기, 근력 운동, 운동 타이머까지 제공합니다!</p>
+    </div>
+    <div class="card" onclick="showSection('games')" style="cursor:pointer; border-top:5px solid #D4822A;">
+      <h3>🧩 치매 예방 게임</h3>
+      <p>기억력, 집중력, 반응 속도를 키우는 재미있는 두뇌 게임 10종! 매일 꾸준히 하시면 인지 능력 향상에 도움이 됩니다.</p>
+    </div>
+    <div class="card" onclick="showSection('health')" style="cursor:pointer; border-top:5px solid #2471A3;">
+      <h3>💊 건강 정보</h3>
+      <p>고혈압, 당뇨, 관절 건강, 치매 예방까지 어르신께 꼭 필요한 건강 정보를 쉽고 자세하게 설명해 드립니다.</p>
+    </div>
+    <div class="card" onclick="showSection('food')" style="cursor:pointer; border-top:5px solid #C0392B;">
+      <h3>🥗 영양 식단</h3>
+      <p>뇌 건강과 몸에 좋은 음식, 피해야 할 음식, 하루 균형 식단 예시까지 알기 쉽게 안내해 드립니다.</p>
+    </div>
+  </div>
+
+  <!-- 치매 예방 TIP -->
+  <div class="card" style="border-top:5px solid #9B59B6;">
+    <h3>🧠 치매 예방 핵심 TIP</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px;">
+      <div style="background:#F5EEF8;border-radius:12px;padding:14px;text-align:center;">
+        <div style="font-size:32px;">🎮</div>
+        <div style="font-weight:700;font-size:17px;margin-top:6px;">매일 두뇌 게임</div>
+        <div style="font-size:15px;color:#666;margin-top:4px;">하루 15분 이상</div>
+      </div>
+      <div style="background:#EAF2FF;border-radius:12px;padding:14px;text-align:center;">
+        <div style="font-size:32px;">🚶</div>
+        <div style="font-weight:700;font-size:17px;margin-top:6px;">규칙적인 운동</div>
+        <div style="font-size:15px;color:#666;margin-top:4px;">하루 30분 걷기</div>
+      </div>
+      <div style="background:#E9F7EF;border-radius:12px;padding:14px;text-align:center;">
+        <div style="font-size:32px;">🥦</div>
+        <div style="font-weight:700;font-size:17px;margin-top:6px;">균형 잡힌 식사</div>
+        <div style="font-size:15px;color:#666;margin-top:4px;">채소·생선 충분히</div>
+      </div>
+      <div style="background:#FEF9E7;border-radius:12px;padding:14px;text-align:center;">
+        <div style="font-size:32px;">😴</div>
+        <div style="font-weight:700;font-size:17px;margin-top:6px;">충분한 수면</div>
+        <div style="font-size:15px;color:#666;margin-top:4px;">7~8시간 숙면</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #E8F8F5, #D5F5E3); border:2px solid #7BBF8E;">
+    <h3>✅ 오늘의 건강 체크리스트</h3>
+    <div id="checklist" style="margin-top:10px;"></div>
+  </div>
+</div>
+
+<!-- EXERCISE -->
+<div id="exercise" class="section">
+  <div class="section-title">🤸 어르신 맞춤 운동 방법</div>
+
+  <div class="card" style="border-top:5px solid var(--green);">
+    <h3>🕐 타이머로 운동하기</h3>
+    <p style="margin-bottom:14px;">운동 시간을 맞춰 드립니다. 버튼을 눌러 시작하세요!</p>
+    <div id="timer-display">00:00</div>
+    <div class="btn-group">
+      <button class="btn btn-green" onclick="startTimer()">▶ 시작</button>
+      <button class="btn btn-red" onclick="stopTimer()">⏸ 정지</button>
+      <button class="btn btn-blue" onclick="resetTimer()">↺ 초기화</button>
+    </div>
+    <div style="text-align:center;margin-top:14px;">
+      <span style="font-size:16px;color:var(--text-light);">권장 운동 시간: </span>
+      <button class="btn" style="background:#FFF9F0;border:2px solid var(--gold);color:var(--gold);padding:8px 18px;font-size:16px;" onclick="setTimerPreset(300)">5분</button>
+      <button class="btn" style="background:#FFF9F0;border:2px solid var(--gold);color:var(--gold);padding:8px 18px;font-size:16px;" onclick="setTimerPreset(600)">10분</button>
+      <button class="btn" style="background:#FFF9F0;border:2px solid var(--gold);color:var(--gold);padding:8px 18px;font-size:16px;" onclick="setTimerPreset(1800)">30분</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🌅 아침 스트레칭 <span class="badge">5~10분</span></h3>
+    <div class="exercise-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>목 스트레칭</h4>
+        <p>천천히 고개를 좌우로 돌리세요. 각 방향 10초씩 유지하세요. (5회 반복)</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>어깨 돌리기</h4>
+        <p>양 어깨를 앞으로 5번, 뒤로 5번 크게 돌리세요. 뭉친 근육이 풀립니다.</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>팔 뻗기</h4>
+        <p>두 팔을 머리 위로 쭉 뻗어 10초 유지하세요. 옆으로도 각각 뻗어보세요.</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>발목 돌리기</h4>
+        <p>의자에 앉아 발목을 시계 방향, 반시계 방향으로 각 10번씩 돌리세요.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🚶 걷기 운동 <span class="badge blue">매일 권장</span></h3>
+    <ul>
+      <li>하루 <strong>30분</strong> 이상 걷기를 목표로 하세요</li>
+      <li>처음에는 <strong>10분→20분→30분</strong>으로 천천히 늘리세요</li>
+      <li>꼭 <strong>편한 신발</strong>을 신고 걸으세요</li>
+      <li>걸을 때 허리를 펴고 <strong>팔을 앞뒤로 흔들며</strong> 걸으세요</li>
+      <li>식사 후 <strong>30분 뒤</strong>에 걷는 것이 좋습니다</li>
+    </ul>
+    <div class="highlight-box" style="margin-top:16px;">
+      💡 비가 오거나 날씨가 나쁜 날에는 실내에서 제자리 걷기를 해도 됩니다!
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>💪 의자 근력 운동 <span class="badge">안전한 운동</span></h3>
+    <div class="exercise-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>의자에서 앉았다 일어서기</h4>
+        <p>팔을 앞으로 뻗으며 천천히 일어나고 앉으세요. 10회 × 2세트</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>다리 들기</h4>
+        <p>의자에 앉아 한쪽 다리를 펴서 들어올린 뒤 10초 유지하세요. 양쪽 번갈아 5회씩</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>벽 짚고 까치발</h4>
+        <p>벽을 짚고 서서 발꿈치를 들어올렸다 내리세요. 10회 × 3세트. 종아리 근력 강화!</p>
+      </div>
+    </div>
+    <div class="exercise-step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>손 꽉 쥐었다 펴기</h4>
+        <p>두 손을 꽉 쥐었다가 손가락을 쫙 펴세요. 20회 반복. 악력과 손 혈액순환 개선!</p>
+      </div>
+    </div>
+    <div class="highlight-box" style="border-left: 5px solid var(--red); background: #FADBD8; color: #922B21;">
+      ⚠️ 주의: 통증이 생기면 즉시 운동을 멈추고 쉬세요. 무리하지 마세요!
+    </div>
+  </div>
+</div>
+
+<!-- GAMES -->
+<div id="games" class="section">
+  <div class="section-title">🧩 치매 예방 두뇌 게임</div>
+
+
+  <div class="card">
+    <!-- 게임 선택 그리드 -->
+    <div id="game-selector" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px;">
+      <button class="game-sel-btn" onclick="switchGame('memory')"   style="--gc:#2E7D32;">🃏<br>짝 맞추기</button>
+      <button class="game-sel-btn" onclick="switchGame('numbers')"  style="--gc:#1565C0;">🔢<br>숫자 기억</button>
+      <button class="game-sel-btn" onclick="switchGame('words')"    style="--gc:#B8860B;">📝<br>낱말 퀴즈</button>
+      <button class="game-sel-btn" onclick="switchGame('tetris')"   style="--gc:#6A1B9A;">🧱<br>테트리스</button>
+      <button class="game-sel-btn" onclick="switchGame('bowling')"  style="--gc:#1A5276;">🎳<br>볼링</button>
+      <button class="game-sel-btn" onclick="switchGame('fishing')"  style="--gc:#0E6655;">🎣<br>낚시</button>
+      <button class="game-sel-btn" onclick="switchGame('mole')"     style="--gc:#6D4C41;">🐹<br>두더지 잡기</button>
+      <button class="game-sel-btn" onclick="switchGame('arctic')"   style="--gc:#1565C0;">🐧<br>남극탐험</button>
+      <button class="game-sel-btn" onclick="switchGame('flaggame')" style="--gc:#B71C1C;">🚩<br>청기백기</button>
+      <button class="game-sel-btn" onclick="switchGame('tensec')"   style="--gc:#4E342E;">⏱️<br>10초 맞추기</button>
+    </div>
+
+    <!-- 뒤로가기 버튼 (게임 중일 때만 표시) -->
+    <div id="game-back-btn" style="display:none;margin-bottom:16px;">
+      <button class="btn" style="background:#555;color:white;font-size:18px;padding:12px 28px;border-radius:40px;" onclick="showGameSelector()">◀ 게임 목록으로</button>
+    </div>
+
+    <!-- MEMORY CARD GAME -->
+    <div id="game-memory" style="display:none;">
+      <h3>🃏 짝 맞추기 게임</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">같은 그림 카드 두 장을 찾아 뒤집어 맞추세요!</p>
+      <div class="score-box">
+        <div class="score-item"><div class="num" id="mem-tries">0</div><div class="label">시도 횟수</div></div>
+        <div class="score-item"><div class="num" id="mem-matched">0</div><div class="label">맞춘 쌍</div></div>
+        <div class="score-item"><div class="num">8</div><div class="label">전체 쌍</div></div>
+      </div>
+      <div id="memory-status">카드를 클릭해서 시작하세요!</div>
+      <div id="memory-grid"></div>
+      <div class="btn-group" style="margin-top:20px;">
+        <button class="btn btn-green" onclick="initMemoryGame()">🔄 새 게임</button>
+      </div>
+    </div>
+
+    <!-- NUMBER MEMORY GAME -->
+    <div id="game-numbers" style="display:none;">
+      <h3>🔢 숫자 기억 게임</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">숫자를 잘 보고 기억한 뒤, 아래에 입력하세요!</p>
+      <div class="score-box">
+        <div class="score-item"><div class="num" id="num-score">0</div><div class="label">점수</div></div>
+        <div class="score-item"><div class="num" id="num-level">1</div><div class="label">단계</div></div>
+        <div class="score-item"><div class="num" id="num-lives">❤️❤️❤️</div><div class="label">남은 기회</div></div>
+      </div>
+      <div id="num-display">준비하세요!</div>
+      <input type="number" id="num-input" placeholder="숫자를 입력하세요" disabled>
+      <div id="num-feedback"></div>
+      <div class="btn-group">
+        <button class="btn btn-blue" id="num-btn" onclick="startNumberGame()">▶ 게임 시작</button>
+      </div>
+    </div>
+
+    <!-- TETRIS GAME -->
+    <div id="game-tetris" style="display:none;">
+      <h3>🧱 테트리스</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">블록을 쌓아 한 줄을 완성하면 점수를 얻어요! 집중력과 순발력을 키워드립니다.</p>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+        <!-- 게임판 -->
+        <div>
+          <canvas id="tetris-canvas" width="300" height="600"
+            style="border:4px solid #6C3483;border-radius:12px;background:#1a0a2e;display:block;box-shadow:0 4px 20px rgba(108,52,131,0.4);"></canvas>
+        </div>
+        <!-- 사이드 패널 -->
+        <div style="min-width:140px;">
+          <div class="score-box" style="flex-direction:column;gap:14px;padding:18px 20px;">
+            <div class="score-item"><div class="num" id="tet-score" style="color:#6C3483;">0</div><div class="label">점수</div></div>
+            <div class="score-item"><div class="num" id="tet-lines" style="color:#6C3483;">0</div><div class="label">완성 줄</div></div>
+            <div class="score-item"><div class="num" id="tet-level" style="color:#6C3483;">1</div><div class="label">레벨</div></div>
+          </div>
+          <div style="background:white;border:2px solid #D7BDE2;border-radius:14px;padding:14px;margin-top:14px;text-align:center;">
+            <div style="font-size:15px;font-weight:700;color:#6C3483;margin-bottom:8px;">다음 블록</div>
+            <canvas id="tetris-next" width="100" height="100" style="background:#1a0a2e;border-radius:8px;"></canvas>
+          </div>
+          <div style="background:#F5EEF8;border-radius:14px;padding:14px;margin-top:14px;font-size:15px;color:#6C3483;line-height:2;">
+            <strong>조작 방법</strong><br>
+            ◀ ▶ : 좌우 이동<br>
+            ▼ : 빠르게 내리기<br>
+            ▲ / Z : 블록 회전<br>
+            스페이스 : 즉시 낙하<br>
+            <span style="font-size:13px;color:#999;">📱 터치: 버튼 사용</span>
+          </div>
+        </div>
+      </div>
+      <!-- 모바일 터치 버튼 -->
+      <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap;">
+        <button class="btn" style="background:#6C3483;color:white;font-size:22px;padding:14px 22px;border-radius:14px;" ontouchstart="tetMove(-1)" onclick="tetMove(-1)">◀</button>
+        <button class="btn" style="background:#6C3483;color:white;font-size:22px;padding:14px 22px;border-radius:14px;" ontouchstart="tetRotate()" onclick="tetRotate()">🔄</button>
+        <button class="btn" style="background:#6C3483;color:white;font-size:22px;padding:14px 22px;border-radius:14px;" ontouchstart="tetDrop()" onclick="tetDrop()">⬇</button>
+        <button class="btn" style="background:#6C3483;color:white;font-size:22px;padding:14px 22px;border-radius:14px;" ontouchstart="tetMove(1)" onclick="tetMove(1)">▶</button>
+      </div>
+      <div class="btn-group" style="margin-top:16px;">
+        <button class="btn" style="background:#6C3483;color:white;" id="tet-start-btn" onclick="tetStartStop()">▶ 게임 시작</button>
+        <button class="btn" style="background:#922B21;color:white;" onclick="tetReset()">↺ 다시 시작</button>
+      </div>
+      <div id="tet-message" style="text-align:center;font-size:22px;font-weight:700;color:#6C3483;min-height:36px;margin-top:10px;"></div>
+    </div>
+
+    <!-- BOWLING GAME -->
+    <div id="game-bowling" style="display:none;">
+      <h3>🎳 볼링 게임</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">조준선을 맞추고 파워를 조절해서 핀을 쓰러뜨리세요!</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+        <div>
+          <canvas id="bowling-canvas" width="360" height="560"
+            style="border:3px solid #1A5276;border-radius:14px;background:#1a1a2e;display:block;box-shadow:0 4px 20px rgba(26,82,118,0.4);cursor:pointer;touch-action:none;"></canvas>
+        </div>
+        <div style="min-width:140px;">
+          <div class="score-box" style="flex-direction:column;gap:14px;padding:18px 20px;">
+            <div class="score-item"><div class="num" id="bwl-score" style="color:#1A5276;">0</div><div class="label">총 점수</div></div>
+            <div class="score-item"><div class="num" id="bwl-frame" style="color:#1A5276;">1</div><div class="label">프레임</div></div>
+            <div class="score-item"><div class="num" id="bwl-pins" style="color:#1A5276;">10</div><div class="label">남은 핀</div></div>
+          </div>
+          <div style="background:#EAF2FF;border:2px solid #AED6F1;border-radius:14px;padding:14px;margin-top:14px;font-size:15px;color:#1A5276;line-height:2.2;">
+            <strong>조작 방법</strong><br>
+            1️⃣ 조준선이 움직이면<br>&nbsp;&nbsp;&nbsp;클릭으로 방향 고정<br>
+            2️⃣ 파워 게이지가 차면<br>&nbsp;&nbsp;&nbsp;다시 클릭으로 투구!<br>
+            📱 터치도 됩니다
+          </div>
+          <div id="bwl-scoreboard" style="background:white;border:2px solid #AED6F1;border-radius:14px;padding:12px;margin-top:14px;font-size:13px;color:#1A5276;min-height:60px;line-height:1.8;">
+            <strong>스코어보드</strong><br>
+            <div id="bwl-frames-display"></div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" style="margin-top:16px;">
+        <button class="btn" style="background:#1A5276;color:white;" onclick="bwlReset()">🔄 새 게임</button>
+      </div>
+      <div id="bwl-message" style="text-align:center;font-size:24px;font-weight:700;color:#1A5276;min-height:40px;margin-top:10px;"></div>
+    </div>
+
+    <!-- FISHING GAME -->
+    <div id="game-fishing" style="display:none;">
+      <h3>🎣 낚시 게임</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">물고기가 낚싯바늘에 가까이 오면 클릭하세요! 반응 속도와 집중력을 키워드립니다.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+        <canvas id="fishing-canvas" width="360" height="520"
+          style="border:3px solid #0E6655;border-radius:14px;display:block;box-shadow:0 4px 20px rgba(14,102,85,0.35);cursor:pointer;touch-action:none;"></canvas>
+        <div style="min-width:140px;">
+          <div class="score-box" style="flex-direction:column;gap:14px;padding:18px 20px;">
+            <div class="score-item"><div class="num" id="fish-score" style="color:#0E6655;">0</div><div class="label">점수</div></div>
+            <div class="score-item"><div class="num" id="fish-caught" style="color:#0E6655;">0</div><div class="label">잡은 물고기</div></div>
+            <div class="score-item"><div class="num" id="fish-timer" style="color:#0E6655;">60</div><div class="label">남은 시간(초)</div></div>
+          </div>
+          <div style="background:#E9F7EF;border:2px solid #A9DFBF;border-radius:14px;padding:14px;margin-top:14px;font-size:15px;color:#0E6655;line-height:2.2;">
+            <strong>조작 방법</strong><br>
+            물고기가 🪝 낚싯바늘 근처에 오면<br><strong>클릭!</strong><br><br>
+            🐟 작은 물고기: 10점<br>
+            🐠 줄무늬 물고기: 20점<br>
+            🦈 큰 물고기: 50점<br>
+            💀 해골 잡으면 -20점!<br><br>
+            📱 터치도 됩니다
+          </div>
+          <div id="fish-catch-log" style="background:white;border:2px solid #A9DFBF;border-radius:14px;padding:12px;margin-top:14px;font-size:14px;color:#0E6655;min-height:60px;max-height:120px;overflow-y:auto;line-height:1.8;">
+            <strong>낚시 기록</strong><br>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" style="margin-top:16px;">
+        <button class="btn" style="background:#0E6655;color:white;" id="fish-start-btn" onclick="fishStartStop()">▶ 낚시 시작</button>
+        <button class="btn" style="background:#922B21;color:white;" onclick="fishReset()">↺ 다시 시작</button>
+      </div>
+      <div id="fish-message" style="text-align:center;font-size:22px;font-weight:700;color:#0E6655;min-height:36px;margin-top:10px;"></div>
+    </div>
+
+    <!-- MOLE GAME -->
+    <div id="game-mole" style="display:none;">
+      <h3>🐹 두더지 잡기</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">두더지가 나타나면 빠르게 클릭하세요! 폭탄은 절대 누르지 마세요!</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+        <div>
+          <div class="score-box" style="margin-bottom:14px;padding:14px 20px;">
+            <div class="score-item"><div class="num" id="mole-score" style="color:#784212;">0</div><div class="label">점수</div></div>
+            <div class="score-item"><div class="num" id="mole-combo" style="color:#784212;">0</div><div class="label">콤보</div></div>
+            <div class="score-item"><div class="num" id="mole-timer" style="color:#784212;">30</div><div class="label">남은 시간</div></div>
+            <div class="score-item"><div class="num" id="mole-lives">❤️❤️❤️</div><div class="label">목숨</div></div>
+          </div>
+          <div id="mole-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:340px;margin:0 auto;"></div>
+          <div id="mole-message" style="text-align:center;font-size:24px;font-weight:700;color:#784212;min-height:40px;margin-top:14px;"></div>
+          <div class="btn-group" style="margin-top:12px;">
+            <button class="btn" style="background:#784212;color:white;" id="mole-start-btn" onclick="moleStartStop()">▶ 게임 시작</button>
+            <button class="btn" style="background:#922B21;color:white;" onclick="moleReset()">↺ 다시 시작</button>
+          </div>
+        </div>
+        <div style="min-width:140px;">
+          <div style="background:#FEF9E7;border:2px solid #F9E79F;border-radius:14px;padding:16px;font-size:15px;color:#784212;line-height:2.4;">
+            <strong>게임 방법</strong><br>
+            🐹 두더지 → <strong>+10점</strong><br>
+            🌟 황금 두더지 → <strong>+30점</strong><br>
+            😡 빠른 두더지 → <strong>+20점</strong><br>
+            💣 폭탄 → <strong>목숨 -1</strong><br><br>
+            콤보 연속 시<br>점수 2~3배!<br><br>
+            📱 터치도 됩니다
+          </div>
+          <div id="mole-highscore-box" style="background:white;border:2px solid #F9E79F;border-radius:14px;padding:14px;margin-top:14px;text-align:center;">
+            <div style="font-size:14px;color:#784212;font-weight:700;">🏆 최고 점수</div>
+            <div id="mole-highscore" style="font-size:32px;font-weight:900;color:#784212;font-family:'Noto Serif KR',serif;">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARCTIC GAME -->
+    <div id="game-arctic" style="display:none;">
+      <h3>🐧 남극탐험</h3>
+      <p style="margin-bottom:10px;color:var(--text-light);">펭귄을 조종해 장애물을 피하며 최대한 멀리 달리세요!</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+        <div>
+          <canvas id="arctic-canvas" width="380" height="480"
+            style="border:3px solid #1565C0;border-radius:14px;display:block;
+                   box-shadow:0 4px 24px rgba(21,101,192,0.4);cursor:pointer;touch-action:none;image-rendering:pixelated;"></canvas>
+          <!-- 모바일 버튼 -->
+          <div style="display:flex;gap:10px;justify-content:center;margin-top:12px;">
+            <button class="btn" style="background:#1565C0;color:white;font-size:20px;padding:14px 28px;border-radius:14px;flex:1;max-width:160px;"
+              ontouchstart="arcticLeft(true)" ontouchend="arcticLeft(false)"
+              onmousedown="arcticLeft(true)" onmouseup="arcticLeft(false)">◀ 왼쪽</button>
+            <button class="btn" style="background:#1565C0;color:white;font-size:20px;padding:14px 28px;border-radius:14px;flex:1;max-width:160px;"
+              ontouchstart="arcticRight(true)" ontouchend="arcticRight(false)"
+              onmousedown="arcticRight(true)" onmouseup="arcticRight(false)">오른쪽 ▶</button>
+          </div>
+        </div>
+        <div style="min-width:140px;">
+          <div class="score-box" style="flex-direction:column;gap:14px;padding:18px 20px;">
+            <div class="score-item"><div class="num" id="arc-score" style="color:#1565C0;">0</div><div class="label">점수</div></div>
+            <div class="score-item"><div class="num" id="arc-best" style="color:#1565C0;">0</div><div class="label">최고 점수</div></div>
+            <div class="score-item"><div class="num" id="arc-speed" style="color:#1565C0;">1</div><div class="label">속도</div></div>
+          </div>
+          <div style="background:#E3F2FD;border:2px solid #90CAF9;border-radius:14px;padding:14px;margin-top:14px;font-size:15px;color:#1565C0;line-height:2.2;">
+            <strong>조작 방법</strong><br>
+            ⌨️ ← → 방향키<br>
+            📱 아래 버튼<br>
+            또는 캔버스<br>왼쪽/오른쪽 터치<br><br>
+            🧊 빙산 피하기<br>
+            🐻‍❄️ 북극곰 피하기<br>
+            ❄️ 눈보라 피하기<br>
+            🐟 물고기 먹기 +30점
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" style="margin-top:14px;">
+        <button class="btn" style="background:#1565C0;color:white;" id="arc-start-btn" onclick="arcticStartStop()">▶ 게임 시작</button>
+        <button class="btn" style="background:#922B21;color:white;" onclick="arcticReset()">↺ 처음부터</button>
+      </div>
+      <div id="arc-message" style="text-align:center;font-size:22px;font-weight:700;color:#1565C0;min-height:36px;margin-top:10px;"></div>
+    </div>
+
+    <!-- FLAG GAME -->
+    <div id="game-flaggame" style="display:none;">
+      <h3>🚩 청기백기</h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">명령을 잘 듣고 올바른 깃발을 올리거나 내리세요! 반응 속도와 집중력을 키워드립니다.</p>
+
+      <!-- 점수/타이머 -->
+      <div class="score-box" style="margin-bottom:18px;">
+        <div class="score-item"><div class="num" id="flag-score" style="color:#B71C1C;">0</div><div class="label">점수</div></div>
+        <div class="score-item"><div class="num" id="flag-combo" style="color:#B71C1C;">0</div><div class="label">콤보</div></div>
+        <div class="score-item"><div class="num" id="flag-timer" style="color:#B71C1C;">60</div><div class="label">남은 시간</div></div>
+        <div class="score-item"><div class="num" id="flag-lives" style="font-size:22px;">❤️❤️❤️</div><div class="label">목숨</div></div>
+      </div>
+
+      <!-- 명령 표시 -->
+      <div id="flag-command" style="
+        background:linear-gradient(135deg,#1a237e,#283593);
+        border-radius:20px; padding:28px 20px; text-align:center;
+        font-size:32px; font-weight:900; color:white; letter-spacing:2px;
+        min-height:90px; display:flex; align-items:center; justify-content:center;
+        box-shadow:0 6px 24px rgba(26,35,126,0.4); margin-bottom:20px;
+        font-family:'Noto Serif KR',serif;
+      ">시작 버튼을 눌러주세요</div>
+
+      <!-- 깃발 버튼 (2×2 그리드) -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:400px;margin:0 auto 16px;">
+        <!-- 청기 올려 -->
+        <button id="flag-btn-blue-up" onclick="flagAction('blue','up')" style="
+          background:linear-gradient(135deg,#1565C0,#1E88E5);
+          color:white; border:none; border-radius:18px; padding:22px 10px;
+          font-size:18px; font-weight:700; cursor:pointer; font-family:'Noto Sans KR',sans-serif;
+          box-shadow:0 4px 14px rgba(21,101,192,0.5); transition:all 0.12s;
+          display:flex; flex-direction:column; align-items:center; gap:6px;
+        ">
+          <span style="font-size:36px;">🏳️</span>
+          <span>청기 올려</span>
+        </button>
+        <!-- 청기 내려 -->
+        <button id="flag-btn-blue-down" onclick="flagAction('blue','down')" style="
+          background:linear-gradient(135deg,#0D47A1,#1565C0);
+          color:white; border:none; border-radius:18px; padding:22px 10px;
+          font-size:18px; font-weight:700; cursor:pointer; font-family:'Noto Sans KR',sans-serif;
+          box-shadow:0 4px 14px rgba(13,71,161,0.5); transition:all 0.12s;
+          display:flex; flex-direction:column; align-items:center; gap:6px;
+        ">
+          <span style="font-size:36px;">🏴</span>
+          <span>청기 내려</span>
+        </button>
+        <!-- 백기 올려 -->
+        <button id="flag-btn-white-up" onclick="flagAction('white','up')" style="
+          background:linear-gradient(135deg,#CFD8DC,#ECEFF1);
+          color:#37474F; border:none; border-radius:18px; padding:22px 10px;
+          font-size:18px; font-weight:700; cursor:pointer; font-family:'Noto Sans KR',sans-serif;
+          box-shadow:0 4px 14px rgba(0,0,0,0.15); transition:all 0.12s;
+          display:flex; flex-direction:column; align-items:center; gap:6px;
+        ">
+          <span style="font-size:36px;">🏳️</span>
+          <span>백기 올려</span>
+        </button>
+        <!-- 백기 내려 -->
+        <button id="flag-btn-white-down" onclick="flagAction('white','down')" style="
+          background:linear-gradient(135deg,#90A4AE,#B0BEC5);
+          color:#263238; border:none; border-radius:18px; padding:22px 10px;
+          font-size:18px; font-weight:700; cursor:pointer; font-family:'Noto Sans KR',sans-serif;
+          box-shadow:0 4px 14px rgba(0,0,0,0.18); transition:all 0.12s;
+          display:flex; flex-direction:column; align-items:center; gap:6px;
+        ">
+          <span style="font-size:36px;">🏴</span>
+          <span>백기 내려</span>
+        </button>
+      </div>
+
+      <!-- 깃발 시각화 -->
+      <div style="display:flex;justify-content:center;gap:40px;margin:10px 0 16px;">
+        <div style="text-align:center;">
+          <div id="flag-vis-blue" style="font-size:64px;transition:transform 0.25s,opacity 0.25s;transform:rotate(-60deg);opacity:0.4;">🚩</div>
+          <div style="font-size:16px;font-weight:700;color:#1565C0;margin-top:4px;">청기</div>
+        </div>
+        <div style="text-align:center;">
+          <div id="flag-vis-white" style="font-size:64px;transition:transform 0.25s,opacity 0.25s;transform:rotate(-60deg);opacity:0.4;">🏳️</div>
+          <div style="font-size:16px;font-weight:700;color:#555;margin-top:4px;">백기</div>
+        </div>
+      </div>
+
+      <div id="flag-feedback" style="text-align:center;font-size:24px;font-weight:700;min-height:40px;margin-bottom:6px;"></div>
+
+      <div class="btn-group">
+        <button class="btn" style="background:#B71C1C;color:white;" id="flag-start-btn" onclick="flagStartStop()">▶ 게임 시작</button>
+        <button class="btn" style="background:#616161;color:white;" onclick="flagReset()">↺ 다시 시작</button>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- TEN SECOND GAME -->
+    <div id="game-tensec" style="display:none;">
+      <h3>⏱️ 10초 맞추기</h3>
+      <p style="margin-bottom:14px;color:var(--text-light);">눈을 감고 속으로 세다가 꼭 10초라고 느껴질 때 버튼을 누르세요! 시계를 보지 마세요 😊</p>
+
+      <!-- 큰 숫자 디스플레이 -->
+      <div id="tsec-display" style="
+        background:linear-gradient(135deg,#263238,#37474F);
+        border-radius:24px; padding:30px 20px; text-align:center;
+        box-shadow:0 8px 32px rgba(0,0,0,0.3); margin-bottom:20px; position:relative; overflow:hidden;
+      ">
+        <!-- 원형 게이지 -->
+        <canvas id="tsec-ring" width="260" height="260" style="display:block;margin:0 auto;"></canvas>
+        <!-- 중앙 숫자 -->
+        <div id="tsec-number" style="
+          position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+          font-family:'Noto Serif KR',serif; font-size:80px; font-weight:900;
+          color:white; text-shadow:0 4px 20px rgba(0,0,0,0.5); line-height:1;
+          pointer-events:none;
+        ">--</div>
+        <div id="tsec-sub" style="
+          position:absolute; bottom:36px; left:0; right:0; text-align:center;
+          font-size:18px; color:rgba(255,255,255,0.7); font-weight:700;
+        ">시작 버튼을 누르세요</div>
+      </div>
+
+      <!-- 결과 히스토리 -->
+      <div id="tsec-result" style="
+        background:white; border:2px solid var(--border); border-radius:18px;
+        padding:20px 24px; margin-bottom:18px; text-align:center; min-height:80px;
+      ">
+        <div id="tsec-result-text" style="font-size:26px;font-weight:700;color:var(--text-dark);">준비됩니다!</div>
+        <div id="tsec-result-sub"  style="font-size:18px;color:var(--text-light);margin-top:6px;"></div>
+      </div>
+
+      <!-- 최근 기록 바 -->
+      <div style="background:white;border:2px solid var(--border);border-radius:16px;padding:16px 20px;margin-bottom:18px;">
+        <div style="font-size:16px;font-weight:700;color:var(--text-mid);margin-bottom:10px;">📊 최근 10회 기록</div>
+        <div id="tsec-history" style="display:flex;gap:6px;align-items:flex-end;height:60px;"></div>
+        <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:14px;color:var(--text-light);">
+          <span id="tsec-avg">평균: -</span>
+          <span id="tsec-best-diff">최고 정확도: -</span>
+        </div>
+      </div>
+
+      <!-- 점수판 -->
+      <div class="score-box" style="margin-bottom:18px;">
+        <div class="score-item"><div class="num" id="tsec-attempts" style="color:#4E342E;">0</div><div class="label">시도 횟수</div></div>
+        <div class="score-item"><div class="num" id="tsec-perfect" style="color:#4E342E;">0</div><div class="label">완벽(±0.3초)</div></div>
+        <div class="score-item"><div class="num" id="tsec-streak" style="color:#4E342E;">0</div><div class="label">연속 성공</div></div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" id="tsec-btn" style="background:#4E342E;color:white;font-size:22px;padding:20px 50px;border-radius:50px;"
+          onclick="tsecClick()">▶ 시작</button>
+        <button class="btn" style="background:#616161;color:white;" onclick="tsecReset()">↺ 초기화</button>
+      </div>
+    </div>
+
+    <!-- WORD QUIZ GAME -->
+    <div id="game-words" style="display:none;">
+      <h3>📝 낱말 퀴즈 <span id="quiz-count-badge" style="font-size:16px;font-weight:500;color:var(--text-light);"></span></h3>
+      <p style="margin-bottom:12px;color:var(--text-light);">문제를 읽고 올바른 답을 선택하세요!</p>
+      <div id="quiz-loading" style="background:linear-gradient(135deg,#FFF3CD,#FFE082);border:2px solid var(--gold-light);border-radius:16px;padding:20px 24px;text-align:center;margin-bottom:14px;display:none;">
+        <div style="font-size:28px;margin-bottom:8px;">🤖 문제 생성 중...</div>
+        <div id="quiz-loading-text" style="font-size:18px;color:var(--text-mid);font-weight:700;"></div>
+        <div style="margin-top:12px;background:#E8D5B7;border-radius:10px;overflow:hidden;height:16px;">
+          <div id="quiz-progress-bar" style="height:100%;background:var(--gold);border-radius:10px;transition:width 0.4s;width:0%;"></div>
+        </div>
+      </div>
+      <div id="word-score">점수: 0점 | 문제: 0/10</div>
+      <div id="word-question">게임 시작 버튼을 눌러주세요!</div>
+      <div class="word-options" id="word-options"></div>
+      <div id="word-feedback"></div>
+      <div class="btn-group" id="word-start-btn-wrap">
+        <button class="btn" style="background:var(--gold);color:white;" id="word-start-btn" onclick="startWordGame()">▶ 게임 시작</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEALTH INFO -->
+<div id="health" class="section">
+  <div class="section-title">💊 어르신 건강 정보</div>
+
+  <!-- 고혈압 -->
+  <div class="card" style="border-top:5px solid var(--red);">
+    <h3>❤️ 고혈압(高血壓) 관리</h3>
+    <div class="tip-card red">
+      <h4>정상 혈압 범위</h4>
+      <p>수축기(위) 120mmHg 미만 / 이완기(아래) 80mmHg 미만이 정상입니다. 130/80 이상이면 고혈압 전단계, 140/90 이상이면 고혈압입니다.</p>
+    </div>
+    <p style="margin-bottom:10px;font-size:17px;color:var(--text-mid);">고혈압은 별다른 증상이 없어 '침묵의 살인자'라 불립니다. 뇌졸중·심근경색의 주요 원인이므로 꾸준한 관리가 필수입니다.</p>
+    <ul>
+      <li>음식에 <strong>소금(나트륨)을 하루 6g 이하</strong>로 줄이세요 — 라면, 찌개, 젓갈 주의!</li>
+      <li>하루 <strong>30분 이상 유산소 운동</strong>(빠르게 걷기, 수영)을 꾸준히 하세요</li>
+      <li>담배는 반드시 <strong>금연</strong>하세요 — 흡연은 혈관을 직접 손상시킵니다</li>
+      <li>스트레스를 줄이고 <strong>명상, 심호흡</strong> 등으로 마음을 안정시키세요</li>
+      <li>아침·저녁 같은 시간에 <strong>혈압을 직접 측정</strong>하고 기록하세요</li>
+      <li>처방받은 <strong>혈압약은 임의로 중단하지 마세요</strong></li>
+      <li>체중이 5kg 줄면 혈압이 약 5mmHg 낮아집니다 — <strong>체중 관리</strong>가 중요합니다</li>
+    </ul>
+    <div class="highlight-box" style="margin-top:14px;">
+      💡 혈압은 아침 기상 후 1시간 이내, 저녁 잠들기 전에 측정하는 것이 가장 정확합니다.
+    </div>
+  </div>
+
+  <!-- 당뇨 -->
+  <div class="card" style="border-top:5px solid var(--blue);">
+    <h3>🩺 당뇨병(糖尿病) 예방 및 관리</h3>
+    <div class="tip-card blue">
+      <h4>혈당 정상 범위</h4>
+      <p>공복혈당 70~99mg/dL, 식후 2시간 혈당 140mg/dL 미만이 정상입니다. 공복혈당 126mg/dL 이상이 2번 이상 측정되면 당뇨병으로 진단합니다.</p>
+    </div>
+    <p style="margin-bottom:10px;font-size:17px;color:var(--text-mid);">우리나라 65세 이상 노인의 약 30%가 당뇨병을 앓고 있습니다. 초기에는 증상이 거의 없으므로 정기 검사가 매우 중요합니다.</p>
+    <ul>
+      <li>흰쌀밥, 흰빵, 떡 대신 <strong>잡곡밥·현미밥</strong>을 드세요</li>
+      <li>단 음식(사탕, 과자, 달콤한 음료, 과일 주스) <strong>줄이기</strong></li>
+      <li><strong>하루 세 끼 규칙적으로</strong>, 한 번에 많이 먹지 말고 천천히 드세요</li>
+      <li>식후 <strong>10~20분 가볍게 걷기</strong>가 혈당 조절에 큰 도움이 됩니다</li>
+      <li><strong>발 관리</strong>에 신경 쓰세요 — 당뇨발 합병증 예방이 중요합니다</li>
+      <li>연 1~2회 <strong>눈 검사, 신장 검사</strong>로 합병증을 조기에 발견하세요</li>
+      <li><strong>금연·절주</strong> — 흡연과 음주는 혈당 조절을 방해합니다</li>
+    </ul>
+    <div class="highlight-box" style="margin-top:14px;background:#EAF2FF;border-color:#AED6F1;color:#1A5276;">
+      💡 당뇨 합병증(망막병증, 신부전, 말초신경병증)은 혈당 조절만 잘 해도 크게 예방할 수 있습니다.
+    </div>
+  </div>
+
+  <!-- 관절 -->
+  <div class="card" style="border-top:5px solid var(--green);">
+    <h3>🦴 관절 건강 & 골다공증 예방</h3>
+    <div class="tip-card">
+      <h4>골다공증이란?</h4>
+      <p>뼈 속이 비어 쉽게 골절되는 질환입니다. 여성은 폐경 후, 남성은 70세 이후 급격히 증가합니다. 낙상 한 번으로 고관절 골절이 생길 수 있으니 주의가 필요합니다.</p>
+    </div>
+    <ul>
+      <li><strong>칼슘이 풍부한 음식</strong>(우유, 두부, 뱅어포, 멸치, 시금치)을 매일 드세요</li>
+      <li>하루 <strong>15~20분 햇볕</strong>을 쬐어 비타민D를 합성하세요</li>
+      <li>무릎에 충격이 적은 <strong>수중운동, 자전거, 평지 걷기</strong>를 추천합니다</li>
+      <li>계단 오를 때 무릎에 무리가 가지 않도록 <strong>손잡이를 꼭 잡으세요</strong></li>
+      <li>체중을 <strong>적정 수준으로 유지</strong>하면 무릎 관절 부담이 줄어듭니다</li>
+      <li>무릎이 아플 때 — <strong>급성(다친 직후)</strong>에는 냉찜질, <strong>만성(오래된 통증)</strong>에는 온찜질</li>
+      <li>집 안에 <strong>미끄럼 방지 매트, 손잡이</strong>를 설치해 낙상을 예방하세요</li>
+      <li>65세 이상은 <strong>골밀도 검사</strong>(DEXA)를 받아보세요</li>
+    </ul>
+  </div>
+
+  <!-- 심장 건강 -->
+  <div class="card" style="border-top:5px solid #E74C3C;">
+    <h3>🫀 심장 건강 & 뇌졸중 예방</h3>
+    <div class="tip-card red">
+      <h4>뇌졸중 골든 타임</h4>
+      <p>뇌졸중 증상 발생 후 <strong>4시간 30분 이내</strong>에 치료를 받아야 후유증을 최소화할 수 있습니다. 의심되면 즉시 119에 신고하세요!</p>
+    </div>
+    <p style="margin-bottom:10px;font-size:17px;color:var(--text-mid);">뇌졸중은 한국 노인 사망 원인 4위입니다. 고혈압·당뇨·흡연·비만이 주요 위험 요인입니다.</p>
+    <div style="background:#FADBD8;border-radius:14px;padding:16px 20px;margin:12px 0;">
+      <strong style="font-size:18px;color:#B71C1C;">⚠️ 뇌졸중 FAST 자가진단법</strong>
+      <ul style="margin-top:10px;color:#922B21;line-height:2.2;">
+        <li><strong>F</strong>ace — 얼굴이 한쪽으로 처지거나 마비 증상</li>
+        <li><strong>A</strong>rm — 한쪽 팔이 힘없이 처짐</li>
+        <li><strong>S</strong>peech — 말이 어눌해지거나 이해 못함</li>
+        <li><strong>T</strong>ime — 즉시 119에 전화!</li>
+      </ul>
+    </div>
+    <ul>
+      <li>콜레스테롤 높은 음식(계란 노른자, 내장류, 새우) <strong>적당히 드세요</strong></li>
+      <li>등푸른 생선(오메가3), 견과류, 올리브오일 등 <strong>좋은 지방</strong>을 섭취하세요</li>
+      <li>심방세동(불규칙한 맥박)이 있으면 <strong>반드시 치료</strong>하세요 — 뇌졸중 위험 5배 증가</li>
+      <li>정기적으로 <strong>콜레스테롤, 혈압, 혈당 검사</strong>를 받으세요</li>
+    </ul>
+  </div>
+
+  <!-- 눈 건강 -->
+  <div class="card" style="border-top:5px solid #8E44AD;">
+    <h3>👁️ 눈 건강 관리</h3>
+    <ul>
+      <li><strong>녹내장</strong> — 시야가 점점 좁아지는 질환. 40세 이상은 연 1회 안압 검사 필수</li>
+      <li><strong>백내장</strong> — 수정체가 뿌옇게 흐려지는 노화성 질환. 시력 저하 시 안과 방문</li>
+      <li><strong>황반변성</strong> — 중심 시야가 흐려지거나 굴곡지어 보이는 증상. 조기 발견이 중요</li>
+      <li>TV나 스마트폰은 <strong>30분마다 10분 눈 휴식</strong>을 취하세요</li>
+      <li>선글라스 착용으로 <strong>자외선으로부터 눈을 보호</strong>하세요</li>
+      <li>루테인(시금치, 케일, 브로콜리)을 꾸준히 섭취하면 <strong>황반변성 예방</strong>에 도움이 됩니다</li>
+    </ul>
+  </div>
+
+  <!-- 수면 -->
+  <div class="card" style="border-top:5px solid #2471A3;">
+    <h3>😴 수면 건강 & 불면증 극복</h3>
+    <div class="tip-card blue">
+      <h4>노인 권장 수면 시간</h4>
+      <p>65세 이상은 하루 7~8시간 수면이 적당합니다. 수면이 부족하면 치매, 우울증, 당뇨 위험이 높아집니다.</p>
+    </div>
+    <ul>
+      <li><strong>매일 같은 시간</strong>에 자고 일어나는 습관을 들이세요</li>
+      <li>침실을 <strong>어둡고 조용하고 서늘하게</strong>(18~20°C) 유지하세요</li>
+      <li>취침 2시간 전부터 <strong>스마트폰·TV 사용을 줄이세요</strong></li>
+      <li>낮잠은 오후 3시 전, <strong>30분 이내</strong>로 제한하세요</li>
+      <li>취침 전 <strong>따뜻한 우유 한 잔</strong> 또는 허브차가 숙면에 도움됩니다</li>
+      <li>잠들기 어려우면 <strong>복식 호흡(4초 들숨, 6초 날숨)</strong>을 반복하세요</li>
+      <li>2주 이상 불면 지속 시 <strong>수면 클리닉</strong> 방문을 권장합니다</li>
+    </ul>
+  </div>
+
+  <!-- 정신 건강 -->
+  <div class="card" style="border-top:5px solid #27AE60;">
+    <h3>💚 정신 건강 & 우울증 예방</h3>
+    <div class="tip-card">
+      <h4>노인 우울증이란?</h4>
+      <p>65세 이상 노인의 약 15%가 우울증을 경험합니다. 기억력 저하, 무기력감, 식욕 변화 등이 나타납니다. 치매와 혼동하기 쉬우니 전문 상담을 받는 것이 중요합니다.</p>
+    </div>
+    <ul>
+      <li><strong>가족·친구와 정기적으로 교류</strong>하세요 — 사회적 고립이 가장 큰 위험 요인입니다</li>
+      <li>취미 활동(원예, 그림, 음악, 요리)으로 <strong>생활에 즐거움</strong>을 만드세요</li>
+      <li>매일 <strong>햇볕 아래 산책</strong>하면 세로토닌 분비가 늘어 기분이 좋아집니다</li>
+      <li>노인 정신건강 위기 상담 전화 <strong>☎ 1577-0199</strong> (24시간 운영)</li>
+      <li>동네 주민센터의 <strong>노인복지관, 경로당</strong>을 적극 이용하세요</li>
+    </ul>
+  </div>
+
+  <!-- 치매 -->
+  <div class="card" style="border-top:5px solid var(--gold);">
+    <h3>🧠 치매 예방 완벽 가이드</h3>
+    <div class="tip-card gold">
+      <h4>치매, 예방이 최선입니다!</h4>
+      <p>치매는 완치가 어렵지만, 꾸준한 생활 습관 관리로 발병 시기를 늦추거나 예방할 수 있습니다. 규칙적인 뇌 활동, 운동, 사회적 교류가 핵심입니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0;">
+      <div style="background:#FFF9F0;border-radius:12px;padding:14px;">
+        <strong style="color:#D48B2A;">🧩 두뇌 활동</strong>
+        <ul style="margin-top:8px;font-size:16px;color:var(--text-mid);line-height:2;">
+          <li>매일 두뇌 게임 15분 이상</li>
+          <li>책·신문 읽기</li>
+          <li>일기·편지 쓰기</li>
+          <li>새로운 취미 배우기</li>
+        </ul>
+      </div>
+      <div style="background:#E9F7EF;border-radius:12px;padding:14px;">
+        <strong style="color:#27AE60;">🏃 신체 활동</strong>
+        <ul style="margin-top:8px;font-size:16px;color:var(--text-mid);line-height:2;">
+          <li>하루 30분 유산소 운동</li>
+          <li>주 3회 이상 운동</li>
+          <li>계단 이용 생활화</li>
+          <li>균형 운동(요가, 태극권)</li>
+        </ul>
+      </div>
+      <div style="background:#EAF2FF;border-radius:12px;padding:14px;">
+        <strong style="color:#1565C0;">👥 사회 활동</strong>
+        <ul style="margin-top:8px;font-size:16px;color:var(--text-mid);line-height:2;">
+          <li>가족·친구와 교류</li>
+          <li>동호회·모임 참여</li>
+          <li>봉사 활동</li>
+          <li>종교 활동</li>
+        </ul>
+      </div>
+      <div style="background:#FDEDEC;border-radius:12px;padding:14px;">
+        <strong style="color:#C0392B;">🏥 정기 검진</strong>
+        <ul style="margin-top:8px;font-size:16px;color:var(--text-mid);line-height:2;">
+          <li>혈압·혈당 관리</li>
+          <li>연 1회 치매 선별 검사</li>
+          <li>콜레스테롤 검사</li>
+          <li>충분한 수면</li>
+        </ul>
+      </div>
+    </div>
+    <div class="highlight-box">
+      📞 치매 안심 센터 (전국 무료): <strong>☎ 치매상담콜센터 1899-9988</strong>
+    </div>
+  </div>
+
+  <!-- 정기 검진 -->
+  <div class="card" style="border-top:5px solid #16A085;">
+    <h3>📋 나이별 필수 건강 검진표</h3>
+    <p style="margin-bottom:14px;font-size:17px;color:var(--text-mid);">국가 건강검진은 2년마다 무료로 받을 수 있습니다. 아래 검사를 꼭 챙기세요!</p>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:16px;">
+        <thead>
+          <tr style="background:#0E6655;color:white;">
+            <th style="padding:12px;text-align:left;border-radius:8px 0 0 0;">검사 항목</th>
+            <th style="padding:12px;text-align:center;">주기</th>
+            <th style="padding:12px;text-align:left;border-radius:0 8px 0 0;">주요 내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#F0FAF8;"><td style="padding:11px 12px;border-bottom:1px solid #ddd;">혈압·혈당·콜레스테롤</td><td style="padding:11px;text-align:center;border-bottom:1px solid #ddd;">매년</td><td style="padding:11px 12px;border-bottom:1px solid #ddd;">고혈압·당뇨·고지혈증 조기 발견</td></tr>
+          <tr style="background:white;"><td style="padding:11px 12px;border-bottom:1px solid #ddd;">위내시경</td><td style="padding:11px;text-align:center;border-bottom:1px solid #ddd;">2년마다</td><td style="padding:11px 12px;border-bottom:1px solid #ddd;">위암 조기 발견 (40세 이상)</td></tr>
+          <tr style="background:#F0FAF8;"><td style="padding:11px 12px;border-bottom:1px solid #ddd;">대장내시경</td><td style="padding:11px;text-align:center;border-bottom:1px solid #ddd;">5년마다</td><td style="padding:11px 12px;border-bottom:1px solid #ddd;">대장암 조기 발견 (50세 이상)</td></tr>
+          <tr style="background:white;"><td style="padding:11px 12px;border-bottom:1px solid #ddd;">치매 선별 검사</td><td style="padding:11px;text-align:center;border-bottom:1px solid #ddd;">매년</td><td style="padding:11px 12px;border-bottom:1px solid #ddd;">치매 안심센터 무료 제공 (60세 이상)</td></tr>
+          <tr style="background:#F0FAF8;"><td style="padding:11px 12px;border-bottom:1px solid #ddd;">골밀도 검사</td><td style="padding:11px;text-align:center;border-bottom:1px solid #ddd;">2년마다</td><td style="padding:11px 12px;border-bottom:1px solid #ddd;">골다공증 조기 발견 (여성 65세↑)</td></tr>
+          <tr style="background:white;"><td style="padding:11px 12px;">안과 검진</td><td style="padding:11px;text-align:center;">매년</td><td style="padding:11px 12px;">녹내장·백내장·황반변성 확인</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 응급 -->
+  <div class="card" style="background:#FADBD8;border:2px solid #E74C3C;">
+    <h3>🚨 즉시 병원에 가야 하는 증상</h3>
+    <ul style="color:#922B21;line-height:2.4;font-size:17px;">
+      <li>갑자기 한쪽 팔다리가 <strong>마비되거나 힘이 빠질 때</strong></li>
+      <li>갑자기 <strong>말이 잘 안 나오거나</strong> 상대방 말을 이해 못할 때</li>
+      <li>갑자기 <strong>극심한 두통</strong>이 생길 때 (머리가 터질 것 같은 느낌)</li>
+      <li><strong>가슴을 쥐어짜는 듯한 통증</strong>이나 압박감이 느껴질 때</li>
+      <li>갑자기 <strong>숨쉬기가 힘들거나</strong> 식은땀이 날 때</li>
+      <li>갑자기 <strong>한쪽 눈이 안 보이거나</strong> 시야가 흐려질 때</li>
+      <li><strong>심한 어지러움</strong>과 함께 구토가 나타날 때</li>
+    </ul>
+    <div style="margin-top:16px;background:white;border-radius:14px;padding:18px;text-align:center;">
+      <strong style="font-size:24px;color:#C0392B;">☎ 응급: 119 &nbsp;|&nbsp; 병원 안내: 129 &nbsp;|&nbsp; 정신건강: 1577-0199</strong>
+    </div>
+  </div>
+</div>
+
+<!-- FOOD -->
+<div id="food" class="section">
+  <div class="section-title">🥗 뇌 건강 영양 식단</div>
+
+  <!-- 뇌에 좋은 음식 -->
+  <div class="card" style="border-top:5px solid var(--green);">
+    <h3>✅ 뇌 건강에 좋은 슈퍼푸드</h3>
+    <div class="grid-2">
+      <div class="tip-card">
+        <h4>🐟 등푸른 생선</h4>
+        <p>고등어, 연어, 꽁치, 청어 — 오메가3 지방산(DHA·EPA)이 풍부해 뇌세포 막을 건강하게 유지합니다. 주 2~3회 섭취를 권장합니다.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🫐 베리류 과일</h4>
+        <p>블루베리, 딸기, 복분자 — 안토시아닌 항산화 성분이 뇌 노화를 늦추고 기억력·집중력을 높입니다. 냉동 베리도 효과적입니다.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🥦 녹황색 채소</h4>
+        <p>브로콜리, 시금치, 케일 — 비타민K, 루테인, 엽산이 풍부해 인지 기능 저하를 예방합니다. 루테인은 눈 건강에도 좋습니다.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🥚 달걀</h4>
+        <p>콜린 성분이 기억력·학습 능력에 관여하는 신경전달물질(아세틸콜린) 생성에 필수입니다. 하루 1~2개가 적당합니다.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🥜 호두·견과류</h4>
+        <p>호두는 뇌와 비슷한 모양처럼 뇌에 좋습니다! 불포화지방산과 비타민E가 뇌세포를 보호합니다. 하루 한 줌(30g)이 적당합니다.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🫘 콩·두부</h4>
+        <p>이소플라본이 인지 기능 보호에 도움이 됩니다. 된장, 청국장, 두부, 낫토 등 다양하게 드세요.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🫒 올리브오일</h4>
+        <p>지중해식 식단의 핵심. 올레오칸탈 성분이 알츠하이머 관련 단백질 제거를 돕습니다. 샐러드 드레싱으로 활용하세요.</p>
+      </div>
+      <div class="tip-card">
+        <h4>🍵 녹차·강황</h4>
+        <p>녹차의 EGCG 성분과 강황의 커큐민은 강력한 항산화·항염 효과로 뇌 건강을 지킵니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 영양소별 가이드 -->
+  <div class="card" style="border-top:5px solid #8E44AD;">
+    <h3>💊 어르신에게 꼭 필요한 영양소</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
+      <div style="background:#F5EEF8;border-radius:12px;padding:16px;">
+        <strong style="color:#8E44AD;font-size:17px;">🦴 칼슘</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">하루 1,000~1,200mg 필요. 우유, 치즈, 요구르트, 멸치, 두부로 섭취</p>
+      </div>
+      <div style="background:#EAF2FF;border-radius:12px;padding:16px;">
+        <strong style="color:#1565C0;font-size:17px;">☀️ 비타민D</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">칼슘 흡수 필수. 햇볕(하루 20분), 등푸른 생선, 달걀 노른자로 보충</p>
+      </div>
+      <div style="background:#E9F7EF;border-radius:12px;padding:16px;">
+        <strong style="color:#27AE60;font-size:17px;">🩸 철분</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">빈혈 예방. 살코기, 시금치, 두부. 비타민C와 함께 먹으면 흡수율 3배↑</p>
+      </div>
+      <div style="background:#FEF9E7;border-radius:12px;padding:16px;">
+        <strong style="color:#D4AC0D;font-size:17px;">🧠 오메가3</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">뇌세포 보호. 고등어·연어(주2회), 들기름, 호두, 아마씨로 섭취</p>
+      </div>
+      <div style="background:#FDEDEC;border-radius:12px;padding:16px;">
+        <strong style="color:#C0392B;font-size:17px;">🫀 비타민B군</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">신경 기능 유지. B12 부족 시 치매 위험↑. 육류, 생선, 달걀, 유제품으로 보충</p>
+      </div>
+      <div style="background:#E8F8F5;border-radius:12px;padding:16px;">
+        <strong style="color:#0E6655;font-size:17px;">🥝 비타민C</strong>
+        <p style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:1.8;">항산화·면역력 강화. 키위, 딸기, 브로콜리, 피망으로 하루 100mg 이상 섭취</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 줄여야 할 음식 -->
+  <div class="card" style="border-top:5px solid var(--red);">
+    <h3>❌ 줄여야 할 음식 & 이유</h3>
+    <div class="grid-2">
+      <div class="tip-card red">
+        <h4>🍜 라면·가공식품</h4>
+        <p>나트륨이 1개에 약 1,700mg 이상 — 하루 권장량(2,000mg)에 육박합니다. 혈압 상승과 뇌 건강 악화의 주원인입니다.</p>
+      </div>
+      <div class="tip-card red">
+        <h4>🍭 설탕·단 음식</h4>
+        <p>혈당 급등락이 반복되면 뇌의 인슐린 저항성이 생겨 인지 기능이 떨어집니다. '뇌의 당뇨'라고도 불립니다.</p>
+      </div>
+      <div class="tip-card red">
+        <h4>🍖 트랜스지방·포화지방</h4>
+        <p>마가린, 쇼트닝, 튀긴 음식, 지방 많은 고기 — 혈관을 막아 뇌졸중·심근경색 위험을 높입니다.</p>
+      </div>
+      <div class="tip-card red">
+        <h4>🍺 술·알코올</h4>
+        <p>과음은 뇌세포를 직접 손상시키고 비타민B1 결핍을 유발해 기억력 장애를 일으킵니다. 남성 2잔, 여성 1잔 이내로 제한하세요.</p>
+      </div>
+      <div class="tip-card red">
+        <h4>☕ 과도한 카페인</h4>
+        <p>하루 3잔 이상의 커피는 수면을 방해하고 칼슘 흡수를 저해합니다. 오후 3시 이후에는 피하세요.</p>
+      </div>
+      <div class="tip-card red">
+        <h4>🧂 짠 음식·장아찌</h4>
+        <p>된장, 고추장, 젓갈, 장아찌는 영양가는 있지만 나트륨이 많으므로 소량만 드세요.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 식사 예시 -->
+  <div class="card" style="border-top:5px solid var(--blue);">
+    <h3>🍽️ 일주일 건강 식단 예시</h3>
+    <div style="display:grid;gap:10px;margin-top:12px;">
+      <div class="tip-card blue"><h4>🌅 아침 식사 (원칙)</h4><p>잡곡밥 또는 통밀빵 + 단백질(달걀·두부·생선) + 채소 반찬 1~2가지 + 저지방 유제품 + 제철 과일 소량</p></div>
+      <div class="tip-card blue"><h4>☀️ 점심 식사 (원칙)</h4><p>잡곡밥 + 등푸른 생선 또는 두부찌개 + 나물 2가지 + 국 (저염) + 과일</p></div>
+      <div class="tip-card blue"><h4>🌙 저녁 식사 (원칙)</h4><p>잡곡밥 (소량) + 채소 위주 반찬 + 단백질 1가지 + 견과류 한 줌 (디저트 대신)</p></div>
+      <div class="tip-card"><h4>🥗 건강 간식</h4><p>오전: 견과류 한 줌 + 물 / 오후: 제철 과일 1개 또는 플레인 요구르트 / 저녁: 따뜻한 허브티</p></div>
+    </div>
+    <div class="highlight-box" style="margin-top:16px;">
+      💧 하루 물 1.5~2L (6~8잔) 마시기! 탈수는 기억력 저하와 직결됩니다.
+    </div>
+  </div>
+
+  <!-- 지중해식 식단 -->
+  <div class="card" style="border-top:5px solid #D4AC0D;background:linear-gradient(135deg,#FFFDE7,#FFF9C4);">
+    <h3>🌊 치매 예방에 최고! 지중해식 식단</h3>
+    <p style="margin-bottom:14px;font-size:17px;color:var(--text-mid);">세계적으로 치매 예방 효과가 가장 잘 증명된 식단입니다. 알츠하이머 위험을 최대 35% 낮춘다는 연구 결과가 있습니다.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div style="background:white;border-radius:12px;padding:14px;">
+        <strong style="color:#27AE60;">✅ 많이 먹어야 할 것</strong>
+        <ul style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:2;">
+          <li>채소·과일 (매끼마다)</li>
+          <li>통곡물·잡곡밥</li>
+          <li>올리브오일 (요리에 활용)</li>
+          <li>콩류·견과류</li>
+          <li>생선 (주 2회 이상)</li>
+        </ul>
+      </div>
+      <div style="background:white;border-radius:12px;padding:14px;">
+        <strong style="color:#E74C3C;">⚠️ 줄여야 할 것</strong>
+        <ul style="margin-top:8px;font-size:15px;color:var(--text-mid);line-height:2;">
+          <li>붉은 고기 (월 4회 이하)</li>
+          <li>버터·마가린 대신 올리브오일</li>
+          <li>설탕·과자·케이크</li>
+          <li>가공육 (소시지·햄)</li>
+          <li>짠 음식·패스트푸드</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 수분 섭취 -->
+  <div class="card" style="border-top:5px solid #2980B9;">
+    <h3>💧 수분 섭취의 중요성</h3>
+    <p style="font-size:17px;color:var(--text-mid);margin-bottom:12px;">노인은 갈증을 잘 느끼지 못해 탈수가 되기 쉽습니다. 탈수가 되면 두통, 어지러움, 기억력 저하, 낙상 위험이 높아집니다.</p>
+    <ul>
+      <li>목이 마르지 않아도 <strong>1~2시간마다</strong> 물을 드세요</li>
+      <li><strong>아침에 일어나자마자</strong> 물 한 잔으로 하루를 시작하세요</li>
+      <li><strong>국물 요리, 과일, 채소</strong>도 수분 보충에 도움이 됩니다</li>
+      <li>소변 색이 <strong>연한 노란색</strong>이면 수분 상태가 좋은 것입니다</li>
+      <li>단, <strong>심부전·신장 질환</strong>이 있으면 의사와 상담 후 수분 섭취량을 결정하세요</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <div style="max-width:900px;margin:0 auto;padding:10px 0;">
+    <div style="font-size:22px;font-weight:900;letter-spacing:3px;margin-bottom:10px;">🌸 건강백세 🌸</div>
+    <div style="font-size:16px;margin-bottom:14px;opacity:0.85;">매일 조금씩, 꾸준히 — 건강한 100세를 향하여</div>
+    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:14px;font-size:15px;">
+      <a href="#" onclick="showModal('privacy')" style="color:rgba(255,255,255,0.8);text-decoration:underline;">개인정보처리방침</a>
+      <span style="opacity:0.4;">|</span>
+      <a href="#" onclick="showModal('terms')" style="color:rgba(255,255,255,0.8);text-decoration:underline;">이용약관</a>
+      <span style="opacity:0.4;">|</span>
+      <a href="#" onclick="showModal('about')" style="color:rgba(255,255,255,0.8);text-decoration:underline;">사이트 소개</a>
+      <span style="opacity:0.4;">|</span>
+      <a href="#" onclick="showModal('contact')" style="color:rgba(255,255,255,0.8);text-decoration:underline;">문의하기</a>
+    </div>
+    <div style="font-size:13px;opacity:0.65;line-height:2;">
+      본 사이트는 어르신의 건강한 노후를 위한 두뇌 활동 및 건강 정보를 제공합니다.<br>
+      제공되는 모든 건강 정보는 참고용이며, 의학적 진단·치료를 대체하지 않습니다.<br>
+      건강 이상이 있으시면 반드시 전문 의료기관을 방문하세요.<br>
+      © 2025 건강백세. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 모달 (개인정보처리방침 / 이용약관 / 소개 / 문의) ===== -->
+<div id="modal-overlay" onclick="closeModal()" style="
+  display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.6);z-index:9999;overflow-y:auto;
+"></div>
+<div id="modal-box" style="
+  display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  background:white;border-radius:20px;padding:32px 28px;max-width:560px;width:92%;
+  max-height:80vh;overflow-y:auto;z-index:10000;box-shadow:0 20px 60px rgba(0,0,0,0.4);
+">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 id="modal-title" style="font-family:'Noto Serif KR',serif;font-size:22px;color:#2C1810;"></h2>
+    <button onclick="closeModal()" style="background:none;border:none;font-size:28px;cursor:pointer;color:#888;line-height:1;">✕</button>
+  </div>
+  <div id="modal-content" style="font-size:16px;line-height:1.9;color:#444;"></div>
+</div>
+
+<script>
+// ===== 안전한 DOM 헬퍼 =====
+function $id(id) { return document.getElementById(id); }
+function setText(id, val) { const el=$id(id); if(el) el.textContent=val; }
+
+// ===== 모달 =====
+const MODAL_CONTENT = {
+  privacy: {
+    title: '개인정보처리방침',
+    html: `
+<p><strong>건강백세</strong>는 이용자의 개인정보를 중요하게 생각하며, 개인정보 보호법에 따라 아래와 같이 처리합니다.</p>
+<br>
+<p><strong>1. 수집하는 개인정보</strong><br>본 사이트는 별도의 회원가입 없이 이용 가능하며, 이름·이메일 등 개인 식별 정보를 수집하지 않습니다.</p>
+<br>
+<p><strong>2. 쿠키 및 광고</strong><br>본 사이트는 Google AdSense를 통해 광고를 제공합니다. Google은 쿠키를 사용하여 이용자의 관심사에 맞는 광고를 표시할 수 있습니다. Google의 광고 쿠키 사용은 <a href="https://policies.google.com/privacy" target="_blank" style="color:#1565C0;">Google 개인정보처리방침</a>에 따릅니다.</p>
+<br>
+<p><strong>3. 제3자 서비스</strong><br>본 사이트는 Google Fonts, Google AdSense 등 제3자 서비스를 이용합니다. 이들 서비스의 개인정보 처리는 각 서비스 제공자의 방침을 따릅니다.</p>
+<br>
+<p><strong>4. 개인정보 보유 기간</strong><br>별도 수집하는 개인정보가 없으므로 보유·파기 대상 정보가 없습니다.</p>
+<br>
+<p><strong>5. 이용자의 권리</strong><br>이용자는 언제든지 브라우저 설정에서 쿠키를 삭제하거나 차단할 수 있습니다.</p>
+<br>
+<p><strong>6. 문의</strong><br>개인정보 처리에 관한 문의는 사이트 내 문의하기를 통해 연락해 주세요.</p>
+<br>
+<p style="color:#888;font-size:14px;">시행일: 2025년 1월 1일</p>
+    `
+  },
+  terms: {
+    title: '이용약관',
+    html: `
+<p><strong>건강백세</strong> 서비스 이용약관입니다. 본 사이트를 이용하시면 아래 약관에 동의하신 것으로 간주합니다.</p>
+<br>
+<p><strong>제1조 (목적)</strong><br>본 약관은 건강백세(이하 '사이트')가 제공하는 서비스의 이용 조건 및 절차, 이용자와 사이트의 권리·의무를 규정합니다.</p>
+<br>
+<p><strong>제2조 (서비스 내용)</strong><br>사이트는 어르신을 위한 두뇌 건강 게임, 건강 정보, 운동 방법, 영양 식단 정보를 무료로 제공합니다.</p>
+<br>
+<p><strong>제3조 (면책 조항)</strong><br>본 사이트에서 제공하는 건강 정보는 일반적인 참고 목적으로만 제공되며, 의학적 진단이나 치료를 대체하지 않습니다. 건강 문제는 반드시 전문 의료기관에 상담하시기 바랍니다.</p>
+<br>
+<p><strong>제4조 (지식재산권)</strong><br>본 사이트의 콘텐츠(게임, 디자인, 텍스트 등)에 대한 저작권은 사이트에 귀속됩니다.</p>
+<br>
+<p><strong>제5조 (서비스 변경 및 중단)</strong><br>사이트는 사전 고지 없이 서비스 내용을 변경하거나 중단할 수 있습니다.</p>
+<br>
+<p><strong>제6조 (준거법)</strong><br>본 약관은 대한민국 법률에 따라 해석됩니다.</p>
+<br>
+<p style="color:#888;font-size:14px;">시행일: 2025년 1월 1일</p>
+    `
+  },
+  about: {
+    title: '사이트 소개',
+    html: `
+<p style="font-size:18px;font-weight:700;color:#D48B2A;margin-bottom:12px;">🌸 건강백세란?</p>
+<p>건강백세는 어르신들의 건강하고 즐거운 노후를 위해 만들어진 <strong>무료 두뇌 건강 플랫폼</strong>입니다.</p>
+<br>
+<p><strong>🎮 제공 서비스</strong></p>
+<ul style="padding-left:20px;line-height:2.2;">
+  <li>치매 예방 두뇌 게임 10종 (짝 맞추기, 숫자 기억, 낱말 퀴즈, 테트리스, 볼링, 낚시, 두더지 잡기, 남극탐험, 청기백기, 10초 맞추기)</li>
+  <li>어르신 맞춤 운동 방법 및 타이머</li>
+  <li>고혈압·당뇨·관절·치매 예방 건강 정보</li>
+  <li>뇌 건강 영양 식단 가이드</li>
+  <li>오늘의 건강 체크리스트</li>
+</ul>
+<br>
+<p><strong>💡 이용 대상</strong><br>60~80대 어르신을 주요 대상으로 하며, 큰 글씨, 간단한 조작, 따뜻한 디자인으로 누구나 쉽게 이용할 수 있습니다.</p>
+<br>
+<p><strong>🆓 완전 무료</strong><br>모든 서비스는 회원가입 없이 무료로 이용 가능합니다.</p>
+    `
+  },
+  contact: {
+    title: '문의하기',
+    html: `
+<p>서비스 이용 중 불편한 점이나 개선 사항이 있으시면 아래를 통해 문의해 주세요.</p>
+<br>
+<div style="background:#FFF9F0;border:2px solid #E8D5B7;border-radius:14px;padding:20px;line-height:2.4;">
+  <p>📧 <strong>이메일 문의</strong><br>
+  <span style="color:#1565C0;">humakamui@hotmail.com</span></p>
+  <p>🕐 <strong>응답 시간</strong><br>
+  평일 오전 9시 ~ 오후 6시 (주말·공휴일 제외)</p>
+</div>
+<br>
+<p style="color:#888;font-size:14px;">※ 의학적 상담은 전문 의료기관을 이용해 주세요.<br>
+※ 긴급한 상황은 119(응급) 또는 129(병원 안내)로 연락하세요.</p>
+    `
+  }
+};
+
+function showModal(type) {
+  const data = MODAL_CONTENT[type];
+  if(!data) return;
+  document.getElementById('modal-title').textContent = data.title;
+  document.getElementById('modal-content').innerHTML = data.html;
+  document.getElementById('modal-overlay').style.display = 'block';
+  document.getElementById('modal-box').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  return false;
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').style.display = 'none';
+  document.getElementById('modal-box').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// ===== NAV =====
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const labels = {home:'홈', exercise:'운동 방법', games:'치매 예방 게임', health:'건강 정보', food:'영양 식단'};
+  document.querySelectorAll('nav button').forEach(b => {
+    if(b.textContent.includes(labels[id])) b.classList.add('active');
+  });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// ===== CHECKLIST =====
+const checks = [
+  {id:'c1', label:'아침 스트레칭 했나요?'},
+  {id:'c2', label:'물 6잔 이상 마셨나요?'},
+  {id:'c3', label:'30분 이상 걸었나요?'},
+  {id:'c4', label:'두뇌 게임 했나요?'},
+  {id:'c5', label:'채소/과일 먹었나요?'},
+  {id:'c6', label:'혈압 측정했나요?'},
+];
+const cl = document.getElementById('checklist');
+checks.forEach(c => {
+  const div = document.createElement('div');
+  div.style.cssText = 'display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px dashed #E8D5B7;font-size:19px;cursor:pointer;';
+  div.innerHTML = `<span id="${c.id}" style="font-size:26px;">⬜</span><span>${c.label}</span>`;
+  div.onclick = () => {
+    const el = document.getElementById(c.id);
+    el.textContent = el.textContent === '⬜' ? '✅' : '⬜';
+  };
+  cl.appendChild(div);
+});
+
+// ===== TIMER =====
+let timerInterval, timerSeconds = 0, timerRunning = false;
+function updateTimerDisplay() {
+  const m = String(Math.floor(timerSeconds/60)).padStart(2,'0');
+  const s = String(timerSeconds%60).padStart(2,'0');
+  document.getElementById('timer-display').textContent = m+':'+s;
+}
+function startTimer() {
+  if(timerRunning) return;
+  timerRunning = true;
+  timerInterval = setInterval(() => { timerSeconds++; updateTimerDisplay(); }, 1000);
+}
+function stopTimer() {
+  clearInterval(timerInterval); timerRunning = false;
+}
+function resetTimer() {
+  stopTimer(); timerSeconds = 0; updateTimerDisplay();
+}
+function setTimerPreset(s) {
+  stopTimer(); timerSeconds = s; updateTimerDisplay();
+}
+
+
+// ===== MEMORY CARD GAME =====
+const emojis = ['🍎','🐶','🌸','🏠','⭐','🎵','🍊','🐱'];
+let memFlipped=[], memMatched=0, memTries=0, memLock=false;
+
+function initMemoryGame() {
+  const cards = [...emojis,...emojis].sort(()=>Math.random()-0.5);
+  memFlipped=[]; memMatched=0; memTries=0; memLock=false;
+  document.getElementById('mem-tries').textContent=0;
+  document.getElementById('mem-matched').textContent=0;
+  document.getElementById('memory-status').textContent='카드를 클릭해서 시작하세요!';
+  const grid = document.getElementById('memory-grid');
+  grid.innerHTML='';
+  cards.forEach((emoji,i) => {
+    const c = document.createElement('div');
+    c.className='mem-card';
+    c.innerHTML=`<span class="back">?</span><span class="front">${emoji}</span>`;
+    c.dataset.emoji=emoji;
+    c.dataset.idx=i;
+    c.onclick=()=>flipCard(c);
+    grid.appendChild(c);
+  });
+}
+
+function flipCard(card) {
+  if(memLock || card.classList.contains('flipped') || card.classList.contains('matched')) return;
+  card.classList.add('flipped');
+  memFlipped.push(card);
+  if(memFlipped.length===2) {
+    memLock=true; memTries++;
+    document.getElementById('mem-tries').textContent=memTries;
+    setTimeout(()=>checkMatch(),700);
+  }
+}
+function checkMatch() {
+  const [a,b]=memFlipped;
+  if(a.dataset.emoji===b.dataset.emoji) {
+    a.classList.add('matched'); b.classList.add('matched');
+    memMatched++;
+    document.getElementById('mem-matched').textContent=memMatched;
+    if(memMatched===emojis.length) {
+      document.getElementById('memory-status').textContent=`🎉 완성! ${memTries}번 만에 다 맞추셨어요!`;
+    }
+  } else {
+    a.classList.remove('flipped'); b.classList.remove('flipped');
+    document.getElementById('memory-status').textContent='아쉽네요! 다시 해보세요 😊';
+  }
+  memFlipped=[]; memLock=false;
+}
+
+// ===== NUMBER MEMORY GAME =====
+let numScore=0, numLevel=1, numLives=3, numAnswer='', numPhase='idle';
+
+function resetNumberGame() {
+  numScore=0; numLevel=1; numLives=3; numAnswer=''; numPhase='idle';
+  document.getElementById('num-score').textContent=0;
+  document.getElementById('num-level').textContent=1;
+  document.getElementById('num-lives').textContent='❤️❤️❤️';
+  document.getElementById('num-display').textContent='준비하세요!';
+  document.getElementById('num-input').value='';
+  document.getElementById('num-input').disabled=true;
+  document.getElementById('num-feedback').textContent='';
+  document.getElementById('num-btn').textContent='▶ 게임 시작';
+  document.getElementById('num-btn').onclick=startNumberGame;
+}
+
+function startNumberGame() {
+  const digits = 2 + numLevel;
+  numAnswer = Array.from({length:digits},()=>Math.floor(Math.random()*10)).join('');
+  numPhase='showing';
+  document.getElementById('num-input').value='';
+  document.getElementById('num-input').disabled=true;
+  document.getElementById('num-feedback').textContent='';
+  document.getElementById('num-btn').textContent='보여주는 중...';
+  document.getElementById('num-display').textContent=numAnswer;
+  setTimeout(()=>{
+    document.getElementById('num-display').textContent='입력하세요!';
+    document.getElementById('num-input').disabled=false;
+    document.getElementById('num-input').focus();
+    document.getElementById('num-btn').textContent='✔ 확인';
+    document.getElementById('num-btn').onclick=checkNumber;
+    numPhase='input';
+  }, 2000 + numLevel * 300);
+}
+
+function checkNumber() {
+  if(numPhase!=='input') return;
+  const val = document.getElementById('num-input').value.trim();
+  const fb = document.getElementById('num-feedback');
+  if(val===numAnswer) {
+    numScore += numLevel * 10;
+    numLevel++;
+    fb.style.color='var(--green)';
+    fb.textContent='🎉 정답! 훌륭해요!';
+    document.getElementById('num-score').textContent=numScore;
+    document.getElementById('num-level').textContent=numLevel;
+    setTimeout(startNumberGame, 1200);
+  } else {
+    numLives--;
+    const hearts = ['','❤️','❤️❤️','❤️❤️❤️'][numLives] || '';
+    document.getElementById('num-lives').textContent=hearts || '💔';
+    fb.style.color='var(--red)';
+    fb.textContent=`❌ 틀렸어요! 정답은 ${numAnswer} 이었어요.`;
+    if(numLives<=0) {
+      document.getElementById('num-display').textContent='게임 종료!';
+      fb.textContent=`게임 끝! 최종 점수: ${numScore}점 (${numLevel-1}단계 도달)`;
+      document.getElementById('num-btn').textContent='🔄 다시 시작';
+      document.getElementById('num-btn').onclick=resetNumberGame;
+      document.getElementById('num-input').disabled=true;
+      numPhase='over';
+    } else {
+      setTimeout(startNumberGame, 1500);
+    }
+  }
+}
+
+// ===== WORD QUIZ — AI 자동 생성 1000문제 =====
+// 기본 문제 (API 호출 전 즉시 사용 가능한 seed 문제들)
+const seedQuizBank = [
+  {q:'대한민국의 수도는 어디인가요?', a:'서울', opts:['서울','부산','대구','인천']},
+  {q:'한국의 국화(나라 꽃)는 무엇인가요?', a:'무궁화', opts:['진달래','무궁화','장미','국화']},
+  {q:'한글을 만드신 분은 누구인가요?', a:'세종대왕', opts:['광개토대왕','이순신','세종대왕','정조']},
+  {q:'이순신 장군이 활약한 전쟁은?', a:'임진왜란', opts:['병자호란','임진왜란','6.25전쟁','독립전쟁']},
+  {q:'우리나라 명절 중 음력 8월 15일은?', a:'추석', opts:['설날','추석','단오','정월대보름']},
+  {q:'태극기의 바탕 색은 무엇인가요?', a:'흰색', opts:['파란색','빨간색','흰색','노란색']},
+  {q:'한국의 전통 발효 식품이 아닌 것은?', a:'초밥', opts:['김치','된장','간장','초밥']},
+  {q:'백두산은 어느 도에 있나요?', a:'양강도', opts:['평안도','함경도','양강도','황해도']},
+  // 자연 / 과학
+  {q:'봄, 여름, 가을, ○ — 빈칸에 들어갈 계절은?', a:'겨울', opts:['봄','여름','가을','겨울']},
+  {q:'태양계에서 가장 큰 행성은 무엇인가요?', a:'목성', opts:['지구','화성','목성','토성']},
+  {q:'물이 100도에서 어떻게 변하나요?', a:'끓는다', opts:['얼음이 된다','끓는다','녹는다','굳는다']},
+  {q:'사과, 배, 딸기, 포도의 공통점은?', a:'과일', opts:['채소','과일','곡식','꽃']},
+  {q:'다음 중 포유류가 아닌 것은?', a:'독수리', opts:['고양이','독수리','소','강아지']},
+  {q:'지구에서 가장 깊은 바다는?', a:'태평양', opts:['대서양','인도양','태평양','북극해']},
+  {q:'꿀을 만드는 곤충은 무엇인가요?', a:'꿀벌', opts:['나비','잠자리','꿀벌','매미']},
+  {q:'하늘에서 내리는 것 중 여름에 내리는 것은?', a:'소나기', opts:['눈','우박','소나기','서리']},
+  {q:'나무의 나이를 알 수 있는 것은?', a:'나이테', opts:['잎맥','나이테','꽃잎','뿌리']},
+  // 생활 / 건강
+  {q:'하루는 몇 시간인가요?', a:'24시간', opts:['12시간','18시간','24시간','48시간']},
+  {q:'1년은 몇 개월인가요?', a:'12개월', opts:['10개월','11개월','12개월','13개월']},
+  {q:'1주일은 며칠인가요?', a:'7일', opts:['5일','6일','7일','8일']},
+  {q:'혈압을 낮추는 데 좋은 것은?', a:'걷기 운동', opts:['짠 음식','걷기 운동','술','담배']},
+  {q:'치매 예방에 도움이 안 되는 것은?', a:'종일 TV만 보기', opts:['독서','퍼즐','종일 TV만 보기','산책']},
+  {q:'뼈 건강을 위해 필요한 영양소는?', a:'칼슘', opts:['칼슘','비타민C','철분','단백질']},
+  {q:'응급 전화번호는 몇 번인가요?', a:'119', opts:['112','119','129','182']},
+  {q:'다음 중 비타민C가 가장 많은 것은?', a:'레몬', opts:['사과','바나나','레몬','수박']},
+  // 수학
+  {q:'3 × 7 = ?', a:'21', opts:['18','21','24','27']},
+  {q:'50 + 37 = ?', a:'87', opts:['77','87','97','107']},
+  {q:'100 - 43 = ?', a:'57', opts:['47','53','57','67']},
+  {q:'12 × 5 = ?', a:'60', opts:['50','55','60','65']},
+  {q:'144 ÷ 12 = ?', a:'12', opts:['10','11','12','14']},
+  {q:'홀수가 아닌 것은?', a:'18', opts:['7','13','18','25']},
+  // 속담 / 관용어
+  {q:'가는 말이 고와야 ○○ 말이 곱다 — 빈칸은?', a:'오는', opts:['가는','오는','떠나는','돌아오는']},
+  {q:'"티끌 모아 ○○" — 빈칸에 들어갈 말은?', a:'태산', opts:['모래산','태산','하늘','바다']},
+  {q:'"낮말은 새가 듣고 밤말은 ○이 듣는다" — 빈칸은?', a:'쥐', opts:['고양이','쥐','개','뱀']},
+  {q:'"세 살 버릇 ○○까지 간다" — 빈칸은?', a:'여든', opts:['쉰','예순','일흔','여든']},
+  // 문화 / 음식
+  {q:'김치찌개의 주재료가 아닌 것은?', a:'두부찜', opts:['김치','돼지고기','두부찜','두부']},
+  {q:'된장을 만드는 주재료는?', a:'콩', opts:['쌀','보리','콩','밀']},
+  {q:'설날에 먹는 대표 음식은?', a:'떡국', opts:['송편','떡국','삼계탕','수정과']},
+  {q:'추석에 만들어 먹는 음식은?', a:'송편', opts:['떡국','송편','팥죽','식혜']},
+  {q:'동지에 먹는 전통 음식은?', a:'팥죽', opts:['팥죽','삼계탕','갈비탕','냉면']},
+  {q:'한글을 만드신 분은 누구인가요?', a:'세종대왕', opts:['광개토대왕','이순신','세종대왕','정조']},
+  {q:'이순신 장군이 활약한 전쟁은?', a:'임진왜란', opts:['병자호란','임진왜란','6.25전쟁','독립전쟁']},
+  {q:'우리나라 명절 중 음력 8월 15일은?', a:'추석', opts:['설날','추석','단오','정월대보름']},
+  {q:'태극기의 바탕 색은 무엇인가요?', a:'흰색', opts:['파란색','빨간색','흰색','노란색']},
+  {q:'봄, 여름, 가을, ○ — 빈칸은?', a:'겨울', opts:['봄','여름','가을','겨울']},
+  {q:'태양계에서 가장 큰 행성은?', a:'목성', opts:['지구','화성','목성','토성']},
+  {q:'물이 100도에서 어떻게 변하나요?', a:'끓는다', opts:['얼음이 된다','끓는다','녹는다','굳는다']},
+  {q:'꿀을 만드는 곤충은 무엇인가요?', a:'꿀벌', opts:['나비','잠자리','꿀벌','매미']},
+  {q:'나무의 나이를 알 수 있는 것은?', a:'나이테', opts:['잎맥','나이테','꽃잎','뿌리']},
+  {q:'1년은 몇 개월인가요?', a:'12개월', opts:['10개월','11개월','12개월','13개월']},
+  {q:'응급 전화번호는 몇 번인가요?', a:'119', opts:['112','119','129','182']},
+  {q:'3 × 7 = ?', a:'21', opts:['18','21','24','27']},
+  {q:'50 + 37 = ?', a:'87', opts:['77','87','97','107']},
+  {q:'"티끌 모아 ○○" — 빈칸은?', a:'태산', opts:['모래산','태산','하늘','바다']},
+  {q:'"세 살 버릇 ○○까지 간다" — 빈칸은?', a:'여든', opts:['쉰','예순','일흔','여든']},
+  {q:'설날에 먹는 대표 음식은?', a:'떡국', opts:['송편','떡국','삼계탕','수정과']},
+  {q:'추석에 만들어 먹는 음식은?', a:'송편', opts:['떡국','송편','팥죽','식혜']},
+  {q:'된장을 만드는 주재료는?', a:'콩', opts:['쌀','보리','콩','밀']},
+  {q:'뼈 건강을 위해 필요한 영양소는?', a:'칼슘', opts:['칼슘','비타민C','철분','단백질']},
+  {q:'혈압을 낮추는 데 좋은 것은?', a:'걷기 운동', opts:['짠 음식','걷기 운동','술','담배']},
+  {q:'1주일은 며칠인가요?', a:'7일', opts:['5일','6일','7일','8일']},
+  {q:'100 - 43 = ?', a:'57', opts:['47','53','57','67']},
+  {q:'12 × 5 = ?', a:'60', opts:['50','55','60','65']},
+  {q:'다음 중 포유류가 아닌 것은?', a:'독수리', opts:['고양이','독수리','소','강아지']},
+  {q:'사과, 배, 딸기, 포도의 공통점은?', a:'과일', opts:['채소','과일','곡식','꽃']},
+  {q:'한국의 국화(나라 꽃)는 무엇인가요?', a:'무궁화', opts:['진달래','무궁화','장미','국화']},
+  {q:'한국의 전통 발효 식품이 아닌 것은?', a:'초밥', opts:['김치','된장','간장','초밥']},
+  {q:'"낮말은 새가 듣고 밤말은 ○이 듣는다" — 빈칸은?', a:'쥐', opts:['고양이','쥐','개','뱀']},
+  {q:'144 ÷ 12 = ?', a:'12', opts:['10','11','12','14']},
+];
+
+// 전체 퀴즈 뱅크 — q 텍스트 기준으로 중복 없이 관리
+// seenQuizTexts: 이미 뱅크에 들어간 문제 텍스트 Set (정규화된 키)
+const seenQuizTexts = new Set();
+function normalizeQ(q) { return q.replace(/\s+/g,'').toLowerCase(); }
+
+// seed 문제 중복 없이 초기 뱅크 구성
+let quizBank = [];
+for(const q of seedQuizBank) {
+  const key = normalizeQ(q.q);
+  if(!seenQuizTexts.has(key)) { seenQuizTexts.add(key); quizBank.push(q); }
+}
+
+let quizGenerated = false;
+let quizGenerating = false;
+
+// quizBank에 안전하게 추가 (문제 텍스트 중복 제거)
+function addToQuizBank(questions) {
+  let added = 0;
+  for(const q of questions) {
+    if(!q.q || !q.a || !Array.isArray(q.opts) || !q.opts.includes(q.a) || q.opts.length !== 4) continue;
+    const key = normalizeQ(q.q);
+    if(seenQuizTexts.has(key)) continue;
+    seenQuizTexts.add(key);
+    quizBank.push(q);
+    added++;
+  }
+  return added;
+}
+
+const QUIZ_CATEGORIES = [
+  { name:'한국 역사 1', desc:'고조선, 삼국시대(고구려 백제 신라), 통일신라, 고려 건국과 멸망, 주요 왕' },
+  { name:'한국 역사 2', desc:'조선 건국, 세종대왕 업적, 임진왜란, 병자호란, 조선 후기 사건' },
+  { name:'한국 역사 3', desc:'일제강점기, 3.1운동, 독립운동가(안중근 유관순 윤봉길), 광복, 6.25전쟁' },
+  { name:'한국 지리 1', desc:'서울 부산 대구 인천 등 주요 도시 특징, 한강 낙동강 금강 등 강 이름' },
+  { name:'한국 지리 2', desc:'한라산 설악산 지리산 등 명산, 제주도 독도 강화도 등 섬, 국립공원' },
+  { name:'한국 음식 1', desc:'김치 된장 간장 고추장 등 발효식품, 불고기 갈비 삼겹살 등 고기 요리' },
+  { name:'한국 음식 2', desc:'비빔밥 냉면 삼계탕 설렁탕 등 대표 음식, 떡볶이 순대 등 분식류' },
+  { name:'한국 음식 3', desc:'떡 종류(송편 인절미 가래떡 등), 한과, 식혜 수정과 등 전통 음료, 명절 음식' },
+  { name:'한국 문화·풍습', desc:'설날 추석 단오 정월대보름 풍습, 전통 놀이(윷놀이 제기차기 널뛰기 연날리기)' },
+  { name:'속담 1', desc:'빈칸 채우기 형식 속담. 예: "가는 말이 고와야 ○○ 말이 곱다", "콩 심은 데 콩 나고 ○ 심은 데 ○ 난다"' },
+  { name:'속담 2', desc:'빈칸 채우기 속담. 예: "호랑이도 제 말 하면 ○○", "배보다 ○○가 더 크다", "발 없는 말이 ○○ 리 간다"' },
+  { name:'사자성어·관용어', desc:'일석이조, 청출어람, 등 사자성어 뜻, 관용어 빈칸 채우기' },
+  { name:'동물 상식 1', desc:'포유류(개 고양이 소 말 돼지 등) 특징, 새끼 이름, 울음소리, 먹이' },
+  { name:'동물 상식 2', desc:'조류(독수리 참새 까치 학 등), 해양 동물(고래 상어 오징어 등), 양서류 파충류' },
+  { name:'곤충·식물 상식', desc:'나비 벌 잠자리 매미 등 곤충 특징, 장미 국화 진달래 등 꽃, 소나무 은행나무 등 나무' },
+  { name:'자연·날씨·계절', desc:'봄 여름 가을 겨울 특징, 장마 태풍 안개 서리 등 날씨 현상, 자연재해' },
+  { name:'과학 기초', desc:'물의 상태 변화, 빛과 그림자, 자석, 전기, 소리, 무게와 힘 등 기초 과학' },
+  { name:'우주·지구 과학', desc:'태양계 행성 순서와 특징, 달의 모양 변화, 별자리, 지구 자전 공전' },
+  { name:'수학·계산 1', desc:'두 자릿수 덧셈 뺄셈 (예: 63+28=?, 91-47=?), 세 자릿수 간단 계산' },
+  { name:'수학·계산 2', desc:'구구단(6~9단), 두 자릿수 곱셈(예: 15×4=?), 나눗셈(예: 84÷7=?)' },
+  { name:'수학·단위 변환', desc:'1m=100cm, 1kg=1000g, 1시간=60분 등 단위 변환, 시간 더하기 빼기' },
+  { name:'건강·영양 1', desc:'비타민(A B C D), 칼슘 철분 단백질 탄수화물 등 영양소와 음식 연결' },
+  { name:'건강·영양 2', desc:'고혈압 당뇨 골다공증 관절염 치매 예방법, 운동 효과, 건강 수칙' },
+  { name:'생활 상식 1', desc:'전화번호(119 112 129 등), 교통 신호, 우체국 은행 등 생활 기관 역할' },
+  { name:'생활 상식 2', desc:'계절별 옷차림, 가전제품 사용법, 절약 습관, 분리수거, 생활 예절' },
+  { name:'세계 지리', desc:'아시아 유럽 아프리카 나라 이름과 수도, 세계 주요 강과 산, 대륙과 대양' },
+  { name:'세계 문화', desc:'올림픽 역사와 종목, 세계 유명 음식, 유명 건축물(에펠탑 피라미드 등)' },
+  { name:'한국 스포츠', desc:'태권도 씨름 양궁 등 한국 전통·강세 스포츠, 월드컵 올림픽 관련 상식' },
+  { name:'문학·동요', desc:'유명 동요 가사 빈칸(반달 나뭇잎 등), 유명 시조, 어린 왕자 등 고전 문학' },
+  { name:'전통 악기·예술', desc:'가야금 거문고 해금 장구 북 등 전통 악기 특징, 탈춤 판소리 등 전통 예술' },
+  { name:'24절기', desc:'입춘 우수 경칩 춘분 청명 곡우 등 24절기 이름, 순서, 계절별 분류, 절기 풍습' },
+  { name:'한국어 어휘 1', desc:'쉬운 반의어(크다↔작다 등), 유의어, 높임말(밥→진지, 나이→연세 등)' },
+  { name:'한국어 어휘 2', desc:'의성어 의태어(꼬꼬 멍멍 반짝반짝 등), 색깔 이름, 숫자 한자어(일 이 삼...)' },
+  { name:'역사 인물 업적', desc:'세종대왕(한글), 이순신(거북선), 장영실(발명품), 신사임당(오만원권) 등 업적' },
+  { name:'농업·자연환경', desc:'벼 보리 콩 옥수수 등 농작물 특징, 제철 채소와 과일, 논밭 농사 지식' },
+];
+
+async function generateQuizBatch(category) {
+  // 이미 뱅크에 있는 문제 샘플 일부를 프롬프트에 포함해 중복 방지
+  const existingSample = quizBank.slice(-20).map(q => q.q).join('\n');
+
+  const prompt = `당신은 한국 어르신(60~80대)을 위한 두뇌 건강 퀴즈 전문가입니다.
+
+카테고리: ${category.name}
+내용 범위: ${category.desc}
+
+이미 만들어진 문제 예시 (이것과 겹치면 절대 안 됩니다):
+${existingSample}
+
+아래 조건을 엄격히 지켜 새로운 퀴즈 30개를 JSON 배열로만 출력하세요:
+- q: 문제 (25자 이내, 어르신이 쉽게 이해하는 표현)
+- a: 정답 (반드시 opts 배열 안에 포함)
+- opts: 선택지 정확히 4개 (정답 1개 + 오답 3개, 헷갈리지만 명확한 오답)
+- 위 "이미 만들어진 문제"와 주제·내용이 겹치지 않는 완전히 새로운 문제만
+- 다양한 유형 혼합: 빈칸채우기 / "다음 중 ~는?" / 계산 / 특징 묻기
+
+JSON 배열만 출력 (설명·마크다운·다른 텍스트 없이):`;
+
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: 3000,
+      messages: [{ role: "user", content: prompt }]
+    })
+  });
+  const data = await response.json();
+  let text = data.content.map(c => c.text || '').join('').trim();
+  text = text.replace(/^```json\s*/i,'').replace(/^```\s*/,'').replace(/\s*```$/,'').trim();
+  return JSON.parse(text);
+}
+
+async function generateAllQuizzes() {
+  if(quizGenerating || quizGenerated) return;
+  quizGenerating = true;
+
+  const loadingEl = document.getElementById('quiz-loading');
+  const loadingText = document.getElementById('quiz-loading-text');
+  const progressBar = document.getElementById('quiz-progress-bar');
+  const badge = document.getElementById('quiz-count-badge');
+  const startBtn = document.getElementById('word-start-btn');
+
+  loadingEl.style.display = 'block';
+  startBtn.disabled = true;
+  startBtn.style.opacity = '0.5';
+
+  let batchDone = 0;
+  const totalBatches = QUIZ_CATEGORIES.length;
+
+  for(const cat of QUIZ_CATEGORIES) {
+    loadingText.textContent = `📝 ${cat.name} 문제 생성 중... (현재 ${quizBank.length}개)`;
+    try {
+      const raw = await generateQuizBatch(cat);
+      const added = addToQuizBank(raw);
+      badge.textContent = `(${quizBank.length}문제)`;
+    } catch(e) {
+      console.warn('배치 오류:', cat.name, e);
+    }
+    batchDone++;
+    progressBar.style.width = Math.round((batchDone / totalBatches) * 100) + '%';
+    loadingText.textContent = `✅ ${cat.name} 완료! (총 ${quizBank.length}개 준비됨)`;
+    await new Promise(r => setTimeout(r, 200));
+  }
+
+  quizGenerated = true;
+  quizGenerating = false;
+  loadingEl.style.display = 'none';
+  startBtn.disabled = false;
+  startBtn.style.opacity = '1';
+  badge.textContent = `(${quizBank.length}문제)`;
+  document.getElementById('word-question').textContent = `🎉 ${quizBank.length}개 문제 준비 완료! 시작해 보세요!`;
+}
+
+let wordIdx=0, wordScore=0, wordUsed=[];
+let usedQuizIndices = new Set(); // 이미 출제된 문제 인덱스 추적
+
+function pickFreshQuestions(count) {
+  // 아직 안 나온 문제 인덱스 목록
+  let available = [];
+  for(let i = 0; i < quizBank.length; i++) {
+    if(!usedQuizIndices.has(i)) available.push(i);
+  }
+  // 남은 문제가 count보다 적으면 기록 초기화 후 전체에서 다시
+  if(available.length < count) {
+    usedQuizIndices.clear();
+    available = quizBank.map((_,i) => i);
+  }
+  // 셔플 후 count개 선택
+  available.sort(() => Math.random() - 0.5);
+  const chosen = available.slice(0, count);
+  chosen.forEach(i => usedQuizIndices.add(i));
+  return chosen.map(i => quizBank[i]);
+}
+
+function resetWordGame() {
+  wordIdx=0; wordScore=0; wordUsed=[];
+  document.getElementById('word-score').textContent='점수: 0점 | 문제: 0/10';
+  document.getElementById('word-question').textContent = quizGenerated
+    ? `🎉 ${quizBank.length}개 문제 준비 완료! 시작해 보세요!`
+    : '게임 시작 버튼을 눌러주세요!';
+  document.getElementById('word-options').innerHTML='';
+  document.getElementById('word-feedback').textContent='';
+  document.getElementById('word-start-btn-wrap').style.display='flex';
+}
+
+function startWordGame() {
+  wordIdx=0; wordScore=0;
+  document.getElementById('word-score').textContent='점수: 0점 | 문제: 0/10';
+  document.getElementById('word-feedback').textContent='';
+  document.getElementById('word-start-btn-wrap').style.display='none';
+  wordUsed = pickFreshQuestions(10);
+  showWordQuestion();
+}
+
+function showWordQuestion() {
+  if(wordIdx>=wordUsed.length) {
+    document.getElementById('word-question').textContent=`🎊 게임 완료! 최종 점수: ${wordScore}점`;
+    document.getElementById('word-options').innerHTML='';
+    const fb = document.getElementById('word-feedback');
+    fb.style.color='var(--green)';
+    const remaining = quizBank.length - usedQuizIndices.size;
+    const remainMsg = remaining > 0 ? ` (아직 안 푼 문제 ${remaining}개 남았어요!)` : ' (모든 문제를 다 푸셨어요! 처음부터 다시 시작합니다 😊)';
+    if(wordScore>=90) fb.textContent='🏆 완벽해요! 정말 대단하세요!' + remainMsg;
+    else if(wordScore>=70) fb.textContent='👏 훌륭해요! 수고하셨습니다!' + remainMsg;
+    else fb.textContent='😊 잘 하셨어요! 다시 해보시겠어요?' + remainMsg;
+    document.getElementById('word-start-btn-wrap').style.display='flex';
+    document.querySelector('#word-start-btn-wrap button').textContent='🔄 다시 시작';
+    return;
+  }
+  const q = wordUsed[wordIdx];
+  document.getElementById('word-score').textContent=`점수: ${wordScore}점 | 문제: ${wordIdx+1}/10`;
+  document.getElementById('word-question').textContent=q.q;
+  document.getElementById('word-feedback').textContent='';
+  const optsDiv = document.getElementById('word-options');
+  optsDiv.innerHTML='';
+  q.opts.sort(()=>Math.random()-0.5).forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className='word-opt-btn pop';
+    btn.textContent=opt;
+    btn.onclick=()=>checkWordAnswer(opt, q.a, optsDiv);
+    optsDiv.appendChild(btn);
+  });
+}
+
+function checkWordAnswer(selected, correct, optsDiv) {
+  optsDiv.querySelectorAll('button').forEach(b => {
+    b.disabled=true;
+    if(b.textContent===correct) b.classList.add('correct');
+    else if(b.textContent===selected && selected!==correct) b.classList.add('wrong');
+  });
+  const fb = document.getElementById('word-feedback');
+  if(selected===correct) {
+    wordScore+=10;
+    fb.style.color='var(--green)';
+    fb.textContent='✅ 정답이에요! 잘 하셨어요! 🎉';
+  } else {
+    fb.style.color='var(--red)';
+    fb.textContent=`❌ 틀렸어요. 정답은 "${correct}" 입니다.`;
+  }
+  document.getElementById('word-score').textContent=`점수: ${wordScore}점 | 문제: ${wordIdx+1}/10`;
+  wordIdx++;
+  setTimeout(showWordQuestion, 1800);
+}
+
+
+function showGameSelector() {
+  ['memory','numbers','words','tetris','bowling','fishing','mole','arctic','flaggame','tensec'].forEach(g => {
+    document.getElementById('game-'+g).style.display = 'none';
+  });
+  document.getElementById('game-selector').style.display = 'grid';
+  document.getElementById('game-back-btn').style.display = 'none';
+  document.querySelectorAll('.game-sel-btn').forEach(b => b.classList.remove('active-game'));
+  tetPause(true); fishPauseStop(); molePauseStop(); arcticPauseStop(); flagPauseStop();
+}
+
+function switchGame(name) {
+  document.getElementById('game-selector').style.display = 'none';
+  document.getElementById('game-back-btn').style.display = 'block';
+
+  ['memory','numbers','words','tetris','bowling','fishing','mole','arctic','flaggame','tensec'].forEach(g => {
+    document.getElementById('game-'+g).style.display = g===name ? 'block' : 'none';
+  });
+
+  document.querySelectorAll('.game-sel-btn').forEach(b => {
+    b.classList.toggle('active-game', b.getAttribute('onclick').includes("'"+name+"'"));
+  });
+
+  if(name==='memory')   initMemoryGame();
+  if(name==='numbers')  resetNumberGame();
+  if(name==='words')    { resetWordGame(); if(!quizGenerated&&!quizGenerating) generateAllQuizzes(); }
+  if(name==='bowling')  { cancelAnimationFrame(bwlState?.animId); bwlLoop(); }
+  if(name==='fishing')  fishOnShow();
+  if(name==='mole')     { if(!moleState) moleReset(); else moleRenderGrid(); }
+  if(name==='arctic')   { if(!arc) arcticReset(); else setTimeout(arcDrawIdle,50); }
+  if(name==='tensec')   tsecOnShow();
+  if(name!=='tetris')   tetPause(true);
+  else                  { if(!tetRunning) { tetDrawBoard(); tetDrawNext(); } }
+  if(name!=='fishing')  fishPauseStop();
+  if(name!=='mole')     molePauseStop();
+  if(name!=='arctic')   arcticPauseStop();
+  if(name!=='flaggame') flagPauseStop();
+
+  window.scrollTo({top: document.getElementById('games').offsetTop - 60, behavior:'smooth'});
+}
+
+// ===== BOWLING GAME =====
+const BWL_W = 360, BWL_H = 560;
+
+// 핀 배치 (정삼각형, 10핀) — 캔버스 좌표
+const PIN_LAYOUT = [
+  // row1 (앞)
+  {r:0,c:0},{r:0,c:1},{r:0,c:2},{r:0,c:3},
+  // row2
+  {r:1,c:0},{r:1,c:1},{r:1,c:2},
+  // row3
+  {r:2,c:0},{r:2,c:1},
+  // row4 (뒤)
+  {r:3,c:0}
+];
+
+function pinPositions() {
+  const cx = BWL_W/2, topY = 90, rowH = 38, colW = 32;
+  return PIN_LAYOUT.map(({r,c}) => {
+    const cols = 4 - r;
+    const startX = cx - (cols-1)*colW/2;
+    return { x: startX + c*colW, y: topY + r*rowH };
+  });
+}
+
+let bwlState; // 전체 게임 상태
+
+function bwlReset() {
+  bwlState = {
+    phase: 'aim',       // aim | power | rolling | result | gameover
+    aimAngle: 0,        // 라디안
+    aimDir: 1,
+    power: 0,
+    powerDir: 1,
+    powerLocked: false,
+    pins: Array(10).fill(true),   // true = 서있음
+    pinsOnFloor: [],              // 쓰러진 애니메이션용
+    ball: null,                   // {x,y,vx,vy}
+    frame: 1,
+    roll: 1,           // 프레임 내 투구 번호 (1 or 2)
+    frames: [],        // 완성된 프레임 기록
+    totalScore: 0,
+    animId: null,
+    standingPinsCopy: null  // 2구 시작 전 서있는 핀 저장
+  };
+  setText('bwl-score','0');
+  setText('bwl-frame','1');
+  setText('bwl-pins','10');
+  setText('bwl-message','조준선이 움직이면 클릭해서 방향을 고정하세요!');
+  setText('bwl-frames-display','');
+  cancelAnimationFrame(bwlState.animId);
+  if(document.getElementById('bowling-canvas')) bwlLoop();
+}
+
+function bwlLoop() {
+  const cv = document.getElementById('bowling-canvas');
+  if(!cv) return;
+  if(cv.offsetParent === null) { bwlState.animId = requestAnimationFrame(bwlLoop); return; }
+  bwlUpdate();
+  bwlDraw();
+  bwlState.animId = requestAnimationFrame(bwlLoop);
+}
+
+function bwlUpdate() {
+  const s = bwlState;
+  if(s.phase === 'aim') {
+    s.aimAngle += 0.032 * s.aimDir;
+    if(s.aimAngle > 0.52) s.aimDir = -1;
+    if(s.aimAngle < -0.52) s.aimDir = 1;
+  } else if(s.phase === 'power') {
+    s.power += 1.8 * s.powerDir;
+    if(s.power >= 100) { s.powerDir = -1; s.power = 100; }
+    if(s.power <= 0)   { s.powerDir =  1; s.power = 0; }
+  } else if(s.phase === 'rolling') {
+    const b = s.ball;
+    b.x += b.vx; b.y += b.vy;
+    // 핀 충돌
+    const pp = pinPositions();
+    pp.forEach((p,i) => {
+      if(!s.pins[i]) return;
+      const dx = b.x - p.x, dy = b.y - p.y;
+      if(Math.sqrt(dx*dx+dy*dy) < 22) {
+        s.pins[i] = false;
+        s.pinsOnFloor.push({x:p.x, y:p.y, angle:0, va:(Math.random()-0.5)*0.3});
+        // 연쇄 충돌 — 인접 핀
+        pp.forEach((p2,j) => {
+          if(!s.pins[j] || j===i) return;
+          const d2x = p2.x-p.x, d2y = p2.y-p.y;
+          if(Math.sqrt(d2x*d2x+d2y*d2y) < 36) {
+            s.pins[j] = false;
+            s.pinsOnFloor.push({x:p2.x,y:p2.y,angle:0,va:(Math.random()-0.5)*0.3});
+          }
+        });
+      }
+    });
+    // 굴러가는 핀 애니메이션
+    s.pinsOnFloor.forEach(p => { p.angle += p.va; });
+    // 볼 레인 끝 도달
+    if(b.y < 60 || b.x < 0 || b.x > BWL_W) {
+      bwlEndRoll();
+    }
+  }
+}
+
+function bwlEndRoll() {
+  const s = bwlState;
+  s.phase = 'result';
+  cancelAnimationFrame(s.animId);
+
+  const knocked = s.pins.filter(v=>!v).length;
+  const wasStrike = s.roll===1 && knocked===10;
+  const wasSpare  = s.roll===2 && knocked===10;
+
+  let msg = '';
+  if(wasStrike)      msg = '🎳 스트라이크! 훌륭해요!';
+  else if(wasSpare)  msg = '✨ 스페어! 대단해요!';
+  else if(knocked===0) msg = '😅 아쉬워요, 다시 도전!';
+  else                 msg = `👏 ${knocked}개 쓰러뜨렸어요!`;
+
+  document.getElementById('bwl-message').textContent = msg;
+  document.getElementById('bwl-pins').textContent = s.pins.filter(v=>v).length;
+
+  // 프레임 기록
+  s.frames.push({ roll: s.roll, knocked, strike: wasStrike, spare: wasSpare });
+  s.totalScore += knocked * (wasStrike ? 3 : wasSpare ? 2 : 1);
+  document.getElementById('bwl-score').textContent = s.totalScore;
+  bwlUpdateScoreboard();
+
+  const isLastFrame = s.frame === 10;
+
+  setTimeout(() => {
+    if(wasStrike || s.roll === 2) {
+      // 프레임 완료
+      if(isLastFrame) {
+        s.phase = 'gameover';
+        document.getElementById('bwl-message').textContent =
+          `🏆 게임 종료! 최종 점수: ${s.totalScore}점`;
+        bwlDraw();
+        return;
+      }
+      s.frame++;
+      s.roll = 1;
+      s.pins = Array(10).fill(true);
+      s.pinsOnFloor = [];
+      document.getElementById('bwl-frame').textContent = s.frame;
+      setText('bwl-pins','10');
+    } else {
+      // 2구
+      s.roll = 2;
+      s.standingPinsCopy = [...s.pins];
+      s.pinsOnFloor = [];
+    }
+    s.phase = 'aim';
+    s.aimAngle = 0; s.aimDir = 1;
+    s.power = 0; s.powerDir = 1; s.powerLocked = false;
+    document.getElementById('bwl-message').textContent =
+      s.roll===2 ? '2구! 남은 핀을 쓰러뜨리세요!' : `${s.frame}프레임 — 조준하세요!`;
+    bwlLoop();
+  }, 1600);
+
+  bwlDraw();
+}
+
+function bwlClick() {
+  const s = bwlState;
+  if(s.phase === 'aim') {
+    s.phase = 'power';
+    s.power = 0; s.powerDir = 1;
+    document.getElementById('bwl-message').textContent = '파워 게이지를 보고 다시 클릭!';
+  } else if(s.phase === 'power') {
+    // 투구!
+    const speed = 8 + s.power * 0.10;
+    const angle = s.aimAngle;
+    const pp = pinPositions();
+    const targetPin = pp[0]; // 헤드핀
+    const ballStartX = BWL_W/2;
+    const ballStartY = BWL_H - 60;
+    const dx = targetPin.x - ballStartX;
+    const dy = targetPin.y - ballStartY;
+    const dist = Math.sqrt(dx*dx+dy*dy);
+    s.ball = {
+      x: ballStartX,
+      y: ballStartY,
+      vx: (dx/dist)*speed + Math.sin(angle)*speed*0.6,
+      vy: (dy/dist)*speed
+    };
+    s.phase = 'rolling';
+    document.getElementById('bwl-message').textContent = '🎳 투구 중...';
+  } else if(s.phase === 'gameover') {
+    bwlReset();
+  }
+}
+
+function bwlUpdateScoreboard() {
+  const s = bwlState;
+  let html = '';
+  let cum = 0;
+  s.frames.forEach((f,i) => {
+    cum += f.knocked * (f.strike?3:f.spare?2:1);
+    const label = f.strike ? '🎳' : f.spare ? '✨' : f.knocked;
+    html += `<span style="display:inline-block;margin:2px 4px;background:#EAF2FF;border-radius:6px;padding:2px 7px;">${i+1}F: ${label}(${cum})</span>`;
+  });
+  document.getElementById('bwl-frames-display').innerHTML = html;
+}
+
+function bwlDraw() {
+  const cv = document.getElementById('bowling-canvas');
+  if(!cv || cv.offsetParent === null) return;
+  const ctx = cv.getContext('2d');
+  const s = bwlState;
+
+  // 레인 배경 그리기
+  // 하늘/벽
+  ctx.fillStyle = '#0d0d1a';
+  ctx.fillRect(0,0,BWL_W,BWL_H);
+
+  // 레인 원근감
+  const laneL_top=100, laneR_top=260, laneL_bot=0, laneR_bot=BWL_W;
+  const laneGrad = ctx.createLinearGradient(0,80,0,BWL_H);
+  laneGrad.addColorStop(0,'#c8a46e');
+  laneGrad.addColorStop(0.4,'#d4a96a');
+  laneGrad.addColorStop(1,'#b8904a');
+  ctx.beginPath();
+  ctx.moveTo(laneL_top, 80);
+  ctx.lineTo(laneR_top, 80);
+  ctx.lineTo(laneR_bot, BWL_H);
+  ctx.lineTo(laneL_bot, BWL_H);
+  ctx.closePath();
+  ctx.fillStyle = laneGrad;
+  ctx.fill();
+
+  // 레인 나뭇결 선
+  ctx.strokeStyle='rgba(180,130,60,0.25)';
+  ctx.lineWidth=1;
+  for(let i=0;i<8;i++){
+    const t=i/7;
+    const tx=laneL_top+(laneR_top-laneL_top)*t;
+    const bx=laneL_bot+(laneR_bot-laneL_bot)*t;
+    ctx.beginPath(); ctx.moveTo(tx,80); ctx.lineTo(bx,BWL_H); ctx.stroke();
+  }
+
+  // 거터 (왼쪽)
+  ctx.fillStyle='#1a0a00';
+  ctx.beginPath();
+  ctx.moveTo(0,80); ctx.lineTo(laneL_top,80); ctx.lineTo(laneL_bot,BWL_H); ctx.lineTo(0,BWL_H);
+  ctx.closePath(); ctx.fill();
+
+  // 거터 (오른쪽)
+  ctx.beginPath();
+  ctx.moveTo(BWL_W,80); ctx.lineTo(laneR_top,80); ctx.lineTo(laneR_bot,BWL_H); ctx.lineTo(BWL_W,BWL_H);
+  ctx.closePath(); ctx.fill();
+
+  // 거터 빨간 줄
+  ctx.strokeStyle='#8B0000'; ctx.lineWidth=4;
+  ctx.beginPath(); ctx.moveTo(laneL_top,80); ctx.lineTo(laneL_bot,BWL_H); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(laneR_top,80); ctx.lineTo(laneR_bot,BWL_H); ctx.stroke();
+
+  // 파울라인
+  ctx.strokeStyle='rgba(255,255,255,0.5)'; ctx.lineWidth=3;
+  ctx.beginPath(); ctx.moveTo(laneL_bot+10,BWL_H-70); ctx.lineTo(laneR_bot-10,BWL_H-70); ctx.stroke();
+
+  // 에로우 마커 (삼각형 7개)
+  const arrowY = [380, 350, 320];
+  const arrowXs = [BWL_W/2-80, BWL_W/2-40, BWL_W/2, BWL_W/2+40, BWL_W/2+80];
+  ctx.fillStyle='rgba(60,30,0,0.5)';
+  arrowXs.forEach(ax => {
+    arrowY.forEach(ay => {
+      ctx.beginPath();
+      ctx.moveTo(ax, ay-10);
+      ctx.lineTo(ax-7, ay+6);
+      ctx.lineTo(ax+7, ay+6);
+      ctx.closePath(); ctx.fill();
+    });
+  });
+
+  // 뒷벽
+  const wallGrad = ctx.createLinearGradient(0,0,0,80);
+  wallGrad.addColorStop(0,'#1a1a3e');
+  wallGrad.addColorStop(1,'#2c2c5e');
+  ctx.fillStyle=wallGrad;
+  ctx.fillRect(0,0,BWL_W,84);
+
+  // 핀 그리기
+  const pp = pinPositions();
+  pp.forEach((p,i) => {
+    if(!s.pins[i]) return;
+    // 핀 그림자
+    ctx.fillStyle='rgba(0,0,0,0.3)';
+    ctx.beginPath(); ctx.ellipse(p.x+3,p.y+14,7,4,0,0,Math.PI*2); ctx.fill();
+    // 핀 몸통
+    const pg = ctx.createRadialGradient(p.x-3,p.y-4,2,p.x,p.y,12);
+    pg.addColorStop(0,'#ffffff');
+    pg.addColorStop(0.6,'#f0f0f0');
+    pg.addColorStop(1,'#c0c0c0');
+    ctx.fillStyle=pg;
+    ctx.beginPath();
+    ctx.ellipse(p.x,p.y+2,7,12,0,0,Math.PI*2); ctx.fill();
+    // 빨간 띠
+    ctx.strokeStyle='#cc0000'; ctx.lineWidth=2.5;
+    ctx.beginPath();
+    ctx.ellipse(p.x,p.y+1,7,4,0,0,Math.PI*2); ctx.stroke();
+    // 핀 머리
+    ctx.fillStyle='#e8e8e8';
+    ctx.beginPath(); ctx.arc(p.x,p.y-8,4.5,0,Math.PI*2); ctx.fill();
+  });
+
+  // 쓰러진 핀 (쓰러지는 애니메이션)
+  s.pinsOnFloor.forEach(p => {
+    ctx.save();
+    ctx.translate(p.x,p.y);
+    ctx.rotate(p.angle + Math.PI/2);
+    ctx.fillStyle='rgba(200,180,140,0.7)';
+    ctx.beginPath();
+    ctx.ellipse(0,0,12,5,0,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  });
+
+  // 볼 그리기
+  if(s.ball && s.phase==='rolling') {
+    const b = s.ball;
+    const progress = Math.max(0, Math.min(1, 1-(b.y-60)/(BWL_H-120)));
+    const r = 14 + progress*4;
+    const ballG = ctx.createRadialGradient(b.x-r*0.3,b.y-r*0.3,r*0.1,b.x,b.y,r);
+    ballG.addColorStop(0,'#5dade2');
+    ballG.addColorStop(0.5,'#1a5276');
+    ballG.addColorStop(1,'#0a2540');
+    ctx.fillStyle=ballG;
+    ctx.beginPath(); ctx.arc(b.x,b.y,r,0,Math.PI*2); ctx.fill();
+    // 손가락 구멍
+    ctx.fillStyle='rgba(0,0,0,0.4)';
+    [[-4,-6],[2,-8],[6,-3]].forEach(([ox,oy])=>{
+      ctx.beginPath(); ctx.arc(b.x+ox,b.y+oy,2,0,Math.PI*2); ctx.fill();
+    });
+    // 볼 그림자
+    ctx.fillStyle='rgba(0,0,0,0.2)';
+    ctx.beginPath(); ctx.ellipse(b.x+4,b.y+r-2,r*0.8,r*0.3,0,0,Math.PI*2); ctx.fill();
+  }
+
+  // 조준선
+  if(s.phase==='aim') {
+    const bx = BWL_W/2, by = BWL_H-60;
+    const len = 220;
+    const angle = s.aimAngle - Math.PI/2;
+    ctx.save();
+    ctx.translate(bx,by);
+    ctx.rotate(angle);
+    // 점선
+    ctx.setLineDash([12,8]);
+    ctx.strokeStyle='rgba(100,210,255,0.85)';
+    ctx.lineWidth=3;
+    ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(0,-len); ctx.stroke();
+    ctx.setLineDash([]);
+    // 화살표 머리
+    ctx.fillStyle='rgba(100,210,255,0.9)';
+    ctx.beginPath(); ctx.moveTo(0,-len); ctx.lineTo(-8,-len+18); ctx.lineTo(8,-len+18); ctx.closePath(); ctx.fill();
+    ctx.restore();
+    // 볼러 몸통 (간단)
+    drawBowler(ctx, bx, by+10);
+  }
+
+  // 파워 게이지 (왼쪽 바)
+  if(s.phase==='aim' || s.phase==='power') {
+    const gx=22, gy=180, gh=220, gw=28;
+    ctx.fillStyle='rgba(0,0,0,0.5)';
+    ctx.roundRect(gx-2,gy-2,gw+4,gh+4,8); ctx.fill();
+    // 배경
+    ctx.fillStyle='#1a2a1a';
+    ctx.roundRect(gx,gy,gw,gh,6); ctx.fill();
+    // 채워진 부분
+    const filled = s.phase==='power' ? s.power/100 : 0;
+    const fh = gh*filled;
+    if(fh>0){
+      const cg = ctx.createLinearGradient(0,gy+gh-fh,0,gy+gh);
+      cg.addColorStop(0,'#e74c3c');
+      cg.addColorStop(0.5,'#f39c12');
+      cg.addColorStop(1,'#2ecc71');
+      ctx.fillStyle=cg;
+      ctx.roundRect(gx,gy+gh-fh,gw,fh,4); ctx.fill();
+    }
+    // 라벨
+    ctx.fillStyle='white'; ctx.font='bold 14px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText('POWER',gx+gw/2,gy-10);
+    // 눈금
+    for(let i=0;i<=4;i++){
+      ctx.strokeStyle='rgba(255,255,255,0.3)'; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.moveTo(gx,gy+gh*i/4); ctx.lineTo(gx+gw,gy+gh*i/4); ctx.stroke();
+    }
+
+    // 볼러 & 볼 (투구 전)
+    if(s.phase==='aim'||s.phase==='power') {
+      const bx=BWL_W/2, by=BWL_H-60;
+      // 볼 (발 앞에)
+      const ballG2 = ctx.createRadialGradient(bx-5,by-5,2,bx,by,16);
+      ballG2.addColorStop(0,'#5dade2'); ballG2.addColorStop(1,'#0a2540');
+      ctx.fillStyle=ballG2;
+      ctx.beginPath(); ctx.arc(bx,by,16,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='rgba(0,0,0,0.4)';
+      [[-5,-8],[3,-10],[7,-4]].forEach(([ox,oy])=>{
+        ctx.beginPath(); ctx.arc(bx+ox,by+oy,2.5,0,Math.PI*2); ctx.fill();
+      });
+    }
+  }
+
+  // 게임오버 오버레이
+  if(s.phase==='gameover') {
+    ctx.fillStyle='rgba(0,0,0,0.6)';
+    ctx.fillRect(0,0,BWL_W,BWL_H);
+    ctx.fillStyle='#FFD700';
+    ctx.font='bold 32px sans-serif'; ctx.textAlign='center';
+    ctx.fillText('🏆 게임 종료!',BWL_W/2,BWL_H/2-30);
+    ctx.fillStyle='white';
+    ctx.font='bold 24px sans-serif';
+    ctx.fillText(`최종 점수: ${s.totalScore}점`,BWL_W/2,BWL_H/2+10);
+    ctx.font='18px sans-serif';
+    ctx.fillStyle='#aaa';
+    ctx.fillText('클릭하면 새 게임 시작',BWL_W/2,BWL_H/2+50);
+  }
+}
+
+function drawBowler(ctx, x, y) {
+  // 머리
+  ctx.fillStyle='#f5cba7';
+  ctx.beginPath(); ctx.arc(x,y-42,12,0,Math.PI*2); ctx.fill();
+  // 몸통 (빨간 유니폼)
+  ctx.fillStyle='#c0392b';
+  ctx.beginPath();
+  ctx.moveTo(x-14,y-28); ctx.lineTo(x+14,y-28);
+  ctx.lineTo(x+16,y); ctx.lineTo(x-16,y); ctx.closePath(); ctx.fill();
+  // 다리
+  ctx.fillStyle='#2c3e50';
+  ctx.fillRect(x-12,y,10,22); ctx.fillRect(x+2,y,10,22);
+  // 팔 (투구 자세)
+  ctx.strokeStyle='#c0392b'; ctx.lineWidth=6; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(x-14,y-20); ctx.lineTo(x-28,y-8); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x+14,y-20); ctx.lineTo(x+26,y-35); ctx.stroke();
+}
+
+// 캔버스 클릭/터치
+document.getElementById('bowling-canvas').addEventListener('click', () => bwlClick());
+document.getElementById('bowling-canvas').addEventListener('touchend', e => { e.preventDefault(); bwlClick(); });
+
+// 초기화
+
+// ===== TETRIS =====
+const TET_COLS = 10, TET_ROWS = 20, TET_SIZE = 30;
+const TET_COLORS = ['','#E74C3C','#E67E22','#F1C40F','#2ECC71','#3498DB','#9B59B6','#1ABC9C'];
+const TETROMINOES = [
+  null,
+  [[1,1,1,1]],                         // I
+  [[2,0],[2,0],[2,2]],                 // J
+  [[0,3],[0,3],[3,3]],                 // L
+  [[4,4],[4,4]],                       // O
+  [[0,5,5],[5,5,0]],                   // S
+  [[6,6,0],[0,6,6]],                   // Z
+  [[0,7,0],[7,7,7]],                   // T
+];
+
+let tetBoard, tetCurrent, tetNext, tetScore, tetLines, tetLevel;
+let tetRunning = false, tetPaused = false, tetTimer = null;
+let tetX, tetY, tetPiece;
+
+const tetCanvas = () => document.getElementById('tetris-canvas');
+const tetNextCanvas = () => document.getElementById('tetris-next');
+
+function tetNewBoard() {
+  return Array.from({length: TET_ROWS}, () => Array(TET_COLS).fill(0));
+}
+
+function tetRandomPiece() {
+  const idx = Math.floor(Math.random() * 7) + 1;
+  return { idx, shape: TETROMINOES[idx].map(r=>[...r]) };
+}
+
+function tetReset() {
+  clearInterval(tetTimer);
+  tetBoard = tetNewBoard();
+  tetScore = 0; tetLines = 0; tetLevel = 1;
+  tetRunning = false; tetPaused = false;
+  tetCurrent = tetRandomPiece();
+  tetNext = tetRandomPiece();
+  tetX = 3; tetY = 0;
+  tetPiece = tetCurrent.shape;
+  updateTetStats();
+  if(document.getElementById('tetris-canvas')) { tetDrawBoard(); tetDrawNext(); }
+  setText('tet-start-btn','▶ 게임 시작');
+  document.getElementById('tet-message').textContent = '게임 시작 버튼을 눌러주세요!';
+}
+
+function tetStartStop() {
+  if(!tetRunning) {
+    tetRunning = true; tetPaused = false;
+    document.getElementById('tet-start-btn').textContent = '⏸ 일시정지';
+    setText('tet-message','');
+    tetLoop();
+  } else {
+    tetPaused = !tetPaused;
+    if(tetPaused) {
+      clearInterval(tetTimer);
+      document.getElementById('tet-start-btn').textContent = '▶ 계속하기';
+      document.getElementById('tet-message').textContent = '⏸ 일시정지 중';
+    } else {
+      document.getElementById('tet-start-btn').textContent = '⏸ 일시정지';
+      setText('tet-message','');
+      tetLoop();
+    }
+  }
+}
+
+function tetPause(force) {
+  if(tetRunning && !tetPaused) {
+    clearInterval(tetTimer);
+    tetPaused = true;
+    document.getElementById('tet-start-btn').textContent = '▶ 계속하기';
+    document.getElementById('tet-message').textContent = '⏸ 일시정지 중';
+  }
+}
+
+function tetLoop() {
+  clearInterval(tetTimer);
+  const speed = Math.max(100, 600 - (tetLevel - 1) * 50);
+  tetTimer = setInterval(() => {
+    if(!tetPaused) tetTick();
+  }, speed);
+}
+
+function tetTick() {
+  if(!tetCanMove(tetPiece, tetX, tetY + 1)) {
+    tetPlace();
+  } else {
+    tetY++;
+    tetDrawBoard();
+  }
+}
+
+function tetCanMove(shape, nx, ny) {
+  for(let r = 0; r < shape.length; r++) {
+    for(let c = 0; c < shape[r].length; c++) {
+      if(!shape[r][c]) continue;
+      const nr = ny + r, nc = nx + c;
+      if(nr < 0 || nr >= TET_ROWS || nc < 0 || nc >= TET_COLS) return false;
+      if(tetBoard[nr][nc]) return false;
+    }
+  }
+  return true;
+}
+
+function tetPlace() {
+  for(let r = 0; r < tetPiece.length; r++)
+    for(let c = 0; c < tetPiece[r].length; c++)
+      if(tetPiece[r][c]) tetBoard[tetY+r][tetX+c] = tetPiece[r][c];
+
+  // 줄 삭제
+  let cleared = 0;
+  for(let r = TET_ROWS-1; r >= 0; r--) {
+    if(tetBoard[r].every(v => v)) {
+      tetBoard.splice(r, 1);
+      tetBoard.unshift(Array(TET_COLS).fill(0));
+      cleared++; r++;
+    }
+  }
+  if(cleared) {
+    const pts = [0,100,300,500,800][cleared] * tetLevel;
+    tetScore += pts; tetLines += cleared;
+    tetLevel = Math.floor(tetLines / 10) + 1;
+    updateTetStats();
+    tetLoop(); // 속도 갱신
+  }
+
+  // 다음 블록
+  tetCurrent = tetNext;
+  tetNext = tetRandomPiece();
+  tetPiece = tetCurrent.shape;
+  tetX = 3; tetY = 0;
+  tetDrawNext();
+
+  // 게임 오버 체크
+  if(!tetCanMove(tetPiece, tetX, tetY)) {
+    clearInterval(tetTimer);
+    tetRunning = false;
+    document.getElementById('tet-message').textContent = `💀 게임 오버! 최종 점수: ${tetScore}점`;
+    setText('tet-start-btn','▶ 게임 시작');
+    tetDrawBoard();
+    return;
+  }
+  tetDrawBoard();
+}
+
+function tetRotate() {
+  if(!tetRunning || tetPaused) return;
+  const rotated = tetPiece[0].map((_, c) => tetPiece.map(r => r[c]).reverse());
+  if(tetCanMove(rotated, tetX, tetY)) {
+    tetPiece = rotated;
+    tetDrawBoard();
+  } else if(tetCanMove(rotated, tetX+1, tetY)) {
+    tetX++; tetPiece = rotated; tetDrawBoard();
+  } else if(tetCanMove(rotated, tetX-1, tetY)) {
+    tetX--; tetPiece = rotated; tetDrawBoard();
+  }
+}
+
+function tetMove(dir) {
+  if(!tetRunning || tetPaused) return;
+  if(tetCanMove(tetPiece, tetX + dir, tetY)) {
+    tetX += dir;
+    tetDrawBoard();
+  }
+}
+
+function tetDrop() {
+  if(!tetRunning || tetPaused) return;
+  while(tetCanMove(tetPiece, tetX, tetY+1)) tetY++;
+  tetPlace();
+}
+
+function updateTetStats() {
+  document.getElementById('tet-score').textContent = tetScore.toLocaleString();
+  document.getElementById('tet-lines').textContent = tetLines;
+  document.getElementById('tet-level').textContent = tetLevel;
+}
+
+function tetDrawBoard() {
+  const cv = tetCanvas();
+  const ctx = cv.getContext('2d');
+  ctx.fillStyle = '#1a0a2e';
+  ctx.fillRect(0, 0, cv.width, cv.height);
+
+  // 격자
+  ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+  ctx.lineWidth = 0.5;
+  for(let r = 0; r < TET_ROWS; r++) {
+    for(let c = 0; c < TET_COLS; c++) {
+      ctx.strokeRect(c*TET_SIZE, r*TET_SIZE, TET_SIZE, TET_SIZE);
+    }
+  }
+
+  // 고정 블록
+  for(let r = 0; r < TET_ROWS; r++) {
+    for(let c = 0; c < TET_COLS; c++) {
+      if(tetBoard[r][c]) drawBlock(ctx, c, r, TET_COLORS[tetBoard[r][c]]);
+    }
+  }
+
+  // 고스트 (그림자)
+  let ghostY = tetY;
+  while(tetCanMove(tetPiece, tetX, ghostY+1)) ghostY++;
+  if(ghostY !== tetY) {
+    for(let r = 0; r < tetPiece.length; r++)
+      for(let c = 0; c < tetPiece[r].length; c++)
+        if(tetPiece[r][c]) {
+          ctx.fillStyle = 'rgba(255,255,255,0.12)';
+          ctx.fillRect((tetX+c)*TET_SIZE+1, (ghostY+r)*TET_SIZE+1, TET_SIZE-2, TET_SIZE-2);
+        }
+  }
+
+  // 현재 블록
+  for(let r = 0; r < tetPiece.length; r++)
+    for(let c = 0; c < tetPiece[r].length; c++)
+      if(tetPiece[r][c]) drawBlock(ctx, tetX+c, tetY+r, TET_COLORS[tetPiece[r][c]]);
+}
+
+function drawBlock(ctx, c, r, color) {
+  const x = c*TET_SIZE, y = r*TET_SIZE, s = TET_SIZE;
+  ctx.fillStyle = color;
+  ctx.fillRect(x+1, y+1, s-2, s-2);
+  ctx.fillStyle = 'rgba(255,255,255,0.3)';
+  ctx.fillRect(x+1, y+1, s-2, 4);
+  ctx.fillRect(x+1, y+1, 4, s-2);
+  ctx.fillStyle = 'rgba(0,0,0,0.2)';
+  ctx.fillRect(x+1, y+s-5, s-2, 4);
+  ctx.fillRect(x+s-5, y+1, 4, s-2);
+}
+
+function tetDrawNext() {
+  const cv = tetNextCanvas();
+  const ctx = cv.getContext('2d');
+  ctx.fillStyle = '#1a0a2e';
+  ctx.fillRect(0,0,cv.width,cv.height);
+  const shape = tetNext.shape;
+  const color = TET_COLORS[tetNext.idx];
+  const bs = 22;
+  const offX = Math.floor((cv.width - shape[0].length*bs) / 2);
+  const offY = Math.floor((cv.height - shape.length*bs) / 2);
+  for(let r = 0; r < shape.length; r++)
+    for(let c = 0; c < shape[r].length; c++)
+      if(shape[r][c]) {
+        ctx.fillStyle = color;
+        ctx.fillRect(offX+c*bs+1, offY+r*bs+1, bs-2, bs-2);
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        ctx.fillRect(offX+c*bs+1, offY+r*bs+1, bs-2, 3);
+      }
+}
+
+// 키보드 조작
+document.addEventListener('keydown', e => {
+  if(!tetRunning || tetPaused) return;
+  if(e.key==='ArrowLeft')  { tetMove(-1); e.preventDefault(); }
+  if(e.key==='ArrowRight') { tetMove(1);  e.preventDefault(); }
+  if(e.key==='ArrowDown')  { tetTick();   e.preventDefault(); }
+  if(e.key==='ArrowUp' || e.key==='z' || e.key==='Z') { tetRotate(); e.preventDefault(); }
+  if(e.key===' ') { tetDrop(); e.preventDefault(); }
+});
+
+// 초기화
+
+// ===== FISHING GAME =====
+const FSH_W = 360, FSH_H = 520;
+const FISH_TYPES = [
+  { name:'작은 물고기', emoji:'🐟', pts:10,  w:34, h:20, speed:1.8, color:'#5dade2', rare:false },
+  { name:'줄무늬 물고기', emoji:'🐠', pts:20, w:38, h:22, speed:2.4, color:'#e67e22', rare:false },
+  { name:'큰 물고기',  emoji:'🐡', pts:30,  w:46, h:28, speed:1.4, color:'#a569bd', rare:false },
+  { name:'황금 물고기',emoji:'🌟', pts:80,  w:36, h:22, speed:3.2, color:'#f1c40f', rare:true  },
+  { name:'문어',      emoji:'🐙', pts:40,  w:42, h:30, speed:1.0, color:'#cb4335', rare:false },
+  { name:'해골',      emoji:'💀', pts:-20, w:32, h:32, speed:2.0, color:'#7f8c8d', rare:false },
+];
+
+let fshState = null;
+
+function fishReset() {
+  if(fshState) {
+    cancelAnimationFrame(fshState.animId);
+    clearInterval(fshState.timerInterval);
+  }
+  fshState = {
+    running: false,
+    paused: false,
+    score: 0,
+    caught: 0,
+    timeLeft: 60,
+    hookY: 200,        // 낚싯바늘 y (물 안)
+    hookDir: 1,        // 1=내려가기 -1=올라가기
+    fishes: [],
+    particles: [],     // 물보라/이펙트
+    log: [],
+    animId: null,
+    timerInterval: null,
+    catchCooldown: 0,
+    wobble: 0,
+    nibble: null,      // 입질 중인 물고기
+    nibbleTimer: 0,
+  };
+  document.getElementById('fish-score').textContent = '0';
+  document.getElementById('fish-caught').textContent = '0';
+  document.getElementById('fish-timer').textContent = '60';
+  setText('fish-message','낚시 시작 버튼을 눌러주세요!');
+  document.getElementById('fish-catch-log').innerHTML = '<strong>낚시 기록</strong><br>';
+  setText('fish-start-btn','▶ 낚시 시작');
+  if(document.getElementById('fishing-canvas') && document.getElementById('fishing-canvas').offsetParent !== null) fishDrawIdle();
+}
+
+function fishOnShow() {
+  if(!fshState) fishReset();
+  else fishDrawIdle();
+}
+
+function fishPauseStop() {
+  if(!fshState) return;
+  if(fshState.running) {
+    fshState.paused = true;
+    fshState.running = false;
+    cancelAnimationFrame(fshState.animId);
+    clearInterval(fshState.timerInterval);
+  }
+}
+
+function fishStartStop() {
+  const s = fshState;
+  if(!s) return;
+  if(s.timeLeft <= 0) { fishReset(); return; }
+  if(!s.running) {
+    s.running = true; s.paused = false;
+    document.getElementById('fish-start-btn').textContent = '⏸ 일시정지';
+    document.getElementById('fish-message').textContent = '물고기가 낚싯바늘 근처에 오면 클릭!';
+    fishStartTimer();
+    fishLoop();
+  } else {
+    s.running = false; s.paused = true;
+    cancelAnimationFrame(s.animId);
+    clearInterval(s.timerInterval);
+    document.getElementById('fish-start-btn').textContent = '▶ 계속하기';
+    document.getElementById('fish-message').textContent = '⏸ 일시정지 중';
+  }
+}
+
+function fishStartTimer() {
+  const s = fshState;
+  clearInterval(s.timerInterval);
+  s.timerInterval = setInterval(() => {
+    if(!s.running) return;
+    s.timeLeft--;
+    document.getElementById('fish-timer').textContent = s.timeLeft;
+    if(s.timeLeft <= 0) {
+      s.running = false;
+      cancelAnimationFrame(s.animId);
+      clearInterval(s.timerInterval);
+      const grade = s.score >= 300 ? '🥇 최고 어부!' : s.score >= 150 ? '🥈 실력자!' : '🥉 초보 어부';
+      document.getElementById('fish-message').textContent =
+        `${grade} 최종 점수: ${s.score}점 (${s.caught}마리)`;
+      document.getElementById('fish-start-btn').textContent = '🔄 다시 시작';
+      fishDraw();
+    }
+  }, 1000);
+}
+
+function fishLoop() {
+  const s = fshState;
+  if(!s.running) return;
+  const cv = document.getElementById('fishing-canvas');
+  if(!cv || cv.offsetParent === null) { s.animId = requestAnimationFrame(fishLoop); return; }
+  fishUpdate();
+  fishDraw();
+  s.animId = requestAnimationFrame(fishLoop);
+}
+
+const WATER_Y = 180; // 수면 y
+const HOOK_X = FSH_W * 0.62; // 낚싯대 위치 x
+
+function fishUpdate() {
+  const s = fshState;
+
+  // 낚싯바늘 위아래 이동
+  s.hookY += 0.8 * s.hookDir;
+  if(s.hookY > FSH_H - 80) s.hookDir = -1;
+  if(s.hookY < WATER_Y + 40) s.hookDir = 1;
+  s.wobble = Math.sin(Date.now() / 400) * 6;
+
+  // 쿨다운
+  if(s.catchCooldown > 0) s.catchCooldown--;
+
+  // 물고기 스폰 (랜덤)
+  if(Math.random() < 0.018 && s.fishes.length < 7) {
+    const type = (() => {
+      const r = Math.random();
+      if(r < 0.06) return FISH_TYPES[3]; // 황금
+      if(r < 0.18) return FISH_TYPES[4]; // 문어
+      if(r < 0.28) return FISH_TYPES[5]; // 해골
+      if(r < 0.52) return FISH_TYPES[1]; // 줄무늬
+      if(r < 0.72) return FISH_TYPES[2]; // 큰
+      return FISH_TYPES[0];              // 작은
+    })();
+    const fromLeft = Math.random() < 0.5;
+    s.fishes.push({
+      ...type,
+      x: fromLeft ? -50 : FSH_W + 50,
+      y: WATER_Y + 30 + Math.random() * (FSH_H - WATER_Y - 110),
+      dir: fromLeft ? 1 : -1,
+      wiggle: 0,
+      alpha: 1,
+      caught: false,
+    });
+  }
+
+  // 물고기 이동
+  s.fishes.forEach(f => {
+    if(f.caught) return;
+    f.x += f.speed * f.dir;
+    f.wiggle += 0.15;
+    // 화면 벗어나면 제거 예정
+  });
+  s.fishes = s.fishes.filter(f => f.x > -80 && f.x < FSH_W + 80 && !f.caught);
+
+  // 입질 감지 — 물고기가 낚싯바늘 근처일 때
+  s.nibble = null;
+  s.fishes.forEach(f => {
+    const dx = f.x - HOOK_X, dy = f.y - s.hookY;
+    if(Math.sqrt(dx*dx+dy*dy) < 44) s.nibble = f;
+  });
+  if(s.nibble) {
+    s.nibbleTimer++;
+    // 너무 오래 있으면 도망
+    if(s.nibbleTimer > 120) {
+      s.nibble.x = s.nibble.dir > 0 ? FSH_W + 100 : -100;
+      s.nibbleTimer = 0; s.nibble = null;
+    }
+  } else {
+    s.nibbleTimer = 0;
+  }
+
+  // 파티클 업데이트
+  s.particles = s.particles.filter(p => p.life > 0);
+  s.particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy; p.vy += 0.15;
+    p.life -= 3; p.alpha = p.life / 100;
+  });
+}
+
+function fishCast() {
+  const s = fshState;
+  if(!s || !s.running || s.catchCooldown > 0) return;
+
+  // 낚싯바늘 주변 물고기 검색
+  let closest = null, closestDist = 55;
+  s.fishes.forEach(f => {
+    if(f.caught) return;
+    const dx = f.x - HOOK_X, dy = f.y - s.hookY;
+    const d = Math.sqrt(dx*dx+dy*dy);
+    if(d < closestDist) { closestDist = d; closest = f; }
+  });
+
+  if(closest) {
+    closest.caught = true;
+    s.score += closest.pts;
+    s.caught++;
+    s.catchCooldown = 40;
+
+    // 파티클
+    for(let i=0;i<18;i++) {
+      const angle = Math.random()*Math.PI*2;
+      s.particles.push({
+        x: HOOK_X, y: s.hookY,
+        vx: Math.cos(angle)*(1+Math.random()*3),
+        vy: Math.sin(angle)*(1+Math.random()*3)-2,
+        life: 80+Math.random()*40,
+        alpha:1,
+        color: closest.pts < 0 ? '#e74c3c' : '#f1c40f',
+      });
+    }
+
+    const msg = closest.pts < 0
+      ? `💀 해골 낚음! -20점`
+      : `🎉 ${closest.name} +${closest.pts}점!`;
+    document.getElementById('fish-message').textContent = msg;
+    s.log.unshift(`${closest.emoji} ${closest.name} ${closest.pts>0?'+':''}${closest.pts}점`);
+    if(s.log.length > 8) s.log.pop();
+
+    document.getElementById('fish-score').textContent = Math.max(0, s.score);
+    document.getElementById('fish-caught').textContent = s.caught;
+    document.getElementById('fish-catch-log').innerHTML =
+      '<strong>낚시 기록</strong><br>' + s.log.join('<br>');
+  } else {
+    // 허탕
+    document.getElementById('fish-message').textContent = '아쉬워요! 타이밍을 잘 맞춰보세요 🎣';
+    s.catchCooldown = 20;
+  }
+}
+
+function fishDrawIdle() {
+  const cv = document.getElementById('fishing-canvas');
+  if(!cv) return;
+  const ctx = cv.getContext('2d');
+  fishDrawScene(ctx, { hookY:240, wobble:0, fishes:[], particles:[], nibble:null, running:false, timeLeft:60 });
+  ctx.fillStyle='rgba(0,0,0,0.38)';
+  ctx.fillRect(0,0,FSH_W,FSH_H);
+  ctx.fillStyle='white'; ctx.font='bold 24px sans-serif'; ctx.textAlign='center';
+  ctx.fillText('🎣 낚시 시작!', FSH_W/2, FSH_H/2);
+  ctx.font='17px sans-serif'; ctx.fillStyle='#ddd';
+  ctx.fillText('버튼을 눌러 시작하세요', FSH_W/2, FSH_H/2+34);
+}
+
+function fishDraw() {
+  const cv = document.getElementById('fishing-canvas');
+  if(!cv) return;
+  const ctx = cv.getContext('2d');
+  fishDrawScene(ctx, fshState);
+}
+
+function fishDrawScene(ctx, s) {
+  // 하늘 배경
+  const skyG = ctx.createLinearGradient(0,0,0,WATER_Y);
+  skyG.addColorStop(0,'#1a6fa8');
+  skyG.addColorStop(1,'#87CEEB');
+  ctx.fillStyle = skyG;
+  ctx.fillRect(0,0,FSH_W,WATER_Y);
+
+  // 구름
+  drawCloud(ctx, 60,  40, 0.9);
+  drawCloud(ctx, 220, 28, 1.2);
+  drawCloud(ctx, 310, 55, 0.7);
+
+  // 산/언덕
+  ctx.fillStyle='#2e7d32';
+  ctx.beginPath(); ctx.moveTo(0,WATER_Y);
+  ctx.lineTo(0,110); ctx.lineTo(60,70); ctx.lineTo(130,100);
+  ctx.lineTo(200,60); ctx.lineTo(280,95); ctx.lineTo(360,75); ctx.lineTo(360,WATER_Y);
+  ctx.closePath(); ctx.fill();
+  ctx.fillStyle='#388e3c';
+  ctx.beginPath(); ctx.moveTo(0,WATER_Y);
+  ctx.lineTo(0,130); ctx.lineTo(80,100); ctx.lineTo(160,120);
+  ctx.lineTo(240,90); ctx.lineTo(320,115); ctx.lineTo(360,100); ctx.lineTo(360,WATER_Y);
+  ctx.closePath(); ctx.fill();
+
+  // 수면 반짝임
+  const waterG = ctx.createLinearGradient(0,WATER_Y,0,FSH_H);
+  waterG.addColorStop(0,'#1565C0');
+  waterG.addColorStop(0.3,'#1976D2');
+  waterG.addColorStop(1,'#0D47A1');
+  ctx.fillStyle = waterG;
+  ctx.fillRect(0,WATER_Y,FSH_W,FSH_H-WATER_Y);
+
+  // 수면 파동선
+  ctx.strokeStyle='rgba(255,255,255,0.18)'; ctx.lineWidth=2;
+  for(let i=0;i<5;i++){
+    const wy = WATER_Y + 12 + i*22;
+    ctx.beginPath();
+    for(let x=0;x<=FSH_W;x+=4){
+      const y2 = wy + Math.sin((x+Date.now()*0.02+i*30)/30)*3;
+      i===0&&x===0 ? ctx.moveTo(x,y2) : ctx.lineTo(x,y2);
+    }
+    ctx.stroke();
+  }
+
+  // 수중 풀
+  [[40,FSH_H-30],[100,FSH_H-20],[280,FSH_H-25],[330,FSH_H-15]].forEach(([gx,gy])=>{
+    for(let i=-2;i<=2;i++){
+      ctx.strokeStyle=`rgba(46,125,50,${0.5+Math.abs(i)*0.1})`;
+      ctx.lineWidth=3;
+      ctx.beginPath();
+      ctx.moveTo(gx+i*6,gy);
+      ctx.quadraticCurveTo(gx+i*6+Math.sin(Date.now()/600+i)*8, gy-25, gx+i*8, gy-45);
+      ctx.stroke();
+    }
+  });
+
+  // 낚싯대 (오른쪽 위)
+  const rodX = FSH_W*0.78, rodY = 10;
+  ctx.strokeStyle='#5D4037'; ctx.lineWidth=5; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(rodX+30, rodY+10); ctx.lineTo(rodX-20, rodY+70); ctx.stroke();
+  // 낚싯줄
+  const lineEndX = HOOK_X, lineEndY = s.hookY;
+  ctx.strokeStyle='rgba(255,255,255,0.7)'; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.moveTo(rodX-20, rodY+70); ctx.lineTo(lineEndX+s.wobble, lineEndY); ctx.stroke();
+
+  // 낚싯바늘
+  const hx = lineEndX+s.wobble, hy = lineEndY;
+  const nibbleNow = s.nibble !== null;
+  ctx.strokeStyle = nibbleNow ? '#FFD700' : '#aaa';
+  ctx.lineWidth = nibbleNow ? 3 : 2;
+  ctx.beginPath();
+  ctx.arc(hx, hy+8, 7, Math.PI*0.1, Math.PI*1.1);
+  ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(hx, hy); ctx.lineTo(hx, hy+8); ctx.stroke();
+  // 찌 (바늘 위)
+  ctx.fillStyle = nibbleNow ? '#e74c3c' : '#e74c3c';
+  ctx.beginPath(); ctx.ellipse(hx-18, hy-20, 5, 14, -0.2, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle = 'white';
+  ctx.beginPath(); ctx.ellipse(hx-18, hy-28, 5, 6, -0.2, 0, Math.PI*2); ctx.fill();
+  // 입질 시 찌 흔들림
+  if(nibbleNow) {
+    ctx.fillStyle='rgba(255,200,0,0.7)';
+    ctx.beginPath(); ctx.arc(hx-18,hy-20,10,0,Math.PI*2); ctx.fill();
+  }
+
+  // 물고기 그리기
+  s.fishes.forEach(f => {
+    if(f.caught) return;
+    ctx.save();
+    ctx.translate(f.x, f.y + Math.sin(f.wiggle)*4);
+    ctx.scale(f.dir, 1);
+    drawFish(ctx, f);
+    ctx.restore();
+  });
+
+  // 파티클
+  s.particles.forEach(p => {
+    ctx.globalAlpha = p.alpha;
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x,p.y,4,0,Math.PI*2); ctx.fill();
+  });
+  ctx.globalAlpha = 1;
+
+  // 낚싯꾼 (왼쪽 상단 언덕)
+  drawFisherman(ctx, 40, WATER_Y-10);
+
+  // 쿨다운 오버레이 (잠깐 어둡게)
+  if(s.catchCooldown && s.catchCooldown > 30) {
+    ctx.fillStyle=`rgba(255,255,255,${(s.catchCooldown-30)/60*0.25})`;
+    ctx.fillRect(0,0,FSH_W,FSH_H);
+  }
+
+  // 게임 종료 오버레이
+  if(!s.running && s.timeLeft === 0) {
+    ctx.fillStyle='rgba(0,0,0,0.55)';
+    ctx.fillRect(0,0,FSH_W,FSH_H);
+    ctx.fillStyle='#FFD700'; ctx.font='bold 28px sans-serif'; ctx.textAlign='center';
+    ctx.fillText('🏆 낚시 완료!', FSH_W/2, FSH_H/2-20);
+    ctx.fillStyle='white'; ctx.font='bold 22px sans-serif';
+    ctx.fillText(`점수: ${Math.max(0,s.score)}점`, FSH_W/2, FSH_H/2+20);
+  }
+}
+
+function drawCloud(ctx, x, y, scale) {
+  ctx.save(); ctx.translate(x,y); ctx.scale(scale,scale);
+  ctx.fillStyle='rgba(255,255,255,0.85)';
+  [[0,0,22],[22,0,18],[-18,0,16],[10,-12,16],[-8,-10,14]].forEach(([cx,cy,r])=>{
+    ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fill();
+  });
+  ctx.restore();
+}
+
+function drawFish(ctx, f) {
+  // 몸통
+  ctx.fillStyle = f.color;
+  ctx.beginPath();
+  ctx.ellipse(0, 0, f.w/2, f.h/2, 0, 0, Math.PI*2); ctx.fill();
+  // 꼬리
+  ctx.beginPath();
+  ctx.moveTo(-f.w/2+4, 0);
+  ctx.lineTo(-f.w/2-12, -f.h/2-2);
+  ctx.lineTo(-f.w/2-12, f.h/2+2);
+  ctx.closePath(); ctx.fill();
+  // 지느러미
+  ctx.fillStyle = shadeColor(f.color, -30);
+  ctx.beginPath();
+  ctx.moveTo(0,-f.h/2); ctx.lineTo(-8,-f.h/2-10); ctx.lineTo(8,-f.h/2); ctx.closePath(); ctx.fill();
+  // 눈
+  ctx.fillStyle='white'; ctx.beginPath(); ctx.arc(f.w/2-8,  -3, 5, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle='#222';  ctx.beginPath(); ctx.arc(f.w/2-7,  -3, 2.5, 0, Math.PI*2); ctx.fill();
+  // 줄무늬 (줄무늬 물고기)
+  if(f.pts === 20) {
+    ctx.strokeStyle='rgba(0,0,0,0.2)'; ctx.lineWidth=3;
+    [-10,0,10].forEach(sx => {
+      ctx.beginPath();
+      ctx.moveTo(sx, -f.h/2+2); ctx.lineTo(sx, f.h/2-2); ctx.stroke();
+    });
+  }
+  // 황금 반짝임
+  if(f.pts === 80) {
+    ctx.fillStyle='rgba(255,255,255,0.5)';
+    ctx.beginPath(); ctx.arc(5,-5,6,0,Math.PI*2); ctx.fill();
+  }
+  // 해골 표시
+  if(f.pts < 0) {
+    ctx.fillStyle='rgba(0,0,0,0.6)';
+    ctx.font='bold 18px sans-serif'; ctx.textAlign='center';
+    ctx.fillText('💀',0,6);
+  }
+}
+
+function drawFisherman(ctx, x, y) {
+  // 모자
+  ctx.fillStyle='#4a2c0a';
+  ctx.beginPath(); ctx.ellipse(x,y-52,14,5,0,0,Math.PI*2); ctx.fill();
+  ctx.fillRect(x-9,y-68,18,18);
+  // 머리
+  ctx.fillStyle='#f5cba7';
+  ctx.beginPath(); ctx.arc(x,y-50,11,0,Math.PI*2); ctx.fill();
+  // 몸
+  ctx.fillStyle='#1565C0';
+  ctx.fillRect(x-11,y-38,22,26);
+  // 낚싯대 팔
+  ctx.strokeStyle='#5D4037'; ctx.lineWidth=3; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(x+11,y-32); ctx.lineTo(x+40,y-60); ctx.stroke();
+  // 다리
+  ctx.fillStyle='#37474F';
+  ctx.fillRect(x-9,y-12,8,18); ctx.fillRect(x+1,y-12,8,18);
+}
+
+function shadeColor(color, amt) {
+  let r = parseInt(color.slice(1,3),16)+amt;
+  let g = parseInt(color.slice(3,5),16)+amt;
+  let b = parseInt(color.slice(5,7),16)+amt;
+  r=Math.max(0,Math.min(255,r)); g=Math.max(0,Math.min(255,g)); b=Math.max(0,Math.min(255,b));
+  return `#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`;
+}
+
+// 클릭/터치
+document.getElementById('fishing-canvas').addEventListener('click', () => fishCast());
+document.getElementById('fishing-canvas').addEventListener('touchend', e => { e.preventDefault(); fishCast(); });
+
+
+// 초기화 (퀴즈 탭 뱃지 표시)
+
+// ===== MOLE GAME =====
+const MOLE_HOLES = 9;
+const MOLE_TYPES = [
+  { type:'normal',  emoji:'🐹', pts:10, speed:900,  label:'두더지'        },
+  { type:'golden',  emoji:'🌟', pts:30, speed:600,  label:'황금 두더지'   },
+  { type:'fast',    emoji:'😡', pts:20, speed:450,  label:'빠른 두더지'   },
+  { type:'bomb',    emoji:'💣', pts:-1, speed:1100, label:'폭탄'          },
+];
+
+let moleState = null;
+
+function moleReset() {
+  molePauseStop();
+  moleState = {
+    running: false,
+    paused: false,
+    score: 0,
+    combo: 0,
+    lives: 3,
+    timeLeft: 30,
+    highScore: moleState?.highScore || 0,
+    holes: Array(MOLE_HOLES).fill(null),
+    spawnInterval: null,
+    timerInterval: null,
+    level: 1,
+  };
+  document.getElementById('mole-score').textContent = '0';
+  document.getElementById('mole-combo').textContent = '0';
+  document.getElementById('mole-timer').textContent = '30';
+  document.getElementById('mole-lives').textContent = '❤️❤️❤️';
+  setText('mole-message','게임 시작 버튼을 눌러주세요!');
+  document.getElementById('mole-highscore').textContent = moleState.highScore;
+  setText('mole-start-btn','▶ 게임 시작');
+  moleRenderGrid();
+}
+
+function molePauseStop() {
+  if(!moleState) return;
+  moleState.running = false;
+  clearInterval(moleState.spawnInterval);
+  clearInterval(moleState.timerInterval);
+  moleState.holes.forEach((_,i) => moleHide(i));
+}
+
+function moleRenderGrid() {
+  const grid = document.getElementById('mole-grid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  for(let i = 0; i < MOLE_HOLES; i++) {
+    const hole = document.createElement('div');
+    hole.id = `mole-hole-${i}`;
+    hole.style.cssText = `
+      position:relative; width:100%; aspect-ratio:1;
+      background:radial-gradient(ellipse at 50% 70%, #3d1a00 60%, #5a2d00 100%);
+      border-radius:50%; cursor:pointer;
+      box-shadow:inset 0 8px 20px rgba(0,0,0,0.6), 0 4px 8px rgba(0,0,0,0.3);
+      overflow:hidden; transition:transform 0.08s;
+      border:3px solid #6b3a00;
+      display:flex; align-items:flex-end; justify-content:center;
+    `;
+    // 흙 언덕
+    const dirt = document.createElement('div');
+    dirt.style.cssText = `
+      position:absolute; bottom:0; left:-5%; width:110%; height:40%;
+      background:radial-gradient(ellipse at 50% 100%, #8B5E3C 60%, #6b4423 100%);
+      border-radius:50% 50% 0 0;
+    `;
+    hole.appendChild(dirt);
+    // 풀
+    const grass = document.createElement('div');
+    grass.style.cssText = `
+      position:absolute; bottom:36%; left:0; width:100%; height:16%;
+      background:linear-gradient(to bottom, #4a9e3f, #2d7a22);
+      border-radius:50% 50% 0 0;
+    `;
+    hole.appendChild(grass);
+    // 두더지 캐릭터
+    const moleEl = document.createElement('div');
+    moleEl.id = `mole-char-${i}`;
+    moleEl.style.cssText = `
+      position:absolute; bottom:-110%; left:50%; transform:translateX(-50%);
+      font-size:52px; line-height:1; z-index:2;
+      transition:bottom 0.15s cubic-bezier(0.34,1.56,0.64,1);
+      filter:drop-shadow(0 -4px 6px rgba(0,0,0,0.4));
+      user-select:none; pointer-events:none;
+    `;
+    hole.appendChild(moleEl);
+    hole.addEventListener('click',    () => moleHit(i));
+    hole.addEventListener('touchend', e => { e.preventDefault(); moleHit(i); });
+    grid.appendChild(hole);
+  }
+}
+
+function moleStartStop() {
+  const s = moleState;
+  if(!s) return;
+  if(s.timeLeft <= 0) { moleReset(); return; }
+  if(!s.running) {
+    s.running = true; s.paused = false;
+    document.getElementById('mole-start-btn').textContent = '⏸ 일시정지';
+    document.getElementById('mole-message').textContent = '두더지를 잡아라! 💥';
+    moleStartSpawn();
+    moleStartTimer();
+  } else {
+    s.running = false; s.paused = true;
+    clearInterval(s.spawnInterval);
+    clearInterval(s.timerInterval);
+    moleState.holes.forEach((_,i) => moleHide(i));
+    document.getElementById('mole-start-btn').textContent = '▶ 계속하기';
+    document.getElementById('mole-message').textContent = '⏸ 일시정지 중';
+  }
+}
+
+function moleStartTimer() {
+  const s = moleState;
+  clearInterval(s.timerInterval);
+  s.timerInterval = setInterval(() => {
+    if(!s.running) return;
+    s.timeLeft--;
+    document.getElementById('mole-timer').textContent = s.timeLeft;
+    if(s.timeLeft === 20) { s.level = 2; moleRestartSpawn(); }
+    if(s.timeLeft === 10) { s.level = 3; moleRestartSpawn(); }
+    if(s.timeLeft <= 0) {
+      s.running = false;
+      clearInterval(s.spawnInterval);
+      clearInterval(s.timerInterval);
+      moleState.holes.forEach((_,i) => moleHide(i));
+      if(s.score > s.highScore) {
+        s.highScore = s.score;
+        document.getElementById('mole-highscore').textContent = s.highScore;
+      }
+      const grade = s.score >= 300 ? '🥇 두더지 마스터!' : s.score >= 150 ? '🥈 실력자!' : '🥉 잘 하셨어요!';
+      document.getElementById('mole-message').textContent = `${grade} 최종: ${s.score}점`;
+      document.getElementById('mole-start-btn').textContent = '🔄 다시 시작';
+    }
+  }, 1000);
+}
+
+function moleStartSpawn() {
+  const s = moleState;
+  clearInterval(s.spawnInterval);
+  const baseInterval = [900, 700, 550][s.level - 1];
+  s.spawnInterval = setInterval(() => {
+    if(!s.running) return;
+    const empty = [];
+    s.holes.forEach((h,i) => { if(!h) empty.push(i); });
+    if(empty.length === 0) return;
+    const idx = empty[Math.floor(Math.random() * empty.length)];
+    const r = Math.random();
+    let mType;
+    if(r < 0.08)      mType = MOLE_TYPES[1]; // 황금
+    else if(r < 0.22) mType = MOLE_TYPES[2]; // 빠른
+    else if(r < 0.38) mType = MOLE_TYPES[3]; // 폭탄
+    else               mType = MOLE_TYPES[0]; // 일반
+    moleShow(idx, mType);
+  }, baseInterval);
+}
+
+function moleRestartSpawn() {
+  clearInterval(moleState.spawnInterval);
+  moleStartSpawn();
+}
+
+function moleShow(idx, mType) {
+  const s = moleState;
+  const charEl = document.getElementById(`mole-char-${idx}`);
+  const holeEl = document.getElementById(`mole-hole-${idx}`);
+  if(!charEl || !holeEl) return;
+  charEl.textContent = mType.emoji;
+  requestAnimationFrame(() => { charEl.style.bottom = '28%'; });
+  if(mType.type === 'golden') holeEl.style.boxShadow = 'inset 0 8px 20px rgba(0,0,0,0.4), 0 0 18px 6px rgba(255,215,0,0.6)';
+  if(mType.type === 'bomb')   holeEl.style.boxShadow = 'inset 0 8px 20px rgba(0,0,0,0.4), 0 0 18px 6px rgba(255,50,50,0.5)';
+  const timer = setTimeout(() => {
+    if(s.holes[idx] && s.holes[idx].type === mType.type) {
+      moleHide(idx);
+      if(mType.type !== 'bomb') {
+        s.combo = 0;
+        document.getElementById('mole-combo').textContent = '0';
+      }
+    }
+  }, mType.speed);
+  s.holes[idx] = { ...mType, timer };
+}
+
+function moleHide(idx) {
+  const s = moleState;
+  if(!s) return;
+  if(s.holes[idx]?.timer) clearTimeout(s.holes[idx].timer);
+  s.holes[idx] = null;
+  const charEl = document.getElementById(`mole-char-${idx}`);
+  const holeEl = document.getElementById(`mole-hole-${idx}`);
+  if(charEl) charEl.style.bottom = '-110%';
+  if(holeEl) holeEl.style.boxShadow = 'inset 0 8px 20px rgba(0,0,0,0.6), 0 4px 8px rgba(0,0,0,0.3)';
+}
+
+function moleHit(idx) {
+  const s = moleState;
+  if(!s || !s.running) return;
+  const m = s.holes[idx];
+  if(!m) return;
+  const holeEl = document.getElementById(`mole-hole-${idx}`);
+  const charEl = document.getElementById(`mole-char-${idx}`);
+  if(m.type === 'bomb') {
+    s.lives--;
+    s.combo = 0;
+    document.getElementById('mole-combo').textContent = '0';
+    const livesStr = ['💔','❤️','❤️❤️','❤️❤️❤️'][Math.max(0,s.lives)];
+    document.getElementById('mole-lives').textContent = livesStr;
+    document.getElementById('mole-message').textContent = '💥 폭탄! 목숨 -1!';
+    holeEl.style.transform = 'scale(1.15)';
+    setTimeout(() => { if(holeEl) holeEl.style.transform = ''; }, 200);
+    moleHide(idx);
+    if(s.lives <= 0) {
+      s.running = false;
+      clearInterval(s.spawnInterval);
+      clearInterval(s.timerInterval);
+      s.holes.forEach((_,i) => moleHide(i));
+      if(s.score > s.highScore) {
+        s.highScore = s.score;
+        document.getElementById('mole-highscore').textContent = s.highScore;
+      }
+      document.getElementById('mole-message').textContent = `💔 게임 오버! 최종: ${s.score}점`;
+      document.getElementById('mole-start-btn').textContent = '🔄 다시 시작';
+    }
+  } else {
+    s.combo++;
+    const comboMult = s.combo >= 5 ? 3 : s.combo >= 3 ? 2 : 1;
+    const gained = m.pts * comboMult;
+    s.score += gained;
+    document.getElementById('mole-score').textContent = s.score;
+    document.getElementById('mole-combo').textContent = s.combo;
+    let msg = `👊 +${gained}점!`;
+    if(s.combo >= 5)      msg = `🔥 ${s.combo}콤보! +${gained}점!!`;
+    else if(s.combo >= 3) msg = `⚡ ${s.combo}콤보! +${gained}점!`;
+    document.getElementById('mole-message').textContent = msg;
+    charEl.style.fontSize = '64px';
+    charEl.textContent = '💥';
+    holeEl.style.transform = 'scale(0.92)';
+    setTimeout(() => {
+      if(charEl) charEl.style.fontSize = '52px';
+      if(holeEl) holeEl.style.transform = '';
+    }, 150);
+    moleHide(idx);
+  }
+}
+
+
+// ===== ARCTIC EXPLORER GAME =====
+const ARC_W = 380, ARC_H = 480;
+const ARC_LANE_XS = [80, 190, 300];
+const HORIZON_Y = 160;
+
+let arc = null;
+
+function arcticReset() {
+  arcticPauseStop();
+  arc = {
+    running:false, paused:false, gameOver:false,
+    score:0, best: arc?.best||0,
+    lane:1, penguinX: ARC_LANE_XS[1], penguinAnim:0,
+    obstacles:[], items:[],
+    bgOffset:0, snowOffset:0,
+    speed:3, frameCount:0, invincible:0,
+    leftHeld:false, rightHeld:false,
+    animId:null,
+  };
+  document.getElementById('arc-score').textContent='0';
+  document.getElementById('arc-best').textContent=arc.best;
+  document.getElementById('arc-speed').textContent='1';
+  setText('arc-message','게임 시작 버튼을 눌러주세요!');
+  setText('arc-start-btn','▶ 게임 시작');
+  if(document.getElementById('arctic-canvas') && document.getElementById('arctic-canvas').offsetParent !== null) arcDrawIdle();
+}
+
+function arcticPauseStop() {
+  if(!arc) return;
+  arc.running=false;
+  cancelAnimationFrame(arc.animId);
+}
+
+function arcticStartStop() {
+  if(!arc) arcticReset();
+  if(arc.gameOver){ arcticReset(); return; }
+  if(!arc.running){
+    arc.running=true; arc.paused=false;
+    document.getElementById('arc-start-btn').textContent='⏸ 일시정지';
+    document.getElementById('arc-message').textContent='← → 버튼으로 장애물을 피하세요!';
+    arcLoop();
+  } else {
+    arc.running=false; arc.paused=true;
+    cancelAnimationFrame(arc.animId);
+    document.getElementById('arc-start-btn').textContent='▶ 계속하기';
+    document.getElementById('arc-message').textContent='⏸ 일시정지 중';
+  }
+}
+
+function arcticLeft(down)  { if(arc) arc.leftHeld=down;  }
+function arcticRight(down) { if(arc) arc.rightHeld=down; }
+
+function arcLoop() {
+  if(!arc||!arc.running) return;
+  const cv = document.getElementById('arctic-canvas');
+  if(!cv || cv.offsetParent === null) { arc.animId = requestAnimationFrame(arcLoop); return; }
+  arcUpdate(); arcDraw();
+  arc.animId = requestAnimationFrame(arcLoop);
+}
+
+function arcUpdate() {
+  const s=arc;
+  s.frameCount++;
+  s.bgOffset   = (s.bgOffset   + s.speed*0.6) % ARC_H;
+  s.snowOffset = (s.snowOffset + s.speed*1.2) % ARC_H;
+
+  if(s.frameCount%6===0){ s.score++; document.getElementById('arc-score').textContent=s.score; }
+  const lvl = Math.floor(s.score/60)+1;
+  s.speed = Math.min(10, 3+(lvl-1)*0.8);
+  document.getElementById('arc-speed').textContent=lvl;
+
+  // 레인 이동
+  if(s.frameCount%14===0){
+    if(s.leftHeld  && s.lane>0) s.lane--;
+    if(s.rightHeld && s.lane<2) s.lane++;
+  }
+  s.penguinX += (ARC_LANE_XS[s.lane]-s.penguinX)*0.18;
+  s.penguinAnim += 0.22;
+  if(s.invincible>0) s.invincible--;
+
+  // 장애물 스폰
+  const spawnRate = Math.max(38, 90-lvl*8);
+  if(s.frameCount%spawnRate===0){
+    const lane=Math.floor(Math.random()*3);
+    const types=[
+      {emoji:'🧊',w:36,pts:0},{emoji:'🧊',w:48,pts:0},
+      {emoji:'🐻‍❄️',w:44,pts:0},{emoji:'❄️',w:32,pts:0},
+    ];
+    const t=types[Math.floor(Math.random()*types.length)];
+    s.obstacles.push({lane,y:HORIZON_Y-10,scale:0.1,...t});
+  }
+  if(s.frameCount%120===0){
+    s.items.push({lane:Math.floor(Math.random()*3),y:HORIZON_Y-10,emoji:'🐟',w:32,scale:0.1,pts:30});
+  }
+
+  // 이동 & 스케일
+  const moveObj = arr => arr.filter(o=>{
+    const prog=Math.max(0,(o.y-HORIZON_Y)/(ARC_H-HORIZON_Y));
+    o.scale=0.1+prog*1.4; o.y+=s.speed*(0.2+prog*1.8);
+    return o.y<ARC_H+60;
+  });
+  s.obstacles=moveObj(s.obstacles);
+  s.items=moveObj(s.items);
+
+  // 충돌
+  if(s.invincible===0){
+    for(const o of s.obstacles){
+      if(o.lane===s.lane && o.y>ARC_H-145 && o.y<ARC_H-15){
+        s.running=false; s.gameOver=true;
+        cancelAnimationFrame(s.animId);
+        if(s.score>s.best){ s.best=s.score; document.getElementById('arc-best').textContent=s.best; }
+        document.getElementById('arc-message').textContent=`🐧 게임 오버! 점수: ${s.score}점`;
+        document.getElementById('arc-start-btn').textContent='🔄 다시 시작';
+        arcDraw(); return;
+      }
+    }
+  }
+  // 아이템 수집
+  s.items=s.items.filter(it=>{
+    if(it.lane===s.lane && it.y>ARC_H-145 && it.y<ARC_H-15){
+      s.score+=it.pts; document.getElementById('arc-score').textContent=s.score;
+      document.getElementById('arc-message').textContent='🐟 물고기 +30점!';
+      return false;
+    }
+    return true;
+  });
+}
+
+function arcDrawIdle(){
+  const cv=document.getElementById('arctic-canvas'); if(!cv) return;
+  const ctx=cv.getContext('2d');
+  arcDrawScene(ctx,{penguinX:ARC_LANE_XS[1],penguinAnim:0,obstacles:[],items:[],bgOffset:0,snowOffset:0,speed:3,invincible:0,score:0,gameOver:false,running:false,lane:1});
+  ctx.fillStyle='rgba(0,0,80,0.45)'; ctx.fillRect(0,0,ARC_W,ARC_H);
+  ctx.fillStyle='white'; ctx.font='bold 26px sans-serif'; ctx.textAlign='center';
+  ctx.fillText('🐧 남극탐험',ARC_W/2,ARC_H/2-10);
+  ctx.font='17px sans-serif'; ctx.fillStyle='#ddd';
+  ctx.fillText('버튼을 눌러 시작하세요',ARC_W/2,ARC_H/2+28);
+}
+
+function arcDraw(){
+  const cv=document.getElementById('arctic-canvas'); if(!cv) return;
+  arcDrawScene(cv.getContext('2d'), arc);
+}
+
+function arcDrawScene(ctx,s){
+  // 하늘
+  const skyG=ctx.createLinearGradient(0,0,0,HORIZON_Y);
+  skyG.addColorStop(0,'#87CEEB'); skyG.addColorStop(1,'#B0E0FF');
+  ctx.fillStyle=skyG; ctx.fillRect(0,0,ARC_W,HORIZON_Y);
+
+  // 구름
+  [[50,30,1.0],[170,22,0.8],[300,36,1.1],[370,18,0.75]].forEach(([cx,cy,sc])=>{
+    ctx.save(); ctx.translate((cx-s.bgOffset*0.05+ARC_W)%ARC_W, cy); ctx.scale(sc,sc);
+    ctx.fillStyle='rgba(255,255,255,0.92)';
+    [[0,0,18],[20,0,14],[-16,0,12],[8,-10,12]].forEach(([ox,oy,r])=>{
+      ctx.beginPath(); ctx.arc(ox,oy,r,0,Math.PI*2); ctx.fill();
+    });
+    ctx.restore();
+  });
+
+  // 빙산 산맥
+  ['#1E88E5','#1565C0','#0D47A1'].forEach((col,mi)=>{
+    ctx.fillStyle=col; ctx.beginPath(); ctx.moveTo(0,HORIZON_Y);
+    const peaks=[20,32,14,28,18,36,12,26,22,30,16,24];
+    for(let i=0;i<=12;i++){
+      ctx.lineTo((i/12)*ARC_W, HORIZON_Y-peaks[i%12]*(1-mi*0.25));
+    }
+    ctx.lineTo(ARC_W,HORIZON_Y); ctx.closePath(); ctx.fill();
+  });
+  // 눈 모자
+  ctx.fillStyle='rgba(255,255,255,0.88)'; ctx.beginPath(); ctx.moveTo(0,HORIZON_Y);
+  for(let x=0;x<=ARC_W;x+=4){ ctx.lineTo(x, HORIZON_Y-8-Math.sin(x*0.08)*6-Math.sin(x*0.14)*3); }
+  ctx.lineTo(ARC_W,HORIZON_Y); ctx.closePath(); ctx.fill();
+
+  // 눈밭
+  const snowG=ctx.createLinearGradient(0,HORIZON_Y,0,ARC_H);
+  snowG.addColorStop(0,'#E8F4FD'); snowG.addColorStop(1,'#C5D8EC');
+  ctx.fillStyle=snowG; ctx.fillRect(0,HORIZON_Y,ARC_W,ARC_H-HORIZON_Y);
+
+  // 원근 레인선
+  ctx.strokeStyle='rgba(150,180,210,0.3)'; ctx.lineWidth=1.5;
+  [-120,-60,0,60,120].forEach(ox=>{
+    ctx.beginPath(); ctx.moveTo(ARC_W/2+ox*0.1,HORIZON_Y); ctx.lineTo(ARC_W/2+ox*3.5,ARC_H); ctx.stroke();
+  });
+
+  // 눈 파티클
+  ctx.fillStyle='rgba(255,255,255,0.75)';
+  for(let i=0;i<28;i++){
+    const sx=(i*137+s.snowOffset*2)%ARC_W;
+    const sy=(i*73+s.snowOffset*3)%(ARC_H-HORIZON_Y)+HORIZON_Y;
+    ctx.beginPath(); ctx.arc(sx,sy,1+(i%3)*0.7,0,Math.PI*2); ctx.fill();
+  }
+
+  // 현재 레인 그림자
+  [0,1,2].forEach(ln=>{
+    ctx.save(); ctx.globalAlpha=ln===s.lane?0.18:0.06;
+    ctx.fillStyle='#1565C0';
+    ctx.beginPath(); ctx.ellipse(ARC_LANE_XS[ln],ARC_H-55,28,10,0,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  });
+
+  // 오브젝트 (원근 정렬)
+  [...s.obstacles,...s.items].sort((a,b)=>a.y-b.y).forEach(o=>{
+    const prog=Math.max(0,Math.min(1,(o.y-HORIZON_Y)/(ARC_H-HORIZON_Y)));
+    const drawX=ARC_W/2+(ARC_LANE_XS[o.lane]-ARC_W/2)*prog;
+    const sz=Math.max(8,(o.w||36)*o.scale);
+    ctx.save(); ctx.globalAlpha=Math.min(1,prog*3);
+    ctx.font=`${sz}px serif`; ctx.textAlign='center'; ctx.textBaseline='bottom';
+    ctx.fillText(o.emoji,drawX,o.y);
+    ctx.restore();
+  });
+
+  // 펭귄
+  drawArcPenguin(ctx,s.penguinX,ARC_H-55,s.penguinAnim,s.invincible);
+
+  // 게임오버
+  if(s.gameOver){
+    ctx.fillStyle='rgba(0,0,40,0.58)'; ctx.fillRect(0,0,ARC_W,ARC_H);
+    ctx.fillStyle='#FFD700'; ctx.font='bold 30px sans-serif'; ctx.textAlign='center';
+    ctx.fillText('🐧 게임 오버!',ARC_W/2,ARC_H/2-20);
+    ctx.fillStyle='white'; ctx.font='bold 22px sans-serif';
+    ctx.fillText(`점수: ${s.score}점`,ARC_W/2,ARC_H/2+18);
+    ctx.font='16px sans-serif'; ctx.fillStyle='#aaa';
+    ctx.fillText('다시 시작 버튼을 눌러주세요',ARC_W/2,ARC_H/2+50);
+  }
+}
+
+function drawArcPenguin(ctx,x,y,anim,invincible){
+  if(invincible>0 && Math.floor(invincible/4)%2===0) return;
+  ctx.save(); ctx.translate(x,y);
+  // 발
+  const lg=Math.sin(anim)*8;
+  ctx.fillStyle='#1565C0';
+  ctx.beginPath(); ctx.ellipse(-7+lg,14,7,5,0.3,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(7-lg,14,7,5,-0.3,0,Math.PI*2); ctx.fill();
+  // 몸통
+  ctx.fillStyle='#111';
+  ctx.beginPath(); ctx.ellipse(0,0,18,26,0,0,Math.PI*2); ctx.fill();
+  // 배
+  ctx.fillStyle='#f5f5f5';
+  ctx.beginPath(); ctx.ellipse(0,4,10,17,0,0,Math.PI*2); ctx.fill();
+  // 날개
+  const wf=Math.sin(anim*1.2)*10;
+  ctx.fillStyle='#111';
+  ctx.beginPath(); ctx.ellipse(-20,-2+wf*0.3,7,16,-0.4,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(20,-2-wf*0.3,7,16,0.4,0,Math.PI*2); ctx.fill();
+  // 머리
+  ctx.fillStyle='#111';
+  ctx.beginPath(); ctx.arc(0,-24,14,0,Math.PI*2); ctx.fill();
+  // 눈
+  ctx.fillStyle='white';
+  ctx.beginPath(); ctx.arc(-5,-25,4.5,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(5,-25,4.5,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='#111';
+  ctx.beginPath(); ctx.arc(-4,-25,2.2,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(6,-25,2.2,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='white';
+  ctx.beginPath(); ctx.arc(-3,-26,1,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(7,-26,1,0,Math.PI*2); ctx.fill();
+  // 부리
+  ctx.fillStyle='#FF8F00';
+  ctx.beginPath(); ctx.moveTo(-4,-20); ctx.lineTo(4,-20); ctx.lineTo(0,-15); ctx.closePath(); ctx.fill();
+  // 빨간 머플러
+  ctx.fillStyle='#C62828';
+  ctx.beginPath(); ctx.ellipse(0,-14,14,5,0,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(8,-14,5,0,Math.PI*2); ctx.fill();
+  ctx.restore();
+}
+
+// 키보드
+document.addEventListener('keydown', e=>{
+  if(!arc) return;
+  if(e.key==='ArrowLeft') { arcticLeft(true); e.preventDefault(); }
+  if(e.key==='ArrowRight'){ arcticRight(true);e.preventDefault(); }
+});
+document.addEventListener('keyup', e=>{
+  if(!arc) return;
+  if(e.key==='ArrowLeft')  arcticLeft(false);
+  if(e.key==='ArrowRight') arcticRight(false);
+});
+
+// 캔버스 터치/클릭
+const arcCv=document.getElementById('arctic-canvas');
+arcCv.addEventListener('touchstart',e=>{
+  e.preventDefault();
+  const t=e.touches[0], rect=arcCv.getBoundingClientRect();
+  if(t.clientX-rect.left < ARC_W/2) arcticLeft(true); else arcticRight(true);
+});
+arcCv.addEventListener('touchend',e=>{ e.preventDefault(); arcticLeft(false); arcticRight(false); });
+arcCv.addEventListener('click',e=>{
+  const rect=arcCv.getBoundingClientRect(), tx=e.clientX-rect.left;
+  if(arc){ if(tx<ARC_W/2){ arc.lane=Math.max(0,arc.lane-1); } else { arc.lane=Math.min(2,arc.lane+1); } }
+});
+
+
+// ===== 청기백기 GAME =====
+const FLAG_COMMANDS = [
+  { text:'청기 올려!',              color:'blue',  action:'up',   negated:false },
+  { text:'청기 내려!',              color:'blue',  action:'down', negated:false },
+  { text:'백기 올려!',              color:'white', action:'up',   negated:false },
+  { text:'백기 내려!',              color:'white', action:'down', negated:false },
+  { text:'청기 올리지 마!',         color:'blue',  action:'up',   negated:true  },
+  { text:'청기 내리지 마!',         color:'blue',  action:'down', negated:true  },
+  { text:'백기 올리지 마!',         color:'white', action:'up',   negated:true  },
+  { text:'백기 내리지 마!',         color:'white', action:'down', negated:true  },
+  { text:'청기 올리고 백기 내려!',   color:'both',  action:'blue-up white-down', negated:false },
+  { text:'백기 올리고 청기 내려!',   color:'both',  action:'white-up blue-down',  negated:false },
+  { text:'청기 올리고 백기도 올려!', color:'both',  action:'blue-up white-up',    negated:false },
+  { text:'청기 내리고 백기도 내려!', color:'both',  action:'blue-down white-down',negated:false },
+  { text:'두 기 모두 올려!',        color:'both',  action:'blue-up white-up',    negated:false },
+  { text:'두 기 모두 내려!',        color:'both',  action:'blue-down white-down',negated:false },
+  { text:'청기만 올려!',            color:'blue',  action:'up',   negated:false },
+  { text:'백기만 내려!',            color:'white', action:'down', negated:false },
+];
+
+let flagState = null;
+
+function flagReset() {
+  flagPauseStop();
+  flagState = {
+    running:false, paused:false,
+    score:0, combo:0, lives:3, timeLeft:60,
+    highScore: flagState?.highScore||0,
+    current:null, answered:false,
+    bothNeeded:null, bothFirst:null,
+    cmdTimeout:null, bothTimer:null, timerInterval:null,
+    blueUp:false, whiteUp:false,
+  };
+  document.getElementById('flag-score').textContent='0';
+  document.getElementById('flag-combo').textContent='0';
+  document.getElementById('flag-timer').textContent='60';
+  document.getElementById('flag-lives').textContent='❤️❤️❤️';
+  document.getElementById('flag-feedback').textContent='';
+  setText('flag-command','시작 버튼을 눌러주세요');
+  document.getElementById('flag-command').style.background='linear-gradient(135deg,#1a237e,#283593)';
+  setText('flag-start-btn','▶ 게임 시작');
+  flagUpdateVisuals(false, false);
+  flagSetButtonsEnabled(false);
+}
+
+function flagPauseStop() {
+  if(!flagState) return;
+  flagState.running=false;
+  clearTimeout(flagState.cmdTimeout);
+  clearTimeout(flagState.bothTimer);
+  clearInterval(flagState.timerInterval);
+}
+
+function flagStartStop() {
+  if(!flagState) return;
+  if(flagState.timeLeft<=0 || flagState.lives<=0) { flagReset(); return; }
+  if(!flagState.running) {
+    flagState.running=true; flagState.paused=false;
+    document.getElementById('flag-start-btn').textContent='⏸ 일시정지';
+    flagSetButtonsEnabled(true);
+    flagStartTimer();
+    flagNextCommand();
+  } else {
+    flagState.running=false; flagState.paused=true;
+    clearTimeout(flagState.cmdTimeout);
+    clearInterval(flagState.timerInterval);
+    flagSetButtonsEnabled(false);
+    document.getElementById('flag-start-btn').textContent='▶ 계속하기';
+    document.getElementById('flag-command').textContent='⏸ 일시정지 중';
+  }
+}
+
+function flagStartTimer() {
+  const s=flagState; clearInterval(s.timerInterval);
+  s.timerInterval=setInterval(()=>{
+    if(!s.running) return;
+    s.timeLeft--;
+    document.getElementById('flag-timer').textContent=s.timeLeft;
+    if(s.timeLeft<=0) flagEndGame();
+  },1000);
+}
+
+function flagEndGame() {
+  const s=flagState;
+  s.running=false;
+  clearTimeout(s.cmdTimeout); clearInterval(s.timerInterval);
+  flagSetButtonsEnabled(false);
+  if(s.score>s.highScore) s.highScore=s.score;
+  const grade=s.score>=400?'🥇 반응 마스터!':s.score>=200?'🥈 잘 하셨어요!':'🥉 수고하셨어요!';
+  document.getElementById('flag-command').textContent=`${grade} 최종: ${s.score}점`;
+  document.getElementById('flag-command').style.background='linear-gradient(135deg,#4a148c,#7b1fa2)';
+  document.getElementById('flag-start-btn').textContent='🔄 다시 시작';
+}
+
+function flagNextCommand() {
+  const s=flagState; if(!s.running) return;
+  s.answered=false; s.bothFirst=null;
+  clearTimeout(s.cmdTimeout); clearTimeout(s.bothTimer);
+  const elapsed=60-s.timeLeft;
+  let pool;
+  if(elapsed<12)      pool=FLAG_COMMANDS.slice(0,4);
+  else if(elapsed<25) pool=FLAG_COMMANDS.slice(0,8);
+  else                pool=FLAG_COMMANDS;
+  const cmd=pool[Math.floor(Math.random()*pool.length)];
+  s.current=cmd;
+  const cmdEl=document.getElementById('flag-command');
+  cmdEl.textContent=cmd.text;
+  cmdEl.style.background=cmd.color==='blue'
+    ?'linear-gradient(135deg,#1565C0,#1E88E5)'
+    :cmd.color==='white'
+    ?'linear-gradient(135deg,#546E7A,#78909C)'
+    :'linear-gradient(135deg,#1a237e,#1565C0)';
+  cmdEl.style.transform='scale(1.08)';
+  setTimeout(()=>{if(cmdEl)cmdEl.style.transform='';},150);
+  const timeLimit=Math.max(700, 2200-elapsed*18-s.combo*25);
+  if(cmd.negated) {
+    s.cmdTimeout=setTimeout(()=>{ if(!s.answered&&s.running) flagCorrect(true); },timeLimit);
+  } else {
+    s.bothNeeded=cmd.color==='both'?cmd.action.split(' '):null;
+    s.cmdTimeout=setTimeout(()=>{ if(!s.answered&&s.running) flagWrong('⏰ 시간 초과!'); },timeLimit);
+  }
+}
+
+function flagAction(color,action) {
+  const s=flagState; if(!s||!s.running||s.answered) return;
+  const cmd=s.current; if(!cmd) return;
+  const key=`${color}-${action}`;
+  if(cmd.negated) {
+    if(cmd.color===color && cmd.action===action) flagWrong('❌ 하지 말라고 했어요!');
+    return;
+  }
+  if(cmd.color==='both') {
+    const needed=s.bothNeeded;
+    if(!needed.includes(key)) { flagWrong('❌ 틀렸어요!'); return; }
+    if(!s.bothFirst) {
+      s.bothFirst=key; flagFlashBtn(color,action,true);
+      s.bothTimer=setTimeout(()=>{ if(!s.answered&&s.running) flagWrong('⏰ 두 번째 버튼!'); },1500);
+    } else {
+      if(s.bothFirst===key) return;
+      clearTimeout(s.bothTimer);
+      flagFlashBtn(color,action,true); flagCorrect(false);
+    }
+    return;
+  }
+  if(cmd.color===color && cmd.action===action) flagCorrect(false);
+  else flagWrong('❌ 틀렸어요!');
+}
+
+function flagCorrect(silent) {
+  const s=flagState; s.answered=true;
+  clearTimeout(s.cmdTimeout); clearTimeout(s.bothTimer);
+  s.combo++;
+  const mult=s.combo>=5?3:s.combo>=3?2:1;
+  const pts=10*mult;
+  s.score+=pts;
+  document.getElementById('flag-score').textContent=s.score;
+  document.getElementById('flag-combo').textContent=s.combo;
+  const fb=document.getElementById('flag-feedback');
+  fb.style.color='var(--green)';
+  fb.textContent=silent?`✅ 잘 참으셨어요! +${pts}점`
+    :s.combo>=5?`🔥 ${s.combo}콤보! +${pts}점!`
+    :s.combo>=3?`⚡ ${s.combo}콤보! +${pts}점`
+    :`✅ 정답! +${pts}점`;
+  // 깃발 상태 갱신
+  const cmd=s.current;
+  if(cmd&&!cmd.negated) {
+    const apply=(c,a)=>{ if(c==='blue') s.blueUp=a==='up'; if(c==='white') s.whiteUp=a==='up'; };
+    if(cmd.color==='both') s.bothNeeded?.forEach(k=>{ const[c,a]=k.split('-'); apply(c,a); });
+    else apply(cmd.color,cmd.action);
+  }
+  flagUpdateVisuals(s.blueUp,s.whiteUp);
+  setTimeout(()=>{ if(s.running) flagNextCommand(); },550);
+}
+
+function flagWrong(msg) {
+  const s=flagState; s.answered=true;
+  clearTimeout(s.cmdTimeout); clearTimeout(s.bothTimer);
+  s.combo=0; s.lives--;
+  document.getElementById('flag-combo').textContent='0';
+  document.getElementById('flag-lives').textContent=['💔','❤️','❤️❤️','❤️❤️❤️'][Math.max(0,s.lives)];
+  const fb=document.getElementById('flag-feedback');
+  fb.style.color='var(--red)';
+  fb.textContent=msg+(s.lives>0?` (남은 목숨: ${s.lives})`:'' );
+  const cmdEl=document.getElementById('flag-command');
+  cmdEl.style.background='linear-gradient(135deg,#B71C1C,#D32F2F)';
+  setTimeout(()=>{ if(cmdEl) cmdEl.style.background='linear-gradient(135deg,#1a237e,#283593)'; },400);
+  if(s.lives<=0) { flagEndGame(); return; }
+  setTimeout(()=>{ if(s.running) flagNextCommand(); },850);
+}
+
+function flagUpdateVisuals(blueUp,whiteUp) {
+  const bv=document.getElementById('flag-vis-blue');
+  const wv=document.getElementById('flag-vis-white');
+  if(bv){ bv.style.transform=blueUp?'rotate(0deg)':'rotate(-60deg)'; bv.style.opacity=blueUp?'1':'0.35'; }
+  if(wv){ wv.style.transform=whiteUp?'rotate(0deg)':'rotate(-60deg)'; wv.style.opacity=whiteUp?'1':'0.35'; }
+}
+
+function flagFlashBtn(color,action,ok) {
+  const el=document.getElementById(`flag-btn-${color}-${action}`); if(!el) return;
+  el.style.transform='scale(0.92)';
+  el.style.boxShadow=ok?'0 0 20px 8px rgba(46,204,113,0.75)':'0 0 20px 8px rgba(231,76,60,0.75)';
+  setTimeout(()=>{ if(el){ el.style.transform=''; el.style.boxShadow=''; } },300);
+}
+
+function flagSetButtonsEnabled(on) {
+  ['blue-up','blue-down','white-up','white-down'].forEach(k=>{
+    const el=document.getElementById(`flag-btn-${k}`);
+    if(el){ el.disabled=!on; el.style.opacity=on?'1':'0.5'; }
+  });
+}
+
+
+// ===== 10초 맞추기 GAME =====
+const TSEC_TARGET = 10000;
+
+let tsec = {
+  phase:'idle', startTime:null, elapsed:null,
+  history:[], attempts:0, perfect:0, streak:0, bestDiff:null, animId:null,
+};
+
+function tsecOnShow() { tsecDrawRing(0,'#546E7A'); }
+
+function tsecReset() {
+  cancelAnimationFrame(tsec.animId);
+  tsec={phase:'idle',startTime:null,elapsed:null,history:[],attempts:0,perfect:0,streak:0,bestDiff:null,animId:null};
+  document.getElementById('tsec-number').textContent='--';
+  document.getElementById('tsec-sub').textContent='시작 버튼을 누르세요';
+  setText('tsec-btn','▶ 시작');
+  document.getElementById('tsec-btn').style.background='#4E342E';
+  document.getElementById('tsec-result-text').textContent='준비됩니다!';
+  document.getElementById('tsec-result-sub').textContent='';
+  document.getElementById('tsec-attempts').textContent='0';
+  document.getElementById('tsec-perfect').textContent='0';
+  document.getElementById('tsec-streak').textContent='0';
+  document.getElementById('tsec-avg').textContent='평균: -';
+  document.getElementById('tsec-best-diff').textContent='최고 정확도: -';
+  document.getElementById('tsec-history').innerHTML='';
+  tsecDrawRing(0,'#546E7A');
+}
+
+function tsecClick() {
+  if(tsec.phase==='idle') {
+    tsec.phase='counting';
+    tsec.startTime=performance.now();
+    document.getElementById('tsec-btn').textContent='⏹ 멈춰!';
+    document.getElementById('tsec-btn').style.background='#B71C1C';
+    document.getElementById('tsec-number').textContent='⏱';
+    document.getElementById('tsec-sub').textContent='10초라 느껴질 때 멈추세요!';
+    document.getElementById('tsec-result-text').textContent='눈을 감고 속으로 세어보세요...';
+    document.getElementById('tsec-result-sub').textContent='';
+    tsecAnimate();
+  } else if(tsec.phase==='counting') {
+    cancelAnimationFrame(tsec.animId);
+    const elapsed=performance.now()-tsec.startTime;
+    tsec.elapsed=elapsed; tsec.phase='result';
+    tsecShowResult(elapsed);
+  } else if(tsec.phase==='result') {
+    tsec.phase='idle';
+    document.getElementById('tsec-btn').textContent='▶ 다시!';
+    document.getElementById('tsec-btn').style.background='#4E342E';
+    document.getElementById('tsec-sub').textContent='시작 버튼을 누르세요';
+    document.getElementById('tsec-number').textContent='--';
+  }
+}
+
+function tsecAnimate() {
+  const elapsed=performance.now()-tsec.startTime;
+  const ratio=Math.min(elapsed/TSEC_TARGET, 1.6);
+  let col;
+  if(ratio<0.7)       col='#26A69A';
+  else if(ratio<0.95) col='#FFA726';
+  else if(ratio<1.05) col='#66BB6A';
+  else                col='#EF5350';
+  tsecDrawRing(ratio, col);
+  if(elapsed<20000) tsec.animId=requestAnimationFrame(tsecAnimate);
+  else tsecClick();
+}
+
+function tsecDrawRing(ratio, color) {
+  const cv=document.getElementById('tsec-ring'); if(!cv) return;
+  const ctx=cv.getContext('2d');
+  const cx=130,cy=130,r=110,lw=18;
+  ctx.clearRect(0,0,260,260);
+
+  // 배경 원
+  ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,0.1)'; ctx.lineWidth=lw; ctx.stroke();
+
+  // 1초 눈금
+  for(let i=0;i<10;i++){
+    const a=-Math.PI/2+(i/10)*Math.PI*2;
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*(r-13),cy+Math.sin(a)*(r-13));
+    ctx.lineTo(cx+Math.cos(a)*(r+3), cy+Math.sin(a)*(r+3));
+    ctx.strokeStyle='rgba(255,255,255,0.3)'; ctx.lineWidth=2; ctx.stroke();
+    // 초 숫자
+    const nr=r+22;
+    ctx.fillStyle='rgba(255,255,255,0.45)'; ctx.font='bold 12px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(i===0?'10':String(i), cx+Math.cos(a)*nr, cy+Math.sin(a)*nr);
+  }
+  // 10초 눈금 금색 강조
+  ctx.beginPath();
+  ctx.moveTo(cx+Math.cos(-Math.PI/2)*(r-18),cy+Math.sin(-Math.PI/2)*(r-18));
+  ctx.lineTo(cx+Math.cos(-Math.PI/2)*(r+7), cy+Math.sin(-Math.PI/2)*(r+7));
+  ctx.strokeStyle='#FFD700'; ctx.lineWidth=4; ctx.stroke();
+
+  // 채워지는 호
+  if(ratio>0) {
+    ctx.beginPath(); ctx.arc(cx,cy,r,-Math.PI/2,-Math.PI/2+Math.min(ratio,1)*Math.PI*2);
+    ctx.strokeStyle=color; ctx.lineWidth=lw; ctx.lineCap='round'; ctx.stroke(); ctx.lineCap='butt';
+    // 초과분 (빨간 점선)
+    if(ratio>1) {
+      ctx.beginPath(); ctx.arc(cx,cy,r,-Math.PI/2,-Math.PI/2+ratio*Math.PI*2);
+      ctx.strokeStyle='rgba(239,83,80,0.55)'; ctx.lineWidth=lw*0.55;
+      ctx.setLineDash([8,8]); ctx.stroke(); ctx.setLineDash([]);
+    }
+  }
+
+  // 중앙 점 (침)
+  if(ratio>0&&ratio<1.5){
+    const needleA=-Math.PI/2+Math.min(ratio,1)*Math.PI*2;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.lineTo(cx+Math.cos(needleA)*(r-20),cy+Math.sin(needleA)*(r-20));
+    ctx.strokeStyle='rgba(255,255,255,0.7)'; ctx.lineWidth=2.5; ctx.lineCap='round'; ctx.stroke();
+    ctx.fillStyle='white'; ctx.beginPath(); ctx.arc(cx,cy,5,0,Math.PI*2); ctx.fill();
+  }
+}
+
+function tsecShowResult(elapsed) {
+  const diff=elapsed-TSEC_TARGET;
+  const absDiff=Math.abs(diff);
+  const elapsedSec=(elapsed/1000).toFixed(2);
+
+  tsec.attempts++;
+  tsec.history.push(elapsed);
+  if(tsec.history.length>10) tsec.history.shift();
+
+  const isPerfect=absDiff<=300, isGood=absDiff<=700;
+  if(isPerfect||isGood) tsec.streak++; else tsec.streak=0;
+  if(isPerfect) tsec.perfect++;
+  if(tsec.bestDiff===null||absDiff<tsec.bestDiff) tsec.bestDiff=absDiff;
+
+  let grade,color,emoji;
+  if(absDiff<=100)       {grade='완벽!!';     color='#2ECC71';emoji='🏆';}
+  else if(absDiff<=300)  {grade='훌륭해요!';  color='#27AE60';emoji='🥇';}
+  else if(absDiff<=700)  {grade='잘 하셨어요!';color='#F39C12';emoji='🥈';}
+  else if(absDiff<=1500) {grade='아쉬워요';   color='#E67E22';emoji='🥉';}
+  else                   {grade='다시 도전!'; color='#E74C3C';emoji='😅';}
+
+  const dir=diff<0?`${(absDiff/1000).toFixed(2)}초 빨랐어요`:`${(absDiff/1000).toFixed(2)}초 느렸어요`;
+
+  document.getElementById('tsec-number').textContent=elapsedSec;
+  document.getElementById('tsec-sub').textContent=diff<0?'⬆ 일찍 눌렀어요':'⬇ 늦게 눌렀어요';
+
+  const rt=document.getElementById('tsec-result-text');
+  rt.style.color=color;
+  rt.textContent=`${emoji} ${elapsedSec}초 — ${grade}`;
+  document.getElementById('tsec-result-sub').textContent=`목표 10.00초 | ${dir}`;
+
+  tsecDrawRing(elapsed/TSEC_TARGET, isPerfect?'#2ECC71':isGood?'#F39C12':'#EF5350');
+  if(isPerfect) tsecParticle();
+  tsecUpdateHistory();
+
+  document.getElementById('tsec-attempts').textContent=tsec.attempts;
+  document.getElementById('tsec-perfect').textContent=tsec.perfect;
+  document.getElementById('tsec-streak').textContent=tsec.streak;
+  const avg=tsec.history.reduce((a,b)=>a+b,0)/tsec.history.length;
+  document.getElementById('tsec-avg').textContent=`평균: ${(avg/1000).toFixed(2)}초`;
+  document.getElementById('tsec-best-diff').textContent=`최고 정확도: ±${(tsec.bestDiff/1000).toFixed(2)}초`;
+
+  document.getElementById('tsec-btn').textContent='▶ 다시 도전!';
+  document.getElementById('tsec-btn').style.background='#4E342E';
+}
+
+function tsecUpdateHistory() {
+  const c=document.getElementById('tsec-history');
+  c.innerHTML=''; c.style.position='relative';
+  const maxH=52;
+  tsec.history.forEach(v=>{
+    const d=Math.abs(v-TSEC_TARGET);
+    const bh=Math.max(8,maxH-(d/1500)*maxH);
+    const col=d<=300?'#2ECC71':d<=700?'#F39C12':'#EF5350';
+    const bar=document.createElement('div');
+    bar.title=`${(v/1000).toFixed(2)}초`;
+    bar.style.cssText=`flex:1;background:${col};border-radius:4px 4px 0 0;height:${bh}px;min-width:16px;transition:height 0.3s;`;
+    c.appendChild(bar);
+  });
+  const line=document.createElement('div');
+  line.style.cssText='position:absolute;bottom:6px;left:0;right:0;height:2px;background:rgba(255,200,0,0.6);border-radius:2px;pointer-events:none;';
+  c.appendChild(line);
+}
+
+function tsecParticle() {
+  const d=document.getElementById('tsec-display');
+  const cols=['#FFD700','#2ECC71','#3498DB','#E74C3C','#9B59B6','#F39C12'];
+  for(let i=0;i<16;i++){
+    const p=document.createElement('div');
+    p.style.cssText=`position:absolute;width:10px;height:10px;border-radius:50%;
+      background:${cols[i%cols.length]};pointer-events:none;z-index:10;
+      left:${30+Math.random()*40}%;top:${20+Math.random()*50}%;
+      animation:tsecPop 0.85s ease-out forwards;`;
+    p.style.setProperty('--tx',`${(Math.random()-0.5)*140}px`);
+    p.style.setProperty('--ty',`${-50-Math.random()*80}px`);
+    d.appendChild(p);
+    setTimeout(()=>p.remove(),950);
+  }
+}
+
+const tsecStyle=document.createElement('style');
+tsecStyle.textContent=`
+@keyframes tsecPop{
+  0%  {transform:translate(0,0) scale(1);opacity:1;}
+  100%{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0;}
+}`;
+document.head.appendChild(tsecStyle);
+
+// ===== 모든 초기화 (DOM 완전 로드 후 실행) =====
+window.addEventListener('load', function() {
+  // 게임 초기화
+  try { initMemoryGame(); } catch(e) {}
+  try { bwlReset(); } catch(e) {}
+  try { tetReset(); } catch(e) {}
+  try { fishReset(); } catch(e) {}
+  try { moleReset(); } catch(e) {}
+  try { arcticReset(); } catch(e) {}
+  try { flagReset(); } catch(e) {}
+  // 퀴즈 뱃지
+  const badge = document.getElementById('quiz-count-badge');
+  if(badge) badge.textContent = '(' + quizBank.length + '문제)';
+});
+
+</script>
+</body>
+</html>
